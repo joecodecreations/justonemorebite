@@ -121,6 +121,15 @@ def brand_mark():
             '<circle cx="22.5" cy="24" r="11.5" fill="none" stroke="#FAF6EF" stroke-width="2.2"/></svg>')
 
 
+def logo_img(pg, dark=False):
+    lg = SITE.get("logo")
+    if not lg:
+        return brand_mark() + '<span class="brand-name">Just One More Bite<small>Chef-made · Raleigh, NC</small></span>'
+    src = lg["file_dark"] if dark else lg["file"]
+    return (f'<img class="brand-logo" src="{pg.rel(src)}" width="{lg["width"]}" height="{lg["height"]}" '
+            f'alt="{esc(lg["alt"])}" decoding="async">')
+
+
 def money(v):
     v = float(v)
     return f"${v:,.0f}" if v == int(v) else f"${v:,.2f}"
@@ -566,7 +575,7 @@ def site_graph():
         {
             "@type": "FoodEstablishment", "@id": biz_id, "name": SITE["name"], "alternateName": [SITE["short_name"], "Just One More Bite NC"],
             "legalName": SITE["legal_name"], "description": SITE["entity"], "url": abs_url(""),
-            "logo": abs_url("icon-512.png"), "image": [abs_url("img/og-home.jpg"), abs_url("img/og-default.jpg")],
+            "logo": abs_url(SITE["logo"]["file_png"]) if SITE.get("logo") else abs_url("icon-512.png"), "image": [abs_url("img/og-home.jpg"), abs_url("img/og-default.jpg")],
             "telephone": SITE["phone_tel"], "email": SITE["email"],
             "priceRange": f"${P['zone_breakfast']['per']}–${P['paleo_dinner']['per']} per meal",
             "servesCuisine": ["American", "Zone diet", "Paleo", "Low carb", "Dairy-free"],
@@ -699,7 +708,7 @@ def header(pg, meta):
 {ribbon}
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{pg.rel('')}" aria-label="{esc(SITE['name'])} home">{brand_mark()}<span class="brand-name">Just One More Bite<small>Chef-made · Raleigh, NC</small></span></a>
+    <a class="brand" href="{pg.rel('')}" aria-label="{esc(SITE['name'])} home">{logo_img(pg)}</a>
     <nav class="nav-desktop" aria-label="Main">{links}</nav>
     <div class="header-actions">
       <a class="btn btn--ghost btn--sm header-call" href="tel:{SITE['phone_tel']}">{icon('phone')}{SITE['phone_display']}</a>
@@ -709,7 +718,7 @@ def header(pg, meta):
   </div>
 </header>
 <div class="nav-sheet" id="nav-sheet" aria-hidden="true">
-  <div class="nav-sheet-top"><a class="brand" href="{pg.rel('')}">{brand_mark()}<span class="brand-name">Just One More Bite</span></a>
+  <div class="nav-sheet-top"><a class="brand" href="{pg.rel('')}" aria-label="{esc(SITE['name'])} home">{logo_img(pg)}</a>
     <button class="menu-toggle" type="button" aria-label="Close menu" data-nav-close>{icon('close')}</button></div>
   <nav aria-label="Mobile">{sheet_links}</nav>
   <div class="btn-row"><a class="btn btn--primary btn--lg" href="{SITE['store_url']}">{icon('cart')}Order now</a>
@@ -730,7 +739,8 @@ def footer(pg):
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="{pg.rel('')}">{brand_mark()}<span class="brand-name">Just One More Bite<small>Chef-made · Raleigh, NC</small></span></a>
+        <a class="brand" href="{pg.rel('')}" aria-label="{esc(SITE['name'])} home">{logo_img(pg, dark=True)}</a>
+        <p class="footer-tagline">Chef-made meals · Raleigh, NC</p>
         <p>{esc(SITE['entity'])}</p>
         <address class="footer-nap"><span><b>{esc(SITE['legal_name'])}</b></span><span>Raleigh, North Carolina · delivering to {esc(towns_sentence())}</span>
           <a href="tel:{SITE['phone_tel']}">{SITE['phone_display']}</a><a href="mailto:{SITE['email']}">{SITE['email']}</a></address>

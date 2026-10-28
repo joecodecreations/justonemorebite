@@ -309,5 +309,15 @@
         "blurb": "Breakfast, lunch and dinner every day, built to 4-block macros."
       }
     ]
+  },
+  "logo": {
+    "_note": "Logo 1 'Fork Bite' from ../logos (temporary pick for review). Swap files in src/assets/brand and rebuild.",
+    "file": "assets/brand/logo-fork-bite.webp",
+    "file_png": "assets/brand/logo-fork-bite.png",
+    "file_dark": "assets/brand/logo-fork-bite-reversed.webp",
+    "width": 386,
+    "height": 180,
+    "icon": "assets/brand/logo-fork-bite-icon.png",
+    "alt": "Just One More Bite"
   }
 }
