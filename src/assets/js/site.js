@@ -8,11 +8,13 @@
   var closers = d.querySelectorAll("[data-nav-close]");
   function setNav(open) {
     if (!sheet) return;
+    var wasOpen = sheet.classList.contains("is-open");
     sheet.classList.toggle("is-open", open);
     sheet.setAttribute("aria-hidden", open ? "false" : "true");
     d.body.classList.toggle("nav-open", open);
     openers.forEach(function (b) { b.setAttribute("aria-expanded", open ? "true" : "false"); });
     if (open) { var f = sheet.querySelector("a, button"); if (f) f.focus(); }
+    else if (wasOpen && openers[0]) { openers[0].focus(); }
   }
   openers.forEach(function (b) { b.addEventListener("click", function () { setNav(true); }); });
   closers.forEach(function (b) { b.addEventListener("click", function () { setNav(false); }); });

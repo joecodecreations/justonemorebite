@@ -86,7 +86,7 @@ ul, ol { padding-left: 1.2em; }
 .btn--light { --bg: #fff7ee; --fg: var(--ink); }
 .btn--outline-light { --bg: transparent; --fg: #fff7ee; border-color: rgba(255,247,238,.45); }
 .btn--outline-light:hover { border-color: #fff7ee; }
-.btn--sm { min-height: 42px; padding: 10px 18px; font-size: .92rem; }
+.btn--sm { min-height: 44px; padding: 10px 18px; font-size: .92rem; }
 .btn--lg { min-height: 58px; padding: 16px 30px; font-size: 1.05rem; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .text-link { font-weight: 650; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
@@ -401,7 +401,7 @@ h1 > .eyebrow { display: flex; width: fit-content; letter-spacing: .16em; }
 /* homepage membership band (mini list) */
 .mbr-mini { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 @media (min-width: 560px) { .mbr-mini { grid-template-columns: 1fr 1fr; } }
-.mbr-mini li { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-radius: 18px; padding: 18px 20px; display: grid; gap: 4px; }
+.mbr-mini li { background: rgba(0,0,0,.14); border: 1px solid rgba(255,255,255,.26); border-radius: 18px; padding: 18px 20px; display: grid; gap: 4px; }
 .mbr-mini-name { font: 650 .76rem/1.2 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #ffe1d6; }
 .mbr-mini strong { font: 600 2rem/1.05 var(--serif); color: #fff; }
 .mbr-mini strong small { font: 500 .9rem var(--sans); color: #ffe1d6; margin-left: 4px; }
@@ -425,6 +425,18 @@ h1 > .eyebrow { display: flex; width: fit-content; letter-spacing: .16em; }
 .nav-sheet .brand-logo { height: 48px; }
 .site-footer .brand-logo { height: 72px; }
 .footer-tagline { margin: -6px 0 16px; font: 600 .74rem/1.3 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: #8f8478; }
+
+/* QA fixes: contrast on tomato + dark, small-screen CTA wrapping, focusable tables */
+.section--tomato .eyebrow, .section--tomato .lead, .stat span, .stat:nth-child(2) span, .stat:nth-child(3) span { color: #fff; }
+.mbr-mini-name, .mbr-mini strong small, .mbr-mini-note { color: #fff; }
+.section--tomato .proposal-pill { background: rgba(0,0,0,.2); color: #fff; border-color: rgba(255,255,255,.45); }
+.step-num { opacity: 1; }
+.section--dark .step-num { color: #ec6a50; }
+@media (max-width: 400px) {
+  .cta-band .btn, .cta-band-inner .btn { white-space: normal; padding-inline: 16px; text-align: center; }
+  .cta-band a[href^="tel:"] { white-space: nowrap; }
+}
+.table-wrap:focus-visible { outline: 3px solid var(--tomato); outline-offset: 3px; }
 
 /* ---- info.css ---- */
 /* Info pages: how-it-works, delivery-area, pricing, faq, chef-michael-saunders, about-jomb.
@@ -676,6 +688,10 @@ h1 > .eyebrow { display: flex; width: fit-content; letter-spacing: .16em; }
   .info-chips-tight .price-chip span { font-size: .74rem; display: block; line-height: 1.3; }
 }
 
+/* ---- QA fixes (tools/qa.py, 2026-10-28): no clipped text in the ID card at 320 px ---- */
+.info-idcard dd { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 420px) { .info-idcard dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+
 /* ---- membership.css ---- */
 /* JOMB Membership: meal-plans page (featured plans, price charts, plan builder). Prefixes: .mbr- .builder- */
 
@@ -876,6 +892,9 @@ body.builder-bar-on .mobile-bar.is-visible { transform: translateY(110%); }
   .builder-bar .btn { padding-inline: 14px; }
 }
 
+/* ---- QA fixes (tools/qa.py, 2026-10-28) ---- */
+.mbr-customize { min-height: 44px; display: inline-flex; align-items: center; padding: 10px 12px; }  /* tap target ≥ 44 px (was 21 px) */
+
 /* ---- menus.css ---- */
 /* Menus + plan pages (menus/, zone, paleo, low-carb dairy-free, family, protein). Prefix: .menus- */
 
@@ -1040,14 +1059,14 @@ body.builder-bar-on .mobile-bar.is-visible { transform: translateY(110%); }
 .menus-option--alt .menus-option-tag { background: var(--herb); }
 
 /* Paleo rules band */
-.menus-rules { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+.menus-rules { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .menus-rule { border-radius: var(--radius); padding: 22px 12px 18px; text-align: center; background: #24201c; border: 1px solid #3a332c; }
 .menus-rule b { display: block; font: italic 500 clamp(.95rem, .8rem + .6vw, 1.15rem)/1 var(--serif); color: #f08a6f; margin-bottom: 8px; }
 .menus-rule span { display: block; font: 600 clamp(1.35rem, 1rem + 1.6vw, 2.4rem)/1.05 var(--serif); color: #fff7ee; text-decoration: line-through; text-decoration-color: var(--tomato); text-decoration-thickness: 3px; }
 .menus-yes { margin-top: 14px; border-radius: var(--radius); padding: 22px 24px; background: var(--herb); color: #fff; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
 .menus-yes b { font: italic 500 1.15rem/1 var(--serif); color: #e6ecdc; }
 .menus-yes ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.menus-yes li { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.14); font-weight: 600; font-size: .95rem; }
+.menus-yes li { padding: 8px 14px; border-radius: 999px; background: rgba(0,0,0,.18); font-weight: 600; font-size: .95rem; }
 
 /* LCDF 4-week track */
 .menus-weeks { display: grid; gap: 14px; counter-reset: wk; position: relative; }
@@ -1098,7 +1117,7 @@ body.builder-bar-on .mobile-bar.is-visible { transform: translateY(110%); }
 .menus-moment cite b { color: #fff; }
 
 /* misc */
-.menus-split-tight { display: grid; gap: clamp(28px, 4vw, 56px); align-items: start; }
+.menus-split-tight { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: start; }
 @media (min-width: 960px) { .menus-split-tight { grid-template-columns: .9fr 1.1fr; } .menus-split-tight--flip { grid-template-columns: 1.1fr .9fr; } }
 .menus-sticky { position: static; }
 @media (min-width: 960px) { .menus-sticky { position: sticky; top: calc(var(--header-h) + 24px); } }
@@ -1145,6 +1164,14 @@ ol.menus-weeks { list-style: none; margin: 0; padding: 0; }
 .menus-weeks--stack { margin-top: 0; }
 .menus-quote-stack { display: grid; gap: 26px; }
 .menus-label dd { white-space: nowrap; }
+
+/* ---- QA fixes (tools/qa.py, 2026-10-28): fit 320 px ---- */
+@media (max-width: 400px) {
+  .menus-weekgrid { grid-template-columns: auto repeat(6, minmax(0, 1fr)); gap: 8px 4px; padding: 16px 12px; }
+  .menus-weekgrid > b, .menus-weekgrid > b.row { font-size: .6rem; letter-spacing: .02em; }
+  .menus-rules { gap: 8px; }
+  .menus-rule { padding: 18px 6px 14px; }
+}
 
 /* ---- services.css ---- */
 /* Service pages: private chef, catering & weddings, gift cards, contact, reviews, 404 (prefix .svc-) */
@@ -1205,7 +1232,7 @@ ol.menus-weeks { list-style: none; margin: 0; padding: 0; }
 @media (min-width: 900px) { .svc-course figcaption b { font-size: 1.18rem; } }
 
 /* inquiry: checklist card + actions */
-.svc-inquiry { display: grid; gap: clamp(28px, 4vw, 56px); align-items: start; }
+.svc-inquiry { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: start; }
 @media (min-width: 940px) { .svc-inquiry { grid-template-columns: 1.1fr .9fr; } }
 .svc-ticket { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow-lg); }
 .svc-ticket::before { content: ""; position: absolute; left: 22px; right: 22px; top: 0; height: 6px; border-radius: 0 0 6px 6px; background: repeating-linear-gradient(90deg, var(--tomato) 0 18px, transparent 18px 26px); opacity: .85; }
@@ -1218,6 +1245,7 @@ ol.menus-weeks { list-style: none; margin: 0; padding: 0; }
 .svc-list b { display: block; color: var(--ink); font-weight: 650; }
 .svc-list span { color: var(--muted); font-size: .94rem; }
 .svc-ticket .btn-row .btn { flex: 1 1 auto; }
+@media (max-width: 479px) { .svc-ticket .btn { white-space: normal; text-align: center; padding-inline: 16px; gap: 8px; } .svc-ticket .btn[href^="tel:"] { white-space: nowrap; } } /* QA: fits 320 px; phone number never splits */
 .svc-aside { display: grid; gap: 18px; }
 .svc-aside .media-frame { aspect-ratio: 4/3; }
 .svc-aside .svc-mail { grid-template-columns: 1fr; }
@@ -1256,7 +1284,7 @@ ol.menus-weeks { list-style: none; margin: 0; padding: 0; }
 .svc-holiday { display: grid; gap: 22px; align-items: center; }
 @media (min-width: 900px) { .svc-holiday { grid-template-columns: 1.3fr 1fr; gap: 48px; } }
 .svc-holiday h2 { margin-bottom: 12px; }
-.svc-holiday p { color: #ffe5dc; font-size: var(--step-1); margin: 0; }
+.svc-holiday p { color: #fff; font-size: var(--step-1); margin: 0; }
 .svc-holiday .btn-row { justify-content: flex-start; }
 @media (min-width: 900px) { .svc-holiday .btn-row { justify-content: flex-end; } }
 .svc-cal { display: inline-grid; place-items: center; width: 112px; height: 100px; border-radius: 16px; background: #fff7ee; color: var(--ink); box-shadow: 0 12px 30px rgba(27,23,20,.25); overflow: hidden; margin-bottom: 18px; }
@@ -1424,3 +1452,10 @@ ol.menus-weeks { list-style: none; margin: 0; padding: 0; }
 .svc-404-media { position: relative; }
 .svc-404-media .media-frame { aspect-ratio: 1; }
 .svc-404-media .float-card { z-index: 2; }
+
+/* ---- QA fixes (tools/qa.py, 2026-10-28) ---- */
+.svc-way--dark a:not(.btn) { color: #f3b39f; }                       /* link on the dark card: 9:1 (was 2.6:1) */
+.svc-way--dark a:not(.btn):hover { color: #fff; }
+@media (max-width: 479px) {
+  .svc-giftcard { width: 80%; }                                      /* card text fit inside the 1.586 card at 320 px */
+}

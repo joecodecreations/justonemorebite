@@ -1,19 +1,1267 @@
 {
- "generated": "2026-10-28T16:07:45",
- "result": "PASS",
- "fails": 0,
- "warnings": 2,
- "site_score": 100,
+ "generated": "2026-10-28T17:05:14",
+ "result": "FAIL",
+ "fails": 1,
+ "warnings": 15,
+ "site_score": 98,
  "pages": {
-  "home": {
+  "about-jomb": {
+   "score": 98,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "WARN",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "JOMB at a Glance: Just One More Bite Fact Sheet | Raleigh",
+    "title_len": 57,
+    "description_len": 154,
+    "h1": [
+     "Fact sheet · Raleigh, NC meal deliveryJust One More Bite at a glance"
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/about-jomb/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "catering-weddings",
+     "chef-michael-saunders",
+     "contact",
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "gift-cards",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "private-chef-raleigh",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "AboutPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 4,
+     "Answer": 4
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday",
+     "Tuesday, 10 AM",
+     "Tuesday, 10 AM",
+     "delivery on Friday.",
+     "delivery on Friday. (membership second delivery)",
+     "delivers on Tuesday",
+     "Tuesday, 10 AM",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "Tuesday delivery"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM."
+    ],
+    "prices": [
+     "$12.25",
+     "$253",
+     "$14.05",
+     "$486",
+     "$13.50",
+     "$73.50",
+     "$81",
+     "$108",
+     "$75",
+     "$108",
+     "$87",
+     "$117",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$100",
+     "$50",
+     "$75",
+     "$50"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "years": [
+     "20+ years"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu All four menus, new every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "catering-weddings": {
    "score": 100,
    "status": {
     "seo": "PASS",
     "schema": "PASS",
     "facts": "PASS",
-    "responsive": null,
-    "a11y": null,
-    "perf": "PASS"
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Wedding & Event Catering in Raleigh, NC | Just One More Bite",
+    "title_len": 60,
+    "description_len": 155,
+    "h1": [
+     "Catering & weddings · Raleigh, NCMake the food the highlight."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/catering-weddings/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "chef-michael-saunders",
+     "faq",
+     "gift-cards",
+     "home",
+     "how-it-works",
+     "menus",
+     "private-chef-raleigh",
+     "reviews"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 6,
+     "Answer": 6
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday",
+     "delivered Tuesday",
+     "Delivered Tuesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "prices": [
+     "$50"
+    ],
+    "menu_posted": [
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "chef-michael-saunders": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Chef Michael Saunders | Just One More Bite, Raleigh NC",
+    "title_len": 54,
+    "description_len": 153,
+    "h1": [
+     "Executive Chef & Owner · Raleigh, NCChef Michael Saunders of Just One More Bite"
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/chef-michael-saunders/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "about-jomb",
+     "catering-weddings",
+     "faq",
+     "home",
+     "menus",
+     "private-chef-raleigh",
+     "reviews"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "ProfilePage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 5,
+     "Answer": 5
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday.",
+     "Tuesday delivery",
+     "delivered Tuesday.",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "Tuesday delivery"
+    ],
+    "years": [
+     "20+ years",
+     "20+ yrs",
+     "20+ years",
+     "20+ years",
+     "20+ years"
+    ],
+    "prices": [
+     "$12.25"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "contact": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Contact Just One More Bite | Raleigh Meal Delivery",
+    "title_len": 50,
+    "description_len": 148,
+    "h1": [
+     "Contact · Raleigh, NCTalk to Chef Mike's team."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/contact/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "delivery-area",
+     "faq",
+     "home",
+     "how-it-works",
+     "meal-plans",
+     "menus",
+     "pricing",
+     "reviews"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "ContactPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 4,
+     "Answer": 4
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday, 10 AM",
+     "arrive Tuesday",
+     "Delivered Tuesday",
+     "Tuesday delivery",
+     "Tuesday · 10 AM",
+     "Tuesday, 10 AM",
+     "delivery on Tuesday",
+     "Tuesday, 10 AM",
+     "delivers Tuesday.",
+     "Delivered Tuesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "windows": [
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM."
+    ],
+    "menu_posted": [
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "delivery-area": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Meal Delivery: Raleigh, Cary, Morrisville & RTP | JOMB",
+    "title_len": 54,
+    "description_len": 143,
+    "h1": [
+     "Meal delivery · Raleigh, Cary, Morrisville, RTP & KnightdaleEvery Tuesday, from Raleigh to your door."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/delivery-area/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "faq",
+     "home",
+     "how-it-works",
+     "meal-plans",
+     "menus",
+     "pricing",
+     "private-chef-raleigh",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 3,
+     "FAQPage": 1,
+     "Question": 7,
+     "Answer": 7
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Sat 8 PM",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday between 10 AM",
+     "Tuesday delivery",
+     "Tuesday delivery",
+     "Tuesday delivery",
+     "Tuesday · 10 AM",
+     "Tuesday between 10 AM",
+     "arrive on Tuesday",
+     "Tuesday, 10 AM",
+     "deliveries every Tuesday",
+     "Tuesday between 10 AM",
+     "delivery on Friday.",
+     "delivery on Friday. (membership second delivery)",
+     "arrive on Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "Tuesday, 10 AM",
+     "delivered every Tuesday",
+     "delivers every Tuesday",
+     "Tuesday, 10 AM",
+     "delivered every Tuesday",
+     "Tuesday delivery"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM–5 PM",
+     "10 AM–5 PM"
+    ],
+    "prices": [
+     "$12.25",
+     "$75",
+     "$75",
+     "$75",
+     "$14.05",
+     "$75",
+     "$81",
+     "$87"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "menu_posted": [
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "family-meal-delivery": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Family Meal Delivery in Raleigh, NC | $75 Dinners Feed 3",
+    "title_len": 56,
+    "description_len": 154,
+    "h1": [
+     "Family meal delivery · Raleigh, NCWeeknight dinner, already handled."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/family-meal-delivery/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "catering-weddings",
+     "delivery-area",
+     "faq",
+     "gift-cards",
+     "home",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "private-chef-raleigh",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 11,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 3,
+     "FAQPage": 1,
+     "Question": 6,
+     "Answer": 6
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Family dinner: $75",
+     "JSON-LD Soup of the week: $20",
+     "JSON-LD Entrée salad: $35",
+     "JSON-LD Fresh-cut fruit, 1-gallon bag: $35",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$75",
+     "$25.00",
+     "$75",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$50",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$75",
+     "$25.00",
+     "$50",
+     "$14.05",
+     "$14.50",
+     "$12.50",
+     "$75",
+     "$75",
+     "$75"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday, 10 AM",
+     "delivered Tuesday",
+     "Tuesday, 10 AM",
+     "arrive Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesdays",
+     "delivered Tuesdays",
+     "Tuesday delivery"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM."
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "faq": {
+   "score": 96,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "WARN",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "FAQ: Raleigh Meal Delivery Questions | Just One More Bite",
+    "title_len": 57,
+    "description_len": 155,
+    "h1": [
+     "FAQ · Raleigh meal deliveryGood questions. Straight answers."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/faq/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "about-jomb",
+     "catering-weddings",
+     "delivery-area",
+     "family-meal-delivery",
+     "gift-cards",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "private-chef-raleigh",
+     "protein-by-the-pound",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "FAQPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "Question": 115,
+     "Answer": 115
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "order by Saturday",
+     "Saturday 8 PM",
+     "order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday, 10 AM",
+     "arrive Tuesday",
+     "Tuesday, 10 AM",
+     "Tuesday between 10 AM",
+     "delivered on Tuesday",
+     "Tuesday between 10 AM",
+     "arrive on Tuesday",
+     "Tuesday, 10 AM",
+     "deliveries every Tuesday",
+     "Tuesday between 10 AM",
+     "delivery on Friday.",
+     "delivery on Friday. (membership second delivery)",
+     "arrive on Tuesday",
+     "Tuesday delivery",
+     "Tuesday, 10 AM",
+     "delivery on Friday",
+     "delivery on Friday (membership second delivery)",
+     "Tuesday between 10 AM",
+     "delivered Tuesday",
+     "Tuesday, 10 AM",
+     "Tuesday, 10 AM",
+     "Tuesday, 10 AM",
+     "arrive Tuesday",
+     "delivered every Tuesday",
+     "Tuesday, 10 AM",
+     "Tuesday, 10 AM",
+     "delivery on Tuesday",
+     "Tuesday, 10 AM",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "Tuesday delivery",
+     "Tuesday delivery"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM."
+    ],
+    "menu_posted": [
+     "menu posts every Wednesday",
+     "menu? Every Wednesday",
+     "menu every Wednesday",
+     "menu goes up every Wednesday",
+     "menu posts every Wednesday",
+     "menu is brand-new every Wednesday",
+     "menus every Wednesday",
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "prices": [
+     "$12.25",
+     "$19.50",
+     "$12.25",
+     "$19.50",
+     "$75",
+     "$50",
+     "$253",
+     "$14.05",
+     "$75",
+     "$108",
+     "$87",
+     "$117",
+     "$50",
+     "$14.05",
+     "$253",
+     "$13.50",
+     "$12.50",
+     "$18.00",
+     "$14.50",
+     "$19.50",
+     "$75",
+     "$486",
+     "$13.50",
+     "$12.25",
+     "$19.50",
+     "$253",
+     "$14.05",
+     "$75",
+     "$12.25",
+     "$12.50",
+     "$14.05",
+     "$13.50",
+     "$262.50",
+     "$253",
+     "$9.50",
+     "$486",
+     "$20",
+     "$75",
+     "$25",
+     "$18.75",
+     "$100",
+     "$20",
+     "$35",
+     "$35",
+     "$73.50",
+     "$81",
+     "$108",
+     "$253",
+     "$14.05",
+     "$486",
+     "$13.50",
+     "$87",
+     "$14.50",
+     "$117",
+     "$19.50",
+     "$12.50",
+     "$75",
+     "$12.50",
+     "$108",
+     "$18.00",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$75",
+     "$25.00",
+     "$50",
+     "$100",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$50",
+     "$75",
+     "$50",
+     "$12.25",
+     "$12.25"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "membership_prices": [
+     "$262.50"
+    ],
+    "years": [
+     "20+ years"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "gift-cards": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Meal Gift Cards in Raleigh, NC | Just One More Bite",
+    "title_len": 51,
+    "description_len": 153,
+    "h1": [
+     "Meal gift cards · Raleigh, NCGive someone a week off from cooking."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/gift-cards/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "family-meal-delivery",
+     "faq",
+     "home",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "private-chef-raleigh",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 8,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 5,
+     "Answer": 5
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Gift cards from: $50",
+     "$50",
+     "$50",
+     "$75",
+     "$50",
+     "$50",
+     "$50",
+     "$75",
+     "$75",
+     "$81",
+     "$117",
+     "$75",
+     "$20",
+     "$35",
+     "$50",
+     "$50",
+     "$50",
+     "$75",
+     "$50",
+     "$50"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Sat 8 PM",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday, 10 AM",
+     "Delivered Tuesday",
+     "arrive Tuesday.",
+     "Tuesday · 10 AM",
+     "Tuesday, 10 AM",
+     "arrive Tuesday",
+     "Delivered Tuesday"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM."
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "menu_posted": [
+     "menu is written new each Wednesday",
+     "menu, posted every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "how-it-works": {
+   "score": 98,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "WARN",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "How Our Raleigh Meal Delivery Works | Just One More Bite",
+    "title_len": 56,
+    "description_len": 155,
+    "h1": [
+     "How it works · Raleigh meal deliveryOrder by Saturday. Eat well all week."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/how-it-works/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "gift-cards",
+     "home",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 17,
+     "Answer": 17
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Order by Saturday.",
+     "Saturday at 8 PM",
+     "Sat 8 PM",
+     "Order by Sat",
+     "Sat 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "order by Saturday",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday between 10 AM",
+     "arrive Tuesday",
+     "Tuesday 10 AM",
+     "Delivered Tuesday",
+     "Tuesday · 10 AM",
+     "deliver every Tuesday",
+     "arrive on Tuesday.",
+     "Tuesday between 10 AM",
+     "delivered on Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "Tuesday delivery"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu goes up Wednesday",
+     "menu every Wednesday",
+     "menu goes up every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "prices": [
+     "$12.25",
+     "$253",
+     "$14.05",
+     "$14.50",
+     "$19.50",
+     "$87",
+     "$117",
+     "$12.50",
+     "$18.00",
+     "$75",
+     "$108",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$10.99",
+     "$75",
+     "$50",
+     "$253",
+     "$14.05",
+     "$75",
+     "$108",
+     "$87",
+     "$117",
+     "$50"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "home": {
+   "score": 92,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "FAIL",
+    "perf": null
    },
    "stats": {
     "title": "Just One More Bite | Chef-Made Meal Delivery in Raleigh, NC",
@@ -79,6 +1327,7 @@
      "Saturday at 8 PM",
      "Saturday at 8 PM.",
      "close Saturday",
+     "Saturday at 8 PM.",
      "Saturday at 8 PM",
      "Order by Saturday",
      "Saturday 8 PM",
@@ -152,207 +1401,1851 @@
      "jomborders@gmail.com"
     ]
    },
-   "lighthouse": {
-    "mobile": {
-     "scores": {
-      "performance": 100,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 66
-     },
-     "lcp_ms": 1069.4567,
-     "cls": 0,
-     "tbt_ms": 28.364175000000046,
-     "fcp_ms": 1069.4567,
-     "si_ms": 1147.2564759211732,
-     "bytes": 520507,
-     "failing": [
-      {
-       "cat": "performance",
-       "id": "cache-insight",
-       "title": "Use efficient cache lifetimes",
-       "score": 0.5,
-       "display": "Est savings of 441 KiB",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/img/zone-plate-800.webp",
-        "http://127.0.0.1:59351/justonemorebite/img/paleo-plate-800.webp",
-        "http://127.0.0.1:59351/justonemorebite/img/family-plate-800.webp"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "forced-reflow-insight",
-       "title": "Forced reflow",
-       "score": 0,
-       "display": "",
-       "weight": 0,
-       "examples": []
-      },
-      {
-       "cat": "performance",
-       "id": "network-dependency-tree-insight",
-       "title": "Network dependency tree",
-       "score": 0,
-       "display": "",
-       "weight": 0,
-       "examples": []
-      },
-      {
-       "cat": "performance",
-       "id": "render-blocking-insight",
-       "title": "Render-blocking requests",
-       "score": 0,
-       "display": "Est savings of 150 ms",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "unminified-css",
-       "title": "Minify CSS",
-       "score": 0.5,
-       "display": "Est savings of 3 KiB",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "unused-css-rules",
-       "title": "Reduce unused CSS",
-       "score": 0.5,
-       "display": "Est savings of 14 KiB",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
-       ]
-      },
-      {
-       "cat": "seo",
-       "id": "is-crawlable",
-       "title": "Page is blocked from indexing",
-       "score": 0,
-       "display": "",
-       "weight": 4.043478260869565,
-       "examples": []
-      }
-     ],
-     "seo_excl_crawlable": 100
-    },
-    "desktop": {
-     "scores": {
-      "performance": 100,
-      "accessibility": 100,
-      "best-practices": 100,
-      "seo": 66
-     },
-     "lcp_ms": 542.0414999999999,
-     "cls": 0,
-     "tbt_ms": 0,
-     "fcp_ms": 265.0415,
-     "si_ms": 645.2560994055788,
-     "bytes": 473857,
-     "failing": [
-      {
-       "cat": "performance",
-       "id": "cache-insight",
-       "title": "Use efficient cache lifetimes",
-       "score": 0,
-       "display": "Est savings of 400 KiB",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/img/meals-tray-800.webp",
-        "http://127.0.0.1:59351/justonemorebite/assets/fonts/fraunces-latin.woff2",
-        "http://127.0.0.1:59351/justonemorebite/img/paleo-plate-480.webp"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "forced-reflow-insight",
-       "title": "Forced reflow",
-       "score": 0,
-       "display": "",
-       "weight": 0,
-       "examples": []
-      },
-      {
-       "cat": "performance",
-       "id": "image-delivery-insight",
-       "title": "Improve image delivery",
-       "score": 0,
-       "display": "Est savings of 173 KiB",
-       "weight": 0,
-       "examples": [
-        "div.plans > article.plan > div.plan-photo > img",
-        "div.plans > article.plan > div.plan-photo > img",
-        "div.container > div.hero-media > div.hero-photo-2 > img"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "network-dependency-tree-insight",
-       "title": "Network dependency tree",
-       "score": 0,
-       "display": "",
-       "weight": 0,
-       "examples": []
-      },
-      {
-       "cat": "performance",
-       "id": "render-blocking-insight",
-       "title": "Render-blocking requests",
-       "score": 0,
-       "display": "Est savings of 40 ms",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "unminified-css",
-       "title": "Minify CSS",
-       "score": 0.5,
-       "display": "Est savings of 3 KiB",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
-       ]
-      },
-      {
-       "cat": "performance",
-       "id": "unused-css-rules",
-       "title": "Reduce unused CSS",
-       "score": 0.5,
-       "display": "Est savings of 14 KiB",
-       "weight": 0,
-       "examples": [
-        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
-       ]
-      },
-      {
-       "cat": "seo",
-       "id": "is-crawlable",
-       "title": "Page is blocked from indexing",
-       "score": 0,
-       "display": "",
-       "weight": 4.043478260869565,
-       "examples": []
-      }
-     ],
-     "seo_excl_crawlable": 100
-    },
-    "prod_seo": 100
-   }
+   "lighthouse": {}
+  },
+  "low-carb-dairy-free-meals": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Low-Carb, Dairy-Free Meal Delivery in Raleigh | JOMB",
+    "title_len": 52,
+    "description_len": 145,
+    "h1": [
+     "Low-carb, dairy-free meal delivery · RaleighLighter eating that still tastes like a restaurant."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/low-carb-dairy-free-meals/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "chef-michael-saunders",
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "home",
+     "how-it-works",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 9,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 3,
+     "FAQPage": 1,
+     "Question": 5,
+     "Answer": 5
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Low-Carb Dairy-Free · lunches: $75",
+     "JSON-LD Low-Carb Dairy-Free · dinners: $108",
+     "$75",
+     "$12.50",
+     "$108",
+     "$18.00",
+     "$12.50",
+     "$18.00",
+     "$75",
+     "$12.50",
+     "$108",
+     "$18.00",
+     "$14.05",
+     "$14.50",
+     "$75",
+     "$75",
+     "$12.50",
+     "$108",
+     "$75",
+     "$12.50",
+     "$108"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Sat 8 PM",
+     "Ordering by Sat",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday",
+     "arrive Tuesday.",
+     "delivered Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesdays",
+     "delivered Tuesdays"
+    ],
+    "menu_posted": [
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "meal-plans": {
+   "score": 98,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "WARN",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Meal Plan Subscriptions in Raleigh, NC | Just One More Bite",
+    "title_len": 59,
+    "description_len": 151,
+    "h1": [
+     "Weekly meal plan subscriptions · Raleigh, NCSet it once. Eat well every week."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/meal-plans/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 11,
+     "Answer": 11
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Sat 8 PM",
+     "Saturday at 8 PM.",
+     "Saturday 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Sat 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Delivered every Tuesday",
+     "delivery Friday",
+     "delivery Friday (membership second delivery)",
+     "arrive Tuesday.",
+     "arrive Tuesday",
+     "Tuesday, 10 AM",
+     "delivered Tuesday",
+     "Friday delivery",
+     "Friday delivery (membership second delivery)",
+     "Tuesday delivery",
+     "Tuesday, 10 AM",
+     "delivery on Friday",
+     "delivery on Friday (membership second delivery)",
+     "delivers Tuesday.",
+     "Delivered Tuesday"
+    ],
+    "prices": [
+     "$34.20",
+     "$213.75",
+     "$225.00",
+     "$11.25",
+     "$71.25",
+     "$926",
+     "$337.50",
+     "$375.00",
+     "$37.50",
+     "$67.50",
+     "$1,461",
+     "$162.00",
+     "$180.00",
+     "$18.00",
+     "$16.20",
+     "$701",
+     "$269.50",
+     "$306.25",
+     "$36.75",
+     "$12.83",
+     "$1,167",
+     "$142.50",
+     "$71.25",
+     "$213.75",
+     "$71.25",
+     "$276.00",
+     "$69.00",
+     "$337.50",
+     "$67.50",
+     "$462.00",
+     "$66.00",
+     "$285.00",
+     "$71.25",
+     "$427.50",
+     "$71.25",
+     "$552.00",
+     "$69.00",
+     "$675.00",
+     "$67.50",
+     "$924.00",
+     "$66.00",
+     "$34.20",
+     "$17.10",
+     "$51.30",
+     "$17.10",
+     "$66.24",
+     "$16.56",
+     "$81.00",
+     "$16.20",
+     "$110.88",
+     "$15.84",
+     "$59.85",
+     "$14.96",
+     "$89.77",
+     "$14.96",
+     "$115.92",
+     "$14.49",
+     "$141.75",
+     "$14.18",
+     "$194.04",
+     "$13.86",
+     "$83.12",
+     "$13.85",
+     "$124.69",
+     "$13.85",
+     "$161.00",
+     "$13.42",
+     "$196.88",
+     "$13.13",
+     "$269.50",
+     "$12.83",
+     "$37.05",
+     "$18.52",
+     "$55.57",
+     "$18.52",
+     "$71.76",
+     "$17.94",
+     "$87.75",
+     "$17.55",
+     "$120.12",
+     "$17.16",
+     "$64.60",
+     "$16.15",
+     "$96.90",
+     "$16.15",
+     "$125.12",
+     "$15.64",
+     "$153.00",
+     "$15.30",
+     "$209.44",
+     "$14.96",
+     "$34.20",
+     "$17.10",
+     "$51.30",
+     "$17.10",
+     "$66.24",
+     "$16.56",
+     "$81.00",
+     "$16.20",
+     "$110.88",
+     "$15.84",
+     "$57.95",
+     "$14.49",
+     "$86.92",
+     "$14.49",
+     "$112.24",
+     "$14.03",
+     "$137.25",
+     "$13.72",
+     "$187.88",
+     "$13.42",
+     "$20",
+     "$35",
+     "$35"
+    ],
+    "membership_prices": [
+     "$34.20",
+     "$213.75",
+     "$225.00",
+     "$11.25",
+     "$71.25",
+     "$926",
+     "$337.50",
+     "$375.00",
+     "$37.50",
+     "$67.50",
+     "$1,461",
+     "$162.00",
+     "$180.00",
+     "$16.20",
+     "$701",
+     "$269.50",
+     "$306.25",
+     "$36.75",
+     "$12.83",
+     "$1,167",
+     "$142.50",
+     "$71.25",
+     "$213.75",
+     "$71.25",
+     "$276.00",
+     "$69.00",
+     "$337.50",
+     "$67.50",
+     "$462.00",
+     "$66.00",
+     "$285.00",
+     "$71.25",
+     "$427.50",
+     "$71.25",
+     "$552.00",
+     "$69.00",
+     "$675.00",
+     "$67.50",
+     "$924.00",
+     "$66.00",
+     "$34.20",
+     "$17.10",
+     "$51.30",
+     "$17.10",
+     "$66.24",
+     "$16.56",
+     "$16.20",
+     "$110.88",
+     "$15.84",
+     "$59.85",
+     "$14.96",
+     "$89.77",
+     "$14.96",
+     "$115.92",
+     "$14.49",
+     "$141.75",
+     "$14.18",
+     "$194.04",
+     "$13.86",
+     "$83.12",
+     "$13.85",
+     "$124.69",
+     "$13.85",
+     "$161.00",
+     "$13.42",
+     "$196.88",
+     "$13.13",
+     "$269.50",
+     "$12.83",
+     "$37.05",
+     "$18.52",
+     "$55.57",
+     "$18.52",
+     "$71.76",
+     "$17.94",
+     "$87.75",
+     "$17.55",
+     "$120.12",
+     "$17.16",
+     "$64.60",
+     "$16.15",
+     "$96.90",
+     "$16.15",
+     "$125.12",
+     "$15.64",
+     "$153.00",
+     "$15.30",
+     "$209.44",
+     "$14.96",
+     "$34.20",
+     "$17.10",
+     "$51.30",
+     "$17.10",
+     "$66.24",
+     "$16.56",
+     "$16.20",
+     "$110.88",
+     "$15.84",
+     "$57.95",
+     "$14.49",
+     "$86.92",
+     "$14.49",
+     "$112.24",
+     "$14.03",
+     "$137.25",
+     "$13.72",
+     "$187.88",
+     "$13.42"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu every Wednesday",
+     "menu is brand-new every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "windows": [
+     "10 AM – 5 PM.",
+     "10 AM – 5 PM"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "menus": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "This Week's Menus · Meal Delivery in Raleigh, NC | JOMB",
+    "title_len": 55,
+    "description_len": 153,
+    "h1": [
+     "Weekly meal delivery menus · Raleigh, NCThis week's menus, all on one page."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/menus/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "chef-michael-saunders",
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "paleo-meal-delivery",
+     "pricing",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "CollectionPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 5,
+     "Answer": 5
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Sat 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Saturday · 8 PM",
+     "Saturday at 8 PM",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday",
+     "Sat 8 PM",
+     "Order by Sat",
+     "Sat 8 PM",
+     "Order by Sat"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday, 10 AM",
+     "delivered Tuesday",
+     "Tuesday 10 AM",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "arrives Tuesday",
+     "Tuesday · 10 AM",
+     "Tuesday between 10 AM",
+     "delivered Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "Tuesday delivery"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM",
+     "10 AM – 5 PM."
+    ],
+    "prices": [
+     "$12.25",
+     "$75",
+     "$14.05",
+     "$14.50",
+     "$12.50",
+     "$75",
+     "$10.99",
+     "$253",
+     "$14.05",
+     "$13.50",
+     "$14.50",
+     "$87",
+     "$19.50",
+     "$117",
+     "$12.50",
+     "$75",
+     "$18.00",
+     "$108",
+     "$75",
+     "$75",
+     "$25.00",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$100",
+     "$10.99",
+     "$13.99",
+     "$100",
+     "$14.05",
+     "$253",
+     "$13.50",
+     "$486",
+     "$73.50",
+     "$81",
+     "$108",
+     "$14.50",
+     "$87",
+     "$19.50",
+     "$117",
+     "$12.50",
+     "$75",
+     "$18.00",
+     "$108",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$100",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$50"
+    ],
+    "menu_posted": [
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu drops every Wednesday",
+     "menus every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "paleo-meal-delivery": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Paleo Meal Delivery in Raleigh, NC | Just One More Bite",
+    "title_len": 55,
+    "description_len": 149,
+    "h1": [
+     "Paleo meal delivery · Raleigh, NCMeat, vegetables, real flavor."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/paleo-meal-delivery/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "chef-michael-saunders",
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "gift-cards",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "pricing",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 9,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 3,
+     "FAQPage": 1,
+     "Question": 6,
+     "Answer": 6
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Paleo · lunches: $87",
+     "JSON-LD Paleo · dinners: $117",
+     "$14.50",
+     "$19.50",
+     "$14.50",
+     "$87",
+     "$19.50",
+     "$117",
+     "$87",
+     "$14.50",
+     "$117",
+     "$19.50",
+     "$14.50",
+     "$12.50",
+     "$13.50",
+     "$19.50",
+     "$18.00",
+     "$18.00",
+     "$87",
+     "$14.50",
+     "$117",
+     "$19.50",
+     "$12.50",
+     "$14.05",
+     "$12.50",
+     "$75",
+     "$87",
+     "$117",
+     "$87",
+     "$117"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "order by Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "Tuesday, 10 AM",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesdays",
+     "delivered Tuesdays"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "windows": [
+     "10 AM – 5 PM."
+    ]
+   },
+   "lighthouse": {}
+  },
+  "pricing": {
+   "score": 84,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "WARN",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Meal Prep Prices in Raleigh, NC | Just One More Bite",
+    "title_len": 52,
+    "description_len": 153,
+    "h1": [
+     "Meal prep prices · Raleigh, NCWhat chef-made meals really cost."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/pricing/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "family-meal-delivery",
+     "faq",
+     "gift-cards",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "protein-by-the-pound",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 17,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 10,
+     "Answer": 10
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Zone · all meals: $253",
+     "JSON-LD Zone · all meals, double: $486",
+     "JSON-LD Zone · breakfasts: $73.50",
+     "JSON-LD Zone · lunches: $81",
+     "JSON-LD Zone · dinners: $108",
+     "JSON-LD Low-Carb Dairy-Free · lunches: $75",
+     "JSON-LD Low-Carb Dairy-Free · dinners: $108",
+     "JSON-LD Paleo · lunches: $87",
+     "JSON-LD Paleo · dinners: $117",
+     "JSON-LD Family dinner: $75",
+     "$12.25",
+     "$19.50",
+     "$253",
+     "$14.05",
+     "$13.50",
+     "$75",
+     "$14.05",
+     "$13.50",
+     "$25.00",
+     "$12.25",
+     "$253",
+     "$14.05",
+     "$486",
+     "$13.50",
+     "$73.50",
+     "$12.25",
+     "$81",
+     "$13.50",
+     "$108",
+     "$18.00",
+     "$75",
+     "$12.50",
+     "$108",
+     "$18.00",
+     "$87",
+     "$14.50",
+     "$117",
+     "$19.50",
+     "$75",
+     "$25.00",
+     "$20",
+     "$35",
+     "$35",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$253",
+     "$14.05",
+     "$42.17",
+     "$486",
+     "$13.50",
+     "$81",
+     "$40.50",
+     "$75",
+     "$25.00",
+     "$18.75",
+     "$183",
+     "$15.25",
+     "$75",
+     "$108",
+     "$189",
+     "$15.75",
+     "$81",
+     "$108",
+     "$204",
+     "$17.00",
+     "$87",
+     "$117",
+     "$14.05",
+     "$18.00",
+     "$262.50",
+     "$253",
+     "$9.50",
+     "$486",
+     "$13.50",
+     "$20",
+     "$75",
+     "$25.00",
+     "$18.75",
+     "$150",
+     "$20",
+     "$35",
+     "$75",
+     "$12.50",
+     "$81",
+     "$13.50",
+     "$87",
+     "$14.50",
+     "$108",
+     "$18.00",
+     "$117",
+     "$19.50",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$100",
+     "$12.25",
+     "$19.50",
+     "$50",
+     "$100",
+     "$12.25",
+     "$19.50",
+     "$253",
+     "$14.05",
+     "$75",
+     "$12.25",
+     "$12.50",
+     "$14.05",
+     "$13.50",
+     "$262.50",
+     "$253",
+     "$9.50",
+     "$486",
+     "$20",
+     "$75",
+     "$25",
+     "$18.75",
+     "$100",
+     "$14.05",
+     "$253",
+     "$13.50",
+     "$12.50",
+     "$18.00",
+     "$14.50",
+     "$19.50",
+     "$75",
+     "$486",
+     "$13.50",
+     "$12.25",
+     "$14.05",
+     "$75",
+     "$12.25",
+     "$14.05",
+     "$75"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered Tuesday.",
+     "delivers Tuesday.",
+     "Delivered Tuesday"
+    ],
+    "membership_prices": [
+     "$183",
+     "$15.25",
+     "$189",
+     "$15.75",
+     "$204",
+     "$17.00",
+     "$262.50",
+     "$150",
+     "$262.50"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "private-chef-raleigh": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Private Chef Dinners in Raleigh, NC | Just One More Bite",
+    "title_len": 56,
+    "description_len": 149,
+    "h1": [
+     "Private chef dinners · Raleigh, NCRestaurant night, at your own table."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/private-chef-raleigh/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "catering-weddings",
+     "chef-michael-saunders",
+     "faq",
+     "gift-cards",
+     "home",
+     "menus",
+     "reviews"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 6,
+     "Answer": 6
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday",
+     "Delivered Tuesday"
+    ],
+    "years": [
+     "20+ years",
+     "20+ years"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "prices": [
+     "$50"
+    ],
+    "menu_posted": [
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "protein-by-the-pound": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Cooked Protein by the Pound in Raleigh | Just One More Bite",
+    "title_len": 59,
+    "description_len": 152,
+    "h1": [
+     "Cooked protein by the pound · RaleighThe slowest part of meal prep, done."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/protein-by-the-pound/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "chef-michael-saunders",
+     "family-meal-delivery",
+     "faq",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 11,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 3,
+     "FAQPage": 1,
+     "Question": 5,
+     "Answer": 5
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Chicken, per lb (cooked): $10.99",
+     "JSON-LD CAB beef, per lb (cooked): $13.99",
+     "JSON-LD Pork, per lb (cooked): $14.99",
+     "JSON-LD Seafood, per lb (cooked): $18.99",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$100",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$100",
+     "$100",
+     "$100",
+     "$100",
+     "$10.99",
+     "$13.99",
+     "$14.99",
+     "$18.99",
+     "$14.05",
+     "$14.50",
+     "$12.50",
+     "$75",
+     "$10.99",
+     "$18.99",
+     "$100",
+     "$10.99",
+     "$18.99",
+     "$100"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Sat 8 PM",
+     "Order by Sat",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Tuesday delivery",
+     "Tuesday, 10 AM",
+     "Delivered Tuesday",
+     "delivered Tuesday",
+     "Tuesday, 10 AM",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesdays",
+     "delivered Tuesdays"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM"
+    ],
+    "menu_posted": [
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "reviews": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Reviews of Just One More Bite | Raleigh Meal Delivery",
+    "title_len": 53,
+    "description_len": 150,
+    "h1": [
+     "Just One More Bite reviews · Raleigh, NCWhat clients say after the last bite."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/reviews/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "catering-weddings",
+     "chef-michael-saunders",
+     "family-meal-delivery",
+     "gift-cards",
+     "home",
+     "meal-plans",
+     "menus",
+     "private-chef-raleigh",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "CollectionPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 2,
+     "FAQPage": 1,
+     "Question": 3,
+     "Answer": 3
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "Tuesday delivery"
+    ],
+    "prices": [
+     "$75"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "zone-meal-delivery": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Zone Diet Meal Delivery in Raleigh | 4-Block Meals | JOMB",
+    "title_len": 57,
+    "description_len": 155,
+    "h1": [
+     "Zone diet meal delivery · Raleigh, NCMacro-balanced Zone meals, cooked by a chef."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/zone-meal-delivery/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "chef-michael-saunders",
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "home",
+     "how-it-works",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "protein-by-the-pound",
+     "reviews"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 10,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 12,
+     "Service": 8,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 3,
+     "FAQPage": 1,
+     "Question": 7,
+     "Answer": 7
+    }
+   },
+   "facts_found": {
+    "prices": [
+     "JSON-LD Zone · all meals: $253",
+     "JSON-LD Zone · all meals, double: $486",
+     "JSON-LD Zone · breakfasts: $73.50",
+     "JSON-LD Zone · lunches: $81",
+     "JSON-LD Zone · dinners: $108",
+     "$253",
+     "$14.05",
+     "$14.05",
+     "$253",
+     "$13.50",
+     "$253",
+     "$14.05",
+     "$486",
+     "$13.50",
+     "$73.50",
+     "$12.25",
+     "$81",
+     "$13.50",
+     "$108",
+     "$18.00",
+     "$73.50",
+     "$81",
+     "$108",
+     "$253",
+     "$14.05",
+     "$486",
+     "$13.50",
+     "$14.50",
+     "$12.50",
+     "$75",
+     "$253",
+     "$14.05",
+     "$253",
+     "$14.05"
+    ],
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM.",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivered every Tuesday",
+     "delivered Tuesday",
+     "delivered Tuesday",
+     "Tuesday delivery",
+     "Tuesday, 10 AM",
+     "Delivered Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesdays",
+     "delivered Tuesdays"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "windows": [
+     "10 AM – 5 PM."
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {}
+  },
+  "404": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": "PASS",
+    "a11y": "PASS",
+    "perf": null
+   },
+   "stats": {
+    "title": "Page Not Found | Just One More Bite",
+    "title_len": 35,
+    "description_len": 148,
+    "h1": [
+     "Page not foundLooks like this page took one more bite."
+    ],
+    "canonical": null,
+    "robots": "noindex, follow",
+    "internal_links_in_main": [
+     "catering-weddings",
+     "contact",
+     "family-meal-delivery",
+     "gift-cards",
+     "home",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "private-chef-raleigh",
+     "zone-meal-delivery"
+    ]
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "Tuesday delivery"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ]
+   },
+   "lighthouse": {}
   }
  },
  "issues": [
   {
+   "page": "about-jomb",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "catering-weddings",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "catering-weddings",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "trust-claim",
+   "msg": "testimonial mentions \"ServSafe\" (allowed: quoted testimonial)",
+   "el": "div.container.svc-story > div:nth-of-type(2) > figure.quote > blockquote",
+   "fix": "",
+   "owner": "page"
+  },
+  {
+   "page": "chef-michael-saunders",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "chef-michael-saunders",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "trust-claim",
+   "msg": "testimonial mentions \"ServSafe\" (allowed: quoted testimonial)",
+   "el": "div.container > div.quotes > figure.quote > blockquote",
+   "fix": "",
+   "owner": "page"
+  },
+  {
+   "page": "chef-michael-saunders",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "trust-claim",
+   "msg": "testimonial mentions \"ServSafe\" (allowed: quoted testimonial)",
+   "el": "div.container > div.split.mt-4 > div:nth-of-type(1) > p.muted",
+   "fix": "",
+   "owner": "page"
+  },
+  {
+   "page": "contact",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "delivery-area",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "family-meal-delivery",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "faq",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "faq",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$9.50 = (zone_breakfast + zone_lunch + zone_dinner) − zone_all from site.json, typed by hand (….50. The full plan is $253, which saves $9.50 a week. The double …)",
+   "el": "div.faq > details:nth-of-type(7) > div.answer > p",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "system"
+  },
+  {
+   "page": "faq",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$18.75 = family_meal ($75) ÷ 4 from site.json, typed by hand (…two adults and two small children, it's $18.75 a person. There's a…)",
+   "el": "div.faq > details:nth-of-type(8) > div.answer > p",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "system"
+  },
+  {
+   "page": "gift-cards",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "how-it-works",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
    "page": "home",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "low-carb-dairy-free-meals",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "meal-plans",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "menus",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "paleo-meal-delivery",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "pricing",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$42.17 = zone_all ($253) ÷ 6 from site.json, typed by hand (…eakfast, lunch and dinner for six days: $42.17 a day for three che…)",
+   "el": "div.container > div.info-math > div.is-best > p:nth-of-type(2)",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "page"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$40.50 = 3 × zone_double.per ($13.50) from site.json, typed by hand (…ry meal for two people is $81 a day, or $40.50 each.…)",
+   "el": "div.container > div.info-math > div:nth-of-type(2) > p:nth-of-type(2)",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "page"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$18.75 = lcdf_lunch ($75) ÷ 4 from site.json, typed by hand (…Or $18.75 a person for two ad…)",
+   "el": "div.container > div.info-math > div:nth-of-type(3) > p:nth-of-type(2)",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "page"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$9.50 = (zone_breakfast + zone_lunch + zone_dinner) − zone_all from site.json, typed by hand (…ly cost $262.50; the full plan is $253, $9.50 less every week.…)",
+   "el": "div.container > div.info-cards.info-cards--3 > article.info-card > p",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "page"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$18.75 = family_meal ($75) ÷ 4 from site.json, typed by hand (…each) or two adults and two small kids ($18.75 each). The two-dinn…)",
+   "el": "div.container > div.info-cards.info-cards--3 > article.info-card > p",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "page"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$9.50 = (zone_breakfast + zone_lunch + zone_dinner) − zone_all from site.json, typed by hand (….50. The full plan is $253, which saves $9.50 a week. The double …)",
+   "el": "div.faq > details:nth-of-type(3) > div.answer > p",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "system"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "derived-price",
+   "msg": "$18.75 = family_meal ($75) ÷ 4 from site.json, typed by hand (…two adults and two small children, it's $18.75 a person. There's a…)",
+   "el": "div.faq > details:nth-of-type(4) > div.answer > p",
+   "fix": "Correct today, but it won't update when site.json changes. Drop it, or ask the main agent for a {{calc}} placeholder.",
+   "owner": "system"
+  },
+  {
+   "page": "private-chef-raleigh",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "protein-by-the-pound",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "reviews",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "reviews",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "trust-claim",
+   "msg": "testimonial mentions \"ServSafe\" (allowed: quoted testimonial)",
+   "el": "div.svc-group-quotes > div:nth-of-type(2) > figure.quote > blockquote",
+   "fix": "",
+   "owner": "page"
+  },
+  {
+   "page": "zone-meal-delivery",
    "cat": "schema",
    "sev": "INFO",
    "check": "offer-price",
@@ -460,15 +3353,215 @@
    "el": "src/site.json membership",
    "fix": "Confirm with Mike before it goes live.",
    "owner": "system"
+  },
+  {
+   "page": "about-jomb",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "hard-coded",
+   "msg": "1 hard-coded day/time value(s) in src/pages/about-jomb.html: \"delivery on Friday.\" (l.58)",
+   "el": "src/pages/about-jomb.html",
+   "fix": "Replace with {{cutoff}} / {{cutoff_short}} / {{delivery_day}} / {{delivery_window}} / {{menu_posted}} so the value follows site.json.",
+   "owner": "page"
+  },
+  {
+   "page": "how-it-works",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "hard-coded",
+   "msg": "1 hard-coded day/time value(s) in src/pages/how-it-works.html: \"Order by Saturday.\" (l.18)",
+   "el": "src/pages/how-it-works.html",
+   "fix": "Replace with {{cutoff}} / {{cutoff_short}} / {{delivery_day}} / {{delivery_window}} / {{menu_posted}} so the value follows site.json.",
+   "owner": "page"
+  },
+  {
+   "page": "meal-plans",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "hard-coded",
+   "msg": "3 hard-coded day/time value(s) in src/pages/meal-plans.html: \"delivery Friday\" (l.36); \"delivery on Friday.\" (l.71); \"Friday delivery\" (l.211)",
+   "el": "src/pages/meal-plans.html",
+   "fix": "Replace with {{cutoff}} / {{cutoff_short}} / {{delivery_day}} / {{delivery_window}} / {{menu_posted}} so the value follows site.json.",
+   "owner": "page"
+  },
+  {
+   "page": "pricing",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "hard-coded",
+   "msg": "15 hard-coded prices value(s) in src/pages/pricing.html: $42.17 (l.62, = zone_all ($253) ÷ 6); $81 (l.67, = zone_lunch); $40.50 (l.67, = 3 × zone_double.per ($13.50)); $18.75 (l.72, = lcdf_lunch ($75) ÷ 4); $183 (l.76, = membership two/3d/lunch_dinner/lcdf base); $15.25 (l.76, = membership one/5d/lunch_dinner/lcdf save); $189 (l.81, = membership two/3d/lunch_dinner/zone base); $15.75 (l.81, = membership one/5d/lunch_dinner/zone save) …",
+   "el": "src/pages/pricing.html",
+   "fix": "Replace with {{price:key}} / {{per:key}} (or a membership placeholder) so the value follows site.json.",
+   "owner": "page"
+  },
+  {
+   "page": "meal-plans",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "builder-math",
+   "msg": "plan builder: checked 80 option combinations against build.py plan_quote(): all prices match [at 1440 px]",
+   "el": "[data-builder]",
+   "fix": "",
+   "owner": "system",
+   "widths": [
+    1440
+   ]
+  },
+  {
+   "page": "home",
+   "cat": "a11y",
+   "sev": "FAIL",
+   "check": "axe:color-contrast",
+   "msg": "Elements must meet minimum color contrast ratio thresholds (serious, 12 elements): li:nth-child(1) > .mbr-mini-name, li:nth-child(1) > strong > small, li:nth-child(1) > .mbr-mini-note, li:nth-child(2) > .mbr-mini-name, li:nth-child(2) > strong > small, li:nth-child(2) > .mbr-mini-note … [at 390, 1440 px]",
+   "el": "li:nth-child(1) > .mbr-mini-name",
+   "fix": "Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 9.1pt (12.16px), font weight: normal). Expected contrast ratio of 4.5:1 First element: <span class=\"mbr-mini-name\">Family 3</span> — https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+   "owner": "system",
+   "widths": [
+    390,
+    1440
+   ],
+   "targets": [
+    {
+     "target": "li:nth-child(1) > .mbr-mini-name",
+     "html": "<span class=\"mbr-mini-name\">Family 3</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 9.1pt (12.16px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(1) > strong > small",
+     "html": "<small>/wk</small>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(1) > .mbr-mini-note",
+     "html": "<span class=\"mbr-mini-note\">$71.25 per family dinner · save 5%</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.6pt (14.08px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(2) > .mbr-mini-name",
+     "html": "<span class=\"mbr-mini-name\">Family 5</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 9.1pt (12.16px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(2) > strong > small",
+     "html": "<small>/wk</small>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(2) > .mbr-mini-note",
+     "html": "<span class=\"mbr-mini-note\">$67.50 per family dinner · save 10%</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.6pt (14.08px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(3) > .mbr-mini-name",
+     "html": "<span class=\"mbr-mini-name\">Dinners for Two</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 9.1pt (12.16px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(3) > strong > small",
+     "html": "<small>/wk</small>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(3) > .mbr-mini-note",
+     "html": "<span class=\"mbr-mini-note\">$16.20 per meal · save 10%</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.6pt (14.08px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(4) > .mbr-mini-name",
+     "html": "<span class=\"mbr-mini-name\">Zone Athlete 7</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 9.1pt (12.16px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(4) > strong > small",
+     "html": "<small>/wk</small>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1"
+    },
+    {
+     "target": "li:nth-child(4) > .mbr-mini-note",
+     "html": "<span class=\"mbr-mini-note\">$12.83 per meal · save 12%</span>",
+     "summary": "Fix any of the following: Element has insufficient color contrast of 4.25 (foreground color: #ffffff, background color: #ce533f, font size: 10.6pt (14.08px), font weight: normal). Expected contrast ratio of 4.5:1"
+    }
+   ]
   }
  ],
  "production_pass": {
   "base_url": "https://www.justonemorebitenc.com",
   "pages": {
+   "about-jomb": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/about-jomb/"
+   },
+   "catering-weddings": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/catering-weddings/"
+   },
+   "chef-michael-saunders": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/chef-michael-saunders/"
+   },
+   "contact": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/contact/"
+   },
+   "delivery-area": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/delivery-area/"
+   },
+   "family-meal-delivery": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/family-meal-delivery/"
+   },
+   "faq": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/faq/"
+   },
+   "gift-cards": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/gift-cards/"
+   },
+   "how-it-works": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/how-it-works/"
+   },
    "home": {
     "robots": "index, follow, max-image-preview:large",
-    "canonical": "https://www.justonemorebitenc.com/",
-    "lighthouse_seo": 100
+    "canonical": "https://www.justonemorebitenc.com/"
+   },
+   "low-carb-dairy-free-meals": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/low-carb-dairy-free-meals/"
+   },
+   "meal-plans": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/meal-plans/"
+   },
+   "menus": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/menus/"
+   },
+   "paleo-meal-delivery": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/paleo-meal-delivery/"
+   },
+   "pricing": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/pricing/"
+   },
+   "private-chef-raleigh": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/private-chef-raleigh/"
+   },
+   "protein-by-the-pound": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/protein-by-the-pound/"
+   },
+   "reviews": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/reviews/"
+   },
+   "zone-meal-delivery": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/zone-meal-delivery/"
    }
   }
  },
@@ -484,8 +3577,8 @@
    1280,
    1440
   ],
-  "browser": false,
-  "lighthouse": true,
-  "allow_pending": true
+  "browser": true,
+  "lighthouse": false,
+  "allow_pending": false
  }
 }

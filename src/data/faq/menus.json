@@ -5,7 +5,7 @@
     {"q": "When does the new menu come out?", "a": "Chef Mike posts brand-new menus every {{menu_posted}}. Orders for the following {{delivery_day}} close {{cutoff}}, and meals are delivered {{delivery_day}} between {{delivery_window}}."},
     {"q": "What does “2 of each” mean on the menu?", "a": "It's how many servings of each dish you get. Every course adds up to six meals for one person: three dishes with two of each, or, for Zone breakfasts, two dishes with three of each. A full Zone week is 6 breakfasts, 6 lunches and 6 dinners (18 meals)."},
     {"q": "Can I swap a dish I don't like?", "a": "Meals are cooked exactly as listed, with no substitutions. That's how Chef Mike keeps quality high and prices fair. Every menu is new each week, so next week brings different dishes."},
-    {"q": "Do I have to subscribe?", "a": "No. Order any single week you like in the <a href=\"{{store}}\">JOMB Store</a>, with no contract. If you'd rather have meals every week, a <a href=\"{{link:meal-plans/}}\">JOMB meal plan</a> saves you up to 12% and lets you skip any week."},
+    {"q": "Do I have to order the weekly menus every week?", "a": "No. Order any single week you like in the <a href=\"{{store}}\">JOMB Store</a>, with no contract. If you'd rather have meals every week, a <a href=\"{{link:meal-plans/}}\">JOMB meal plan</a> saves you up to 12% and lets you skip any week."},
     {"q": "What if I have a food allergy?", "a": "Gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy. If you have a severe allergy, email <a href=\"mailto:{{email}}\">{{email}}</a> before you order so we can talk it through."}
   ],
 
@@ -38,7 +38,7 @@
 
   "family": [
     {"q": "How many people does a family dinner feed?", "a": "One family dinner feeds three adults, or two adults and two small children. The soup, entrée salad and vegetarian options are a little smaller and usually serve two adults."},
-    {"q": "Is there a minimum order?", "a": "Yes: two family dinners per order. Each dinner is {{price:family_meal}} before tax."},
+    {"q": "Is there a minimum order for family dinners?", "a": "Yes: two family dinners per order. Each dinner is {{price:family_meal}} before tax."},
     {"q": "What can I add to a family order?", "a": "A soup of the week ({{price:family_soup}}), an entrée salad ({{price:family_salad}}) and a 1-gallon bag of fresh-cut fruit in several varieties ({{price:fruit}}). The extras change with the menu each week."},
     {"q": "What does a family dinner cost per person?", "a": "At {{price:family_meal}} for three adults, it's {{per:family_meal}} per adult serving, before tax, with no shopping, cooking or dishes."},
     {"q": "Can I send family dinners as a gift?", "a": "Yes. Gift cards start at {{price:gift_from}}, or you can send a week of dinners straight to someone else's door in our delivery area. <a href=\"{{link:gift-cards/}}\">See gift cards</a>."},
@@ -47,7 +47,7 @@
 
   "protein": [
     {"q": "What does “cooked weight” mean?", "a": "The protein is weighed after it's cooked, so the pound you pay for is the pound you eat."},
-    {"q": "Is there a minimum order?", "a": "Add protein by the pound to any meal order, or order protein on its own with a $100 minimum before tax."},
+    {"q": "Is there a minimum order for protein by the pound?", "a": "Add protein by the pound to any meal order, or order protein on its own with a {{price:protein_min}} minimum before tax."},
     {"q": "Which proteins can I buy?", "a": "The cooked proteins from that week's menus, so the selection changes weekly. Prices before tax: chicken {{price:protein_chicken}}/lb, CAB beef {{price:protein_beef}}/lb, pork {{price:protein_pork}}/lb and seafood {{price:protein_seafood}}/lb."},
     {"q": "When do I order, and when does it arrive?", "a": "Order by {{cutoff}}. Your protein is delivered with the week's meals on {{delivery_day}}, {{delivery_window}}, anywhere in {{towns_sentence}}."},
     {"q": "Can I add protein to my Zone or family order?", "a": "Yes. Protein by the pound works as an add-on to any Zone, Paleo, Low-Carb Dairy-Free or Family order. Add it to your cart in the <a href=\"{{store}}\">JOMB Store</a>."}

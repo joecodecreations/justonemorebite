@@ -71,7 +71,8 @@ SYSTEM_RE = re.compile(r"(^|[\s.#>])(head|title|html|site-header|header-inner|he
                        r"nav-desktop|nav-sheet|menu-toggle|brand|brand-name|site-footer|footer-[\w-]+|mobile-bar|"
                        r"preview-ribbon|skip-link|cta-band[\w-]*|plans|plan|plan-[\w-]+|steps|step|step-[\w-]+|"
                        r"menu-board[\w-]*|menu-group|menu-cols|menu-foot|menu-week|facts|fact|creds[\w-]*|marquee[\w-]*|"
-                       r"quotes?|quote--[\w-]+|faq|breadcrumbs|table-wrap|chips|btn--sm|footer)\b|JSON-LD site graph|"
+                       r"quotes?|quote--[\w-]+|faq|breadcrumbs|table-wrap|chips|btn--sm|footer|stat|stat-row|mbr-mini[\w-]*|proposal-pill|"
+                       r"step-num|brand-logo|footer-trust)\b|#membership|JSON-LD site graph|"
                        r"site\.css|site\.js|build\.py")
 
 
@@ -211,7 +212,7 @@ def segments(root):
         for c in n.children:
             if isinstance(c, str):
                 buf.append(c)
-            elif c.tag in SKIP_TEXT or c.tag == "head":
+            elif c.tag in SKIP_TEXT or c.tag == "head" or "hidden" in c.attrs:
                 continue
             elif c.tag in BLOCK:
                 flush(blk)
@@ -346,13 +347,9 @@ def membership_values(site):
     mb = site.get("membership")
     if not mb:
         return {}
-    try:
-        import importlib.util
-        spec = importlib.util.spec_from_file_location("jomb_build_for_qa", ROOT / "build.py")
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        pq = mod.plan_quote
-    except Exception:  # noqa: BLE001 - build.py changed shape; fall back to no membership numbers
+    mod = load_build()
+    pq = getattr(mod, "plan_quote", None) if mod else None
+    if not pq:
         return {}
     out = {}
     menus = list(mb.get("menus", {})) + ["family"]
@@ -667,7 +664,8 @@ def check_seo(p, ctx, rep):
             add(n, "seo", WARN, "img-alt", f"<img> with empty alt (not marked decorative): {src}", sel, FIXES["img-alt"])
         if not img.get("width") or not img.get("height"):
             add(n, "seo", FAIL, "img-size", f"<img> without width/height: {src}", sel, FIXES["img-size"])
-        if img.get("fetchpriority") == "high" or img.get("loading") == "eager" or (img.get("loading") is None and img.get("fetchpriority") is None):
+        in_chrome = img.inside(lambda a: a.tag in ("header", "footer") or "nav-sheet" in a.classes())
+        if not in_chrome and (img.get("fetchpriority") == "high" or img.get("loading") == "eager" or (img.get("loading") is None and img.get("fetchpriority") is None)):
             eager.append(sel)
     if len(eager) > 1:
         add(n, "seo", WARN, "img-eager", f"{len(eager)} images load eagerly (only the hero should): {', '.join(eager[:4])}", eager[1],
@@ -1544,7 +1542,7 @@ JS_MEASURE = "(W) => {" + JS_SEL + r"""
       const clip = clipAnc(el, false);
       if (!(clip && clip.getBoundingClientRect().right <= cw + 1)) {
         const p = el.parentElement, pr = p.getBoundingClientRect();
-        out.offenders.push({sel: SEL(el), right: Math.round(r.right), width: Math.round(r.width), over: Math.round(r.right - cw),
+        out.offenders.push({sel: SEL(el), fixed: cs.position === 'fixed' || cs.position === 'sticky', right: Math.round(r.right), width: Math.round(r.width), over: Math.round(r.right - cw),
           breakout: p === document.body || pr.right <= cw + 1, text: ((el.innerText || el.getAttribute('alt') || '') + '').trim().replace(/\s+/g, ' ').slice(0, 60)});
       }
     }
@@ -1586,7 +1584,7 @@ JS_TAPS = "(groups) => {" + JS_SEL + r"""
         const hit = rects.some(([o, orr]) => o !== el && !o.contains(el) && !el.contains(o) && orr.left < cx + h && orr.right > cx - h && orr.top < cy + h && orr.bottom > cy - h);
         if (!hit) continue;
       }
-      out.push({group, sel: SEL(el), w: Math.round(r.width), h: Math.round(r.height), min, label});
+      out.push({group, sel: SEL(el), cls: el.className || '', w: Math.round(r.width), h: Math.round(r.height), min, label});
     }
   }
   return out;
@@ -1623,7 +1621,7 @@ def browser_checks(ctx, rep, server, axe_path, widths):
         for w in widths:
             mobile = w <= MOBILE_MAX
             bctx = browser.new_context(viewport={"width": w, "height": 844 if mobile else 900}, device_scale_factor=1,
-                                       is_mobile=mobile, has_touch=mobile)
+                                       is_mobile=mobile, has_touch=mobile, reduced_motion="reduce")
             targets = [(nm, ctx.pages[nm].rel) for nm in ctx.selected]
             if "404" in ctx.pages and "404" in ctx.selected:
                 targets.append(("404@nested", "no-such-page/really/"))
@@ -1674,7 +1672,7 @@ def browser_checks(ctx, rep, server, axe_path, widths):
                 over = max(m["scrollWidth"], m["innerWidth"]) - m["clientWidth"]
                 if m["scrollWidth"] > m["clientWidth"] + 1:
                     offs = [o for o in m["offenders"] if o["breakout"]] or sorted(m["offenders"], key=lambda o: -o["over"])[:3]
-                    offs = sorted(offs, key=lambda o: -o["over"])
+                    offs = sorted(offs, key=lambda o: (o.get("fixed", False), -o["over"]))  # fixed bars stretch to the overflow: symptoms
                     top = offs[0] if offs else {"sel": "?", "over": over, "width": 0, "text": ""}
                     others = "; ".join(f"{o['sel']} (+{o['over']}px)" for o in offs[1:4])
                     note(pname, "responsive", FAIL, "overflow", top["sel"],
@@ -1694,6 +1692,17 @@ def browser_checks(ctx, rep, server, axe_path, widths):
                     note(pname, "responsive", FAIL, "broken-image", b["src"], f"image failed to load: {b['src']}", b["sel"], "Check the img slug/width exists in docs/img.", w)
                 for host in m["thirdParty"]:
                     note(pname, "responsive", WARN, "third-party", host, f"third-party request to {host}", "page", "README promises no third-party requests; self-host or drop it.", w)
+                # interactive plan builder (meal-plans): every option combination, then re-check layout
+                if page.query_selector("[data-builder]"):
+                    exercise_builder(page, pname, w, ctx, note, check_prices=(w == max(ctx.widths)))
+                    m2 = page.evaluate(JS_MEASURE, w)
+                    if m2["scrollWidth"] > m2["clientWidth"] + 1 and not m["scrollWidth"] > m["clientWidth"] + 1:
+                        offs = sorted([o for o in m2["offenders"] if o["breakout"]] or m2["offenders"], key=lambda o: (o.get("fixed", False), -o["over"]))
+                        top = offs[0] if offs else {"sel": "?", "over": 0, "width": 0}
+                        note(pname, "responsive", FAIL, "overflow", "builder:" + top["sel"], f"horizontal overflow after using the plan builder: {m2['scrollWidth']}px in {m2['clientWidth']}px; widest offender {top['sel']} (+{top['over']}px)",
+                             top["sel"], "Let the builder chips/summary wrap (min-width:0, flex-wrap) at this width.", w)
+                    for c in m2["clipped"][:4]:
+                        note(pname, "responsive", WARN, "clipped-text", "builder:" + c["sel"], f"after using the plan builder, text clipped by {c['by']}: “{c['text']}”", c["sel"], "Let the box grow at this width.", w)
                 # tap targets
                 if w <= 768:
                     sev = FAIL if mobile else WARN
@@ -1703,9 +1712,13 @@ def browser_checks(ctx, rep, server, axe_path, widths):
                     taps += page.evaluate(JS_TAPS, [["mobile bar", ".mobile-bar a, .mobile-bar button", 44, False]])
                     for t in taps:
                         s2 = sev if t["min"] >= 44 else WARN
-                        note(pname, "responsive", s2, "tap-target", t["sel"], f"{t['group']} tap target “{t['label']}” is {t['w']}×{t['h']}px (min {t['min']}×{t['min']})",
-                             t["sel"], "Give it min-height/min-width 44px (padding), e.g. .btn--sm { min-height: 44px }" if t["min"] >= 44 else
-                             "Make the link ≥ 24px tall (padding-block) or space links ≥ 24px apart (WCAG 2.5.8).", w)
+                        sm = "btn--sm" in str(t.get("cls", ""))
+                        note(pname, "responsive", s2, "tap-target", t["sel"], f"{t['group']} tap target “{t['label']}” is {t['w']}×{t['h']}px (min {t['min']}×{t['min']})"
+                             + (" (a .btn--sm button)" if sm else ""), t["sel"] + (".btn--sm" if sm else ""),
+                             "site.css: .btn--sm { min-height: 44px } (it is 42px)" if sm else
+                             "Give it min-height/min-width 44px (padding)." if t["min"] >= 44 else
+                             "Make the link ≥ 24px tall (padding-block) or space links ≥ 24px apart (WCAG 2.5.8).", w,
+                             owner="system" if sm else None)
                     page.evaluate("() => window.scrollTo(0, 0)")
                     # mobile nav sheet
                     opener = page.query_selector("[data-nav-open]")
@@ -1746,7 +1759,91 @@ def browser_checks(ctx, rep, server, axe_path, widths):
         rep.add(page, "a11y", sev, f"axe:{rid}", f"{v['help']} ({v['impact']}, {len(tg)} element{'s' if len(tg) != 1 else ''}){' in the ' + where if where else ''}: "
                 f"{', '.join(tg[:6])}{' …' if len(tg) > 6 else ''} [at {fmt_widths(sorted(d['widths']))}]",
                 tg[0] if tg else "", f"{summ} First element: {first['html'][:120]} — {v['helpUrl']}", widths=sorted(d["widths"]),
+                owner="system" if SYSTEM_RE.search(" ".join(tg[:3]) + " " + " ".join(re.findall(r'class="([^"]*)"', first.get("html", "")))) else "page",
                 targets=[{"target": t, "html": n["html"], "summary": n["summary"]} for t, n in d["targets"].items()])
+
+
+JS_BUILDER = r"""async () => {
+  const b = document.querySelector('[data-builder]');
+  if (!b) return null;
+  const names = ['household', 'days', 'menu', 'coverage'];
+  const opts = {};
+  for (const n of names) opts[n] = [...b.querySelectorAll(`input[name="b-${n}"]`)].map(i => i.value);
+  const pick = (n, v) => { const i = b.querySelector(`input[name="b-${n}"][value="${v}"]`); if (i && !i.checked) i.click(); };
+  const frame = () => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0)));
+  const results = [];
+  for (const h of opts.household) for (const dy of opts.days) for (const m of (opts.menu.length ? opts.menu : [''])) for (const c of (opts.coverage.length ? opts.coverage : [''])) {
+    pick('household', h); pick('days', dy); if (m) pick('menu', m); if (c) pick('coverage', c);
+    await frame();
+    const st = {};
+    for (const n of names) { const i = b.querySelector(`input[name="b-${n}"]:checked`); st[n] = i ? i.value : null; }
+    const outs = [...document.querySelectorAll('#builder-summary [data-out], [data-builder-bar] [data-out]')]
+      .filter(e => !e.closest('[hidden]')).map(e => [e.getAttribute('data-out'), e.textContent.trim().replace(/\s+/g, ' ')]);
+    results.push({st, outs});
+  }
+  // leave it on the busiest combination for the layout re-check
+  pick('household', opts.household[opts.household.length - 1]); pick('days', opts.days[opts.days.length - 1]);
+  await frame();
+  return {opts, n: results.length, results};
+}"""
+
+
+def exercise_builder(page, pname, w, ctx, note, check_prices):
+    # contexts run with reduced_motion="reduce" so plan-builder.js sets prices at once (no 420 ms roll)
+    res = page.evaluate(JS_BUILDER)
+    if not res:
+        return
+    if not res["results"]:
+        note(pname, "responsive", FAIL, "builder", "no-options", "plan builder rendered no options (JS didn't build the chips)", "[data-builder]",
+             "Check plan-builder.js and the #membership-data JSON.", w, owner="system")
+        return
+    if not check_prices:
+        return
+    bmod = load_build()
+    pq = getattr(bmod, "plan_quote", None) if bmod else None
+    if not pq:
+        return
+    seen, bad = set(), []
+    for r in res["results"]:
+        st = r["st"]
+        fam = st["household"] in ("family", "bigfamily") or "family_dinners" in next((h for h in ctx.site["membership"]["households"] if h["key"] == st["household"]), {})
+        key = (st["household"], st["days"]) + (() if fam else (st["menu"], st["coverage"]))
+        if key in seen:
+            continue
+        seen.add(key)
+        try:
+            q = pq(st["household"], int(st["days"]), "dinner" if fam else st["coverage"], "family" if fam else st["menu"])
+        except Exception as e:  # noqa: BLE001
+            bad.append(f"{'/'.join(map(str, key))}: build.py plan_quote raised {e}")
+            continue
+        want = {round(float(q[k]), 2) for k in ("price", "base", "save", "per", "monthly") if isinstance(q.get(k), (int, float))}
+        for out_key, text in r["outs"]:
+            for mm in PRICE.finditer(text):
+                v = round(float(mm.group(1).replace(",", "") + "." + (mm.group(2) or "0")), 2)
+                if v not in want:
+                    bad.append(f"{'/'.join(map(str, key))} {out_key}: shows {mm.group(0)}, build.py says one of {', '.join(money(x) for x in sorted(want))}")
+    rep_line = f"plan builder: checked {len(seen)} option combinations against build.py plan_quote()"
+    if bad:
+        note(pname, "facts", FAIL, "builder-math", "builder-math", f"{rep_line}; {len(bad)} mismatch(es): {'; '.join(bad[:5])}", "[data-builder] #builder-summary",
+             "plan-builder.js must mirror build.py plan_quote() (rounding included).", w, owner="system")
+    else:
+        note(pname, "facts", INFO, "builder-math", "builder-math", f"{rep_line}: all prices match", "[data-builder]", "", w, owner="system")
+
+
+_BUILD_MOD = []
+
+
+def load_build():
+    if not _BUILD_MOD:
+        try:
+            import importlib.util
+            spec = importlib.util.spec_from_file_location("jomb_build_for_qa", ROOT / "build.py")
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            _BUILD_MOD.append(mod)
+        except Exception:  # noqa: BLE001
+            _BUILD_MOD.append(None)
+    return _BUILD_MOD[0]
 
 
 def axe_note(rep, seen, page, v, w, where):

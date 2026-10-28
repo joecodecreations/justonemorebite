@@ -56,7 +56,7 @@
 @media (min-width: 900px) { .svc-course figcaption b { font-size: 1.18rem; } }
 
 /* inquiry: checklist card + actions */
-.svc-inquiry { display: grid; gap: clamp(28px, 4vw, 56px); align-items: start; }
+.svc-inquiry { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: start; }
 @media (min-width: 940px) { .svc-inquiry { grid-template-columns: 1.1fr .9fr; } }
 .svc-ticket { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 40px); box-shadow: var(--shadow-lg); }
 .svc-ticket::before { content: ""; position: absolute; left: 22px; right: 22px; top: 0; height: 6px; border-radius: 0 0 6px 6px; background: repeating-linear-gradient(90deg, var(--tomato) 0 18px, transparent 18px 26px); opacity: .85; }
@@ -69,6 +69,7 @@
 .svc-list b { display: block; color: var(--ink); font-weight: 650; }
 .svc-list span { color: var(--muted); font-size: .94rem; }
 .svc-ticket .btn-row .btn { flex: 1 1 auto; }
+@media (max-width: 479px) { .svc-ticket .btn { white-space: normal; text-align: center; padding-inline: 16px; gap: 8px; } .svc-ticket .btn[href^="tel:"] { white-space: nowrap; } } /* QA: fits 320 px; phone number never splits */
 .svc-aside { display: grid; gap: 18px; }
 .svc-aside .media-frame { aspect-ratio: 4/3; }
 .svc-aside .svc-mail { grid-template-columns: 1fr; }
@@ -107,7 +108,7 @@
 .svc-holiday { display: grid; gap: 22px; align-items: center; }
 @media (min-width: 900px) { .svc-holiday { grid-template-columns: 1.3fr 1fr; gap: 48px; } }
 .svc-holiday h2 { margin-bottom: 12px; }
-.svc-holiday p { color: #ffe5dc; font-size: var(--step-1); margin: 0; }
+.svc-holiday p { color: #fff; font-size: var(--step-1); margin: 0; }
 .svc-holiday .btn-row { justify-content: flex-start; }
 @media (min-width: 900px) { .svc-holiday .btn-row { justify-content: flex-end; } }
 .svc-cal { display: inline-grid; place-items: center; width: 112px; height: 100px; border-radius: 16px; background: #fff7ee; color: var(--ink); box-shadow: 0 12px 30px rgba(27,23,20,.25); overflow: hidden; margin-bottom: 18px; }
@@ -275,3 +276,10 @@
 .svc-404-media { position: relative; }
 .svc-404-media .media-frame { aspect-ratio: 1; }
 .svc-404-media .float-card { z-index: 2; }
+
+/* ---- QA fixes (tools/qa.py, 2026-10-28) ---- */
+.svc-way--dark a:not(.btn) { color: #f3b39f; }                       /* link on the dark card: 9:1 (was 2.6:1) */
+.svc-way--dark a:not(.btn):hover { color: #fff; }
+@media (max-width: 479px) {
+  .svc-giftcard { width: 80%; }                                      /* card text fit inside the 1.586 card at 320 px */
+}

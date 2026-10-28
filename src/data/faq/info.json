@@ -26,7 +26,7 @@
     {"q": "Is the full Zone plan cheaper than buying meals separately?", "a": "Yes. Bought separately, 6 Zone breakfasts, lunches and dinners come to $262.50. The full plan is {{price:zone_all}}, which saves $9.50 a week. The double portion for two is {{price:zone_double}}, $20 less than two single plans."},
     {"q": "How much is a family dinner per person?", "a": "A Family dinner is {{price:family_meal}} and feeds three adults, so it works out to $25 per adult. Fed to two adults and two small children, it's $18.75 a person. There's a two-meal minimum."},
     {"q": "Do prices include sales tax?", "a": "No. Every price on this site is before North Carolina sales tax, which is added at checkout in the <a href=\"{{store}}\">JOMB Store</a>. You see your full total before you pay."},
-    {"q": "Is there a minimum order at Just One More Bite?", "a": "Meal plans are sold as sets of 6 (6 breakfasts, 6 lunches or 6 dinners). Family dinners have a two-meal minimum. Cooked protein by the pound has a $100 minimum when you order it on its own, or you can add it to any meal order."}
+    {"q": "Is there a minimum order at Just One More Bite?", "a": "Meal plans are sold as sets of 6 (6 breakfasts, 6 lunches or 6 dinners). Family dinners have a two-meal minimum. Cooked protein by the pound has a {{price:protein_min}} minimum when you order it on its own, or you can add it to any meal order."}
   ],
 
   "chef": [

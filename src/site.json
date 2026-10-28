@@ -157,6 +157,10 @@
     "gift_from": {
       "label": "Gift cards from",
       "price": 50
+    },
+    "protein_min": {
+      "label": "Protein by the pound, minimum on its own",
+      "price": 100
     }
   },
   "prices_confirm": "Prices from the JOMB Store on 2026-10-28, before tax. Zone double shows $13.50/meal ($486 / 36); the old site says $14.50.",

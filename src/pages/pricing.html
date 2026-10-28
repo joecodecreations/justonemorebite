@@ -21,7 +21,7 @@
         <div class="price-chips info-chips-tight">
           <div class="price-chip"><b>{{per:zone_all}}</b><span>per meal · Zone full plan</span></div>
           <div class="price-chip"><b>{{per:zone_double}}</b><span>per meal · Zone for two</span></div>
-          <div class="price-chip"><b>$25</b><span>per adult · Family dinner</span></div>
+          <div class="price-chip"><b>{{per:family_meal}}</b><span>per adult · Family dinner</span></div>
         </div>
         <div class="btn-row">
           <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order this week</a>
@@ -68,7 +68,7 @@
       </div>
       <div>
         <h3>Family dinner</h3>
-        <p class="info-eq"><span>{{price:family_meal}}</span><i>÷</i><span>3 adults</span><i>=</i><b>$25</b></p>
+        <p class="info-eq"><span>{{price:family_meal}}</span><i>÷</i><span>3 adults</span><i>=</i><b>{{per:family_meal}}</b></p>
         <p>Or $18.75 a person for two adults and two small kids. Two-dinner minimum.</p>
       </div>
       <div>
@@ -112,7 +112,7 @@
       <article class="info-card reveal">
         <span class="info-card-kicker">Best for households</span>
         <h3>“I'm feeding a family.”</h3>
-        <p><a href="{{link:family-meal-delivery/}}">Family dinners</a> are {{price:family_meal}} each and feed three adults ($25 each) or two adults and two small kids ($18.75 each). The two-dinner minimum is $150. Add a soup ({{price:family_soup}}) or entrée salad ({{price:family_salad}}) to stretch a night.</p>
+        <p><a href="{{link:family-meal-delivery/}}">Family dinners</a> are {{price:family_meal}} each and feed three adults ({{per:family_meal}} each) or two adults and two small kids ($18.75 each). The two-dinner minimum is $150. Add a soup ({{price:family_soup}}) or entrée salad ({{price:family_salad}}) to stretch a night.</p>
       </article>
       <article class="info-card reveal">
         <span class="info-card-kicker">Best for workdays</span>
@@ -127,7 +127,7 @@
       <article class="info-card reveal">
         <span class="info-card-kicker">Best for home cooks</span>
         <h3>“I'll handle the sides.”</h3>
-        <p>Buy the week's cooked protein <a href="{{link:protein-by-the-pound/}}">by the pound</a>: chicken {{price:protein_chicken}}, CAB beef {{price:protein_beef}}, pork {{price:protein_pork}} or seafood {{price:protein_seafood}} per pound. Add it to any order, or order it alone with a $100 minimum.</p>
+        <p>Buy the week's cooked protein <a href="{{link:protein-by-the-pound/}}">by the pound</a>: chicken {{price:protein_chicken}}, CAB beef {{price:protein_beef}}, pork {{price:protein_pork}} or seafood {{price:protein_seafood}} per pound. Add it to any order, or order it alone with a {{price:protein_min}} minimum.</p>
       </article>
     </div>
   </div>
@@ -184,7 +184,7 @@
     <div class="info-cards info-cards--3">
       <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:gift}}</span><h3>Gift cards</h3><p>From {{price:gift_from}} in the JOMB Store, or send a week of meals straight to someone's door.</p><a class="text-link" href="{{link:gift-cards/}}">Give a gift</a></div>
       <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:list}}</span><h3>Sales tax</h3><p>Every price on this site is before North Carolina sales tax, which is added at checkout. You see your full total before you pay.</p></div>
-      <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:check}}</span><h3>Minimums</h3><p>Plans come in sets of six meals. Family dinners have a two-dinner minimum, and protein by the pound has a $100 minimum on its own.</p></div>
+      <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:check}}</span><h3>Minimums</h3><p>Plans come in sets of six meals. Family dinners have a two-dinner minimum, and protein by the pound has a {{price:protein_min}} minimum on its own.</p></div>
     </div>
   </div>
 </section>

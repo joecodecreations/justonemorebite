@@ -275,7 +275,7 @@ def render_price_table(pg, arg):
         desc = esc(v.get("desc", ""))
         rows.append(f'<tr><td><strong>{esc(v["label"])}</strong><br><span class="muted small">{desc}</span></td>'
                     f'<td class="num">{money(v["price"])}</td><td class="num">{per}</td></tr>')
-    return ('<div class="table-wrap"><table class="table"><thead><tr><th>Plan</th><th class="num">Price</th>'
+    return ('<div class="table-wrap" tabindex="0" role="region" aria-label="Just One More Bite price list"><table class="table"><thead><tr><th>Plan</th><th class="num">Price</th>'
             f'<th class="num">Per meal</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
             '<p class="note mt-1">Prices before NC sales tax. Checkout in the JOMB Store.</p>')
 
@@ -341,7 +341,7 @@ def simple_values():
         "phone_link": f'<a href="tel:{SITE["phone_tel"]}">{SITE["phone_display"]}</a>',
         "email_link": f'<a href="mailto:{SITE["email"]}">{SITE["email"]}</a>',
         "cutoff": f'{SITE["cutoff_day"]} at {SITE["cutoff_time"]}', "cutoff_short": f'{SITE["cutoff_day"][:3]} {SITE["cutoff_time"]}',
-        "delivery_day": SITE["delivery_day"], "delivery_window": SITE["delivery_window"],
+        "delivery_day": SITE["delivery_day"], "delivery_window": SITE["delivery_window"], "cutoff_day": SITE["cutoff_day"],
         "delivery": f'{SITE["delivery_day"]}, {SITE["delivery_window"]}', "menu_posted": SITE["menu_posted"],
         "week_label": MENU["week_label"], "order_by": MENU["order_by"], "towns_sentence": towns_sentence(),
         "chef": SITE["chef"]["display"], "chef_nick": SITE["chef"]["nick"], "chef_years": SITE["chef"]["years"],
@@ -526,7 +526,7 @@ def render_mbr_table(pg, arg):
                 rows.append(f'<tr><td><strong>{esc(mv["label"])}</strong><br><span class="muted small">{esc(c["label"])}</span></td>{cells}</tr>')
         title = "Individual plans · weekly price for one person (two people: double it)"
     disc_row = "".join(f'<td class="num"><span class="mbr-save">save {round(MBR["discount"][str(d)] * 100)}%</span></td>' for d in days)
-    return (f'<div class="table-wrap"><table class="table mbr-table"><caption class="sr-only">{esc(title)}</caption><thead><tr><th>Plan</th>{head}</tr></thead>'
+    return (f'<div class="table-wrap" tabindex="0" role="region" aria-label="{esc(title)}"><table class="table mbr-table"><caption class="sr-only">{esc(title)}</caption><thead><tr><th>Plan</th>{head}</tr></thead>'
             f'<tbody>{"".join(rows)}<tr class="mbr-disc-row"><td><span class="muted small">Subscriber savings vs. one-off orders</span></td>{disc_row}</tr></tbody></table></div>')
 
 
@@ -702,7 +702,7 @@ def header(pg, meta):
         f'<a href="{pg.rel(p)}"{cur if k == nav_key else ""}>{esc(n)}</a>' for k, n, p in NAV)
     sheet_links = "".join(f'<a href="{pg.rel(p)}">{esc(n)}</a>' for k, n, p in NAV) + \
         f'<a href="{pg.rel("reviews/")}">Reviews</a><a href="{pg.rel("faq/")}">FAQ</a><a href="{pg.rel("contact/")}">Contact</a>'
-    ribbon = (f'<div class="preview-ribbon"><strong>Preview</strong> · {esc(SITE["preview_note"])}</div>' if SITE["preview"] else "")
+    ribbon = (f'<div class="preview-ribbon" role="region" aria-label="Preview notice"><strong>Preview</strong> · {esc(SITE["preview_note"])}</div>' if SITE["preview"] else "")
     return f"""<body>
 <a class="skip-link" href="#main">Skip to content</a>
 {ribbon}
@@ -796,6 +796,10 @@ def build():
         for k in ("title", "og_title", "description"):
             if k in meta:
                 meta[k] = fill(pg, meta[k])
+        if isinstance(meta.get("service"), dict):
+            for k in ("name", "description"):
+                if k in meta["service"]:
+                    meta["service"][k] = fill(pg, meta["service"][k])
         _mark_n[0] = 0
         content = fill(pg, body, meta)
         ld = site_graph() + page_graph(pg, meta)

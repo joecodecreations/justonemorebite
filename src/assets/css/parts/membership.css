@@ -196,3 +196,6 @@ body.builder-bar-on .mobile-bar.is-visible { transform: translateY(110%); }
   .builder-bar-text strong { font-size: 1.3rem; }
   .builder-bar .btn { padding-inline: 14px; }
 }
+
+/* ---- QA fixes (tools/qa.py, 2026-10-28) ---- */
+.mbr-customize { min-height: 44px; display: inline-flex; align-items: center; padding: 10px 12px; }  /* tap target ≥ 44 px (was 21 px) */

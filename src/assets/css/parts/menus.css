@@ -161,14 +161,14 @@
 .menus-option--alt .menus-option-tag { background: var(--herb); }
 
 /* Paleo rules band */
-.menus-rules { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); }
+.menus-rules { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .menus-rule { border-radius: var(--radius); padding: 22px 12px 18px; text-align: center; background: #24201c; border: 1px solid #3a332c; }
 .menus-rule b { display: block; font: italic 500 clamp(.95rem, .8rem + .6vw, 1.15rem)/1 var(--serif); color: #f08a6f; margin-bottom: 8px; }
 .menus-rule span { display: block; font: 600 clamp(1.35rem, 1rem + 1.6vw, 2.4rem)/1.05 var(--serif); color: #fff7ee; text-decoration: line-through; text-decoration-color: var(--tomato); text-decoration-thickness: 3px; }
 .menus-yes { margin-top: 14px; border-radius: var(--radius); padding: 22px 24px; background: var(--herb); color: #fff; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
 .menus-yes b { font: italic 500 1.15rem/1 var(--serif); color: #e6ecdc; }
 .menus-yes ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.menus-yes li { padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.14); font-weight: 600; font-size: .95rem; }
+.menus-yes li { padding: 8px 14px; border-radius: 999px; background: rgba(0,0,0,.18); font-weight: 600; font-size: .95rem; }
 
 /* LCDF 4-week track */
 .menus-weeks { display: grid; gap: 14px; counter-reset: wk; position: relative; }
@@ -219,7 +219,7 @@
 .menus-moment cite b { color: #fff; }
 
 /* misc */
-.menus-split-tight { display: grid; gap: clamp(28px, 4vw, 56px); align-items: start; }
+.menus-split-tight { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: start; }
 @media (min-width: 960px) { .menus-split-tight { grid-template-columns: .9fr 1.1fr; } .menus-split-tight--flip { grid-template-columns: 1.1fr .9fr; } }
 .menus-sticky { position: static; }
 @media (min-width: 960px) { .menus-sticky { position: sticky; top: calc(var(--header-h) + 24px); } }
@@ -266,3 +266,11 @@ ol.menus-weeks { list-style: none; margin: 0; padding: 0; }
 .menus-weeks--stack { margin-top: 0; }
 .menus-quote-stack { display: grid; gap: 26px; }
 .menus-label dd { white-space: nowrap; }
+
+/* ---- QA fixes (tools/qa.py, 2026-10-28): fit 320 px ---- */
+@media (max-width: 400px) {
+  .menus-weekgrid { grid-template-columns: auto repeat(6, minmax(0, 1fr)); gap: 8px 4px; padding: 16px 12px; }
+  .menus-weekgrid > b, .menus-weekgrid > b.row { font-size: .6rem; letter-spacing: .02em; }
+  .menus-rules { gap: 8px; }
+  .menus-rule { padding: 18px 6px 14px; }
+}
