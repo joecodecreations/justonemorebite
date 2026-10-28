@@ -26,7 +26,7 @@ SITE = json.loads((ROOT / "src" / "site.json").read_text())
 FONT = (ROOT / "src" / "assets" / "fonts" / "fraunces-latin.woff2").as_uri()
 FONT_I = (ROOT / "src" / "assets" / "fonts" / "fraunces-italic-latin.woff2").as_uri()
 DPI = 200
-ORDER = ["home", "menus", "zone-meal-delivery", "paleo-meal-delivery", "low-carb-dairy-free-meals", "family-meal-delivery",
+ORDER = ["home", "menus", "meal-plans", "zone-meal-delivery", "paleo-meal-delivery", "low-carb-dairy-free-meals", "family-meal-delivery",
          "protein-by-the-pound", "how-it-works", "pricing", "delivery-area", "private-chef-raleigh", "catering-weddings",
          "chef-michael-saunders", "reviews", "faq", "gift-cards", "contact", "about-jomb"]
 

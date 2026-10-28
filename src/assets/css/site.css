@@ -437,3 +437,6 @@ h1 > .eyebrow { display: flex; width: fit-content; letter-spacing: .16em; }
   .cta-band a[href^="tel:"] { white-space: nowrap; }
 }
 .table-wrap:focus-visible { outline: 3px solid var(--tomato); outline-offset: 3px; }
+
+.obj-face { object-position: 50% 16%; }
+@media (max-width: 959px) { .hero-first { order: -1; aspect-ratio: 4 / 4.4; } }

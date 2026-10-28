@@ -36,6 +36,7 @@ PHOTOS = {
     "chef-plating-2": ("063.jpg", None, "Chef finishing plates of seared salmon"),
     "chef-label": ("069.jpg", None, "Chef checking a hand-written label on a bottle of house vinaigrette"),
     "chef-banner": ("061.jpg", None, "Chef Michael Saunders of Just One More Bite at an event"),
+    "chef-portrait": ("chef-portrait.webp", None, "Chef Michael Saunders in chef's whites and a toque, arms crossed, smiling in the kitchen"),
     "chef-table-outdoor": ("046.jpg", None, "Chef standing at a long outdoor table set for a private dinner"),
     "table-outdoor": ("042.jpg", None, "Farmhouse table set outdoors for a private chef dinner"),
     "table-fall": ("039.jpg", None, "Autumn table setting with sunflowers and leaf placemats"),
@@ -66,7 +67,7 @@ OG = {
     "og-paleo": ("paleo-plate", 0.5),
     "og-lcdf": ("lcdf-plate", 0.5),
     "og-family": ("family-plate", 0.5),
-    "og-chef": ("chef-plating", 0.35),
+    "og-chef": ("chef-portrait", 0.12),
     "og-private": ("dinner-candles", 0.55),
     "og-catering": ("catering-tuna", 0.5),
     "og-default": ("meals-rows", 0.5),
@@ -141,6 +142,8 @@ def bite_mark(size, bg=None):
 
 
 def make_icons():
+    if (ROOT / "src/assets/brand/logo-fork-bite-icon.png").exists():
+        return  # the Fork Bite logo icons are made by the logo step; don't overwrite them with the old bite mark
     for size, name in [(180, "apple-touch-icon.png"), (192, "icon-192.png"), (512, "icon-512.png")]:
         bg = (250, 246, 239, 255) if name == "apple-touch-icon.png" else None
         bite_mark(size, bg).save(OUT.parent / name)

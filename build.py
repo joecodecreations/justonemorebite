@@ -589,7 +589,7 @@ def site_graph():
         {
             "@type": "Person", "@id": chef_id, "name": SITE["chef"]["name"], "alternateName": [SITE["chef"]["display"], SITE["chef"]["nick"]],
             "jobTitle": "Executive Chef", "worksFor": {"@id": biz_id}, "url": abs_url("chef-michael-saunders/"),
-            "image": abs_url("img/chef-plating-800.webp"),
+            "image": abs_url("img/chef-portrait-800.webp"),
             "description": "Executive Chef and owner of Just One More Bite in Raleigh, NC. Formerly " + "; ".join(
                 f'{r["role"]} at {r["place"]} ({r["city"]})' for r in SITE["chef"]["resume"]) + ".",
             "knowsAbout": ["Zone diet meal prep", "Paleo cooking", "Low-carb, dairy-free cooking", "Steakhouse cuisine", "Private dining", "Catering"],
