@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joecodecreations.github.io/justonemorebite/sitemap.xml

@@ -1,0 +1,203 @@
+<!--meta
+{
+  "title": "Meal Gift Cards in Raleigh, NC | Just One More Bite",
+  "og_title": "Give a week off from cooking · Just One More Bite gift cards",
+  "description": "Give a Just One More Bite gift card, or send a week of chef-made meals to someone's door in Raleigh, Cary or RTP. For new parents, recovery and holidays.",
+  "path": "gift-cards/",
+  "og": "og-default",
+  "nav": "",
+  "page_type": "WebPage",
+  "breadcrumb": [["Gift cards", "gift-cards/"]],
+  "service": {"name": "Just One More Bite gift cards and meal gifts", "description": "Gift cards from $50 for chef-made weekly meals in the Raleigh area, or a week of meals delivered to someone else's door on Tuesday.", "type": "Gift card", "offers": ["gift_from"]}
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Meal gift cards · Raleigh, NC</span>Give someone a week <em>off from cooking.</em></h1>
+        <p class="lead">Just One More Bite gift cards start at {{price:gift_from}} in the JOMB Store. Or skip the card and send real food: order a week of {{chef_nick}}'s cooking, add their address, and it arrives at their door on {{delivery_day}} in {{towns_sentence}}.</p>
+        <div class="price-chips svc-chips">
+          <div class="price-chip"><b>{{price:gift_from}}+</b><span>gift cards</span></div>
+          <div class="price-chip"><b>{{price:family_meal}}</b><span>a family dinner, feeds 3</span></div>
+          <div class="price-chip"><b>{{delivery_day}}</b><span>delivered to their door</span></div>
+        </div>
+        <div class="btn-row svc-hero-actions">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:gift}}Buy a gift card</a>
+          <a class="btn btn--ghost btn--lg" href="#send">Send a week of meals</a>
+        </div>
+      </div>
+      <div class="svc-gift-hero">
+        <div class="media-frame">{{img:table-fall|(min-width: 960px) 40vw, 90vw||eager}}</div>
+        <div class="svc-giftcard" role="img" aria-label="Just One More Bite gift card, from {{price:gift_from}}">
+          <div class="svc-giftcard-top"><div class="svc-giftcard-brand">Just One More Bite<small>Chef-made · Raleigh, NC</small></div>{{icon:gift}}</div>
+          <div class="svc-giftcard-amount"><span>Gift card · from</span>{{price:gift_from}}</div>
+          <div class="svc-giftcard-foot"><span>Redeem online</span><span>JOMB Store</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="send">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Two ways to give</span>
+      <h2>A card for later, or <em>dinner on Tuesday.</em></h2>
+      <p>Both come from the same chef and the same weekly menus. Pick the one that fits the person.</p>
+    </div>
+    <div class="svc-ways">
+      <div class="svc-way reveal">
+        <span class="svc-way-num">01</span>
+        <h3>A gift card</h3>
+        <div class="svc-price"><strong>{{price:gift_from}}</strong><span>and up, in the JOMB Store</span></div>
+        <p class="muted">Best when you don't know their schedule or their tastes. They choose the menu and the week.</p>
+        <ul class="checks">
+          <li>Pick any amount from {{price:gift_from}}</li>
+          <li>Spend it in the JOMB Store, where every weekly menu is ordered</li>
+          <li>Zone, Paleo, Low-Carb Dairy-Free or Family dinners: their call</li>
+        </ul>
+        <div class="btn-row"><a class="btn btn--primary" href="{{store}}">{{icon:gift}}Buy a gift card</a></div>
+      </div>
+      <div class="svc-way svc-way--dark reveal">
+        <span class="svc-way-num">02</span>
+        <h3>A week of <em>real meals</em></h3>
+        <div class="svc-price"><strong>{{price:family_meal}}</strong><span>per family dinner · feeds 3 · 2-dinner minimum</span></div>
+        <p class="muted">Order their meals in the JOMB Store and enter their name and address at checkout. Chef Mike cooks; they get dinner on {{delivery_day}}.</p>
+        <ul class="checks">
+          <li>Delivered {{delivery_day}}, {{delivery_window}}</li>
+          <li>To a home or office in {{towns_sentence}}</li>
+          <li>Rather email the details? We'll match them to your order.</li>
+        </ul>
+        <p class="small muted">Thinking bigger, like a month of dinners? Start with <a href="{{link:meal-plans/}}">JOMB meal plans</a>, then email us their details.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="{{store}}">{{icon:cart}}Send meals</a>
+          <a class="btn btn--outline-light" href="mailto:{{email}}?subject=Gift%20order%3A%20delivery%20details&amp;body=Hi%20JOMB%20team%2C%0A%0AI%27m%20sending%20meals%20as%20a%20gift.%0A%0AMy%20name%3A%0AOrder%20number%20%28if%20placed%29%3A%0ARecipient%27s%20name%3A%0ARecipient%27s%20delivery%20address%3A%0ARecipient%27s%20phone%3A%0AGift%20message%3A%0A">{{icon:mail}}Email delivery details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="occasions">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The gift that gets eaten</span>
+      <h2>Who's on <em>your list?</em></h2>
+      <p>When someone's life gets full, dinner is the first thing to go. This puts it back.</p>
+    </div>
+    <div class="svc-tiles">
+      <div class="svc-tile reveal"><span class="svc-tile-icon">{{icon:heart}}</span><h3>New parents</h3><p>Survival mode, meet dinner. One family meal feeds two adults and two small kids, or three adults.<br><span class="svc-tag">Feeds 3 per dinner</span></p></div>
+      <div class="svc-tile reveal"><span class="svc-tile-icon">{{icon:leaf}}</span><h3>Recovery after surgery</h3><p>When standing at the stove isn't an option, a fridge of fresh, chef-made meals is one less thing to manage.</p></div>
+      <div class="svc-tile reveal"><span class="svc-tile-icon">{{icon:users}}</span><h3>A friend in a hard season</h3><p>Grief, a move, a long stretch of hospital visits. You can't fix it, but you can make sure they eat well.</p></div>
+      <div class="svc-tile reveal"><span class="svc-tile-icon">{{icon:plate}}</span><h3>Busy couples</h3><p>Give them a night in. As one client put it: “It's like having a date night in your own home!”</p></div>
+      <div class="svc-tile reveal"><span class="svc-tile-icon">{{icon:gift}}</span><h3>Holiday gifts</h3><p>Better than another candle: real dinners for the people who say they don't need anything.<br><span class="svc-tag">Gift season</span></p></div>
+      <div class="svc-tile reveal"><span class="svc-tile-icon">{{icon:briefcase}}</span><h3>Client &amp; team gifts</h3><p>Realtors, advisors and offices: a week of dinners beats another bottle of wine at closing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="parents">
+  <div class="container split">
+    <div class="media-frame media-frame--tall reveal">{{img:zone-plate|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">Herb-crusted chicken, asparagus, cranberry relish</span></div>
+    <div class="reveal">
+      <span class="eyebrow">For Mom and Dad</span>
+      <h2>Weekly meals for <em>an aging parent.</em></h2>
+      <p class="lead">A week of fresh, chef-made meals means no grocery run and no cooking for a parent who shouldn't have to. Sandi F. orders for her 93-year-old mother, who came home from the hospital needing to change her diet right away.</p>
+      {{quote:sandi_mom}}
+      <p class="muted small mt-1">Need a specific diet, like no added sugar or gluten-free? Email {{email_link}} before ordering and we'll talk it through.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="guide">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Not sure what to send?</span>
+      <h2>A gift guide, <em>by person.</em></h2>
+      <p>Real prices from the JOMB Store. Every menu is written new each {{menu_posted}}, so the dishes change weekly.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="table svc-guide">
+        <thead><tr><th>For</th><th>Send</th><th class="num">Price</th></tr></thead>
+        <tbody>
+          <tr><td><strong>New parents or a busy family</strong></td><td><a href="{{link:family-meal-delivery/}}">Family dinners</a><br><span class="muted small">Each feeds 3 adults, or 2 adults and 2 small kids. 2-dinner minimum.</span></td><td class="num">{{price:family_meal}} each</td></tr>
+          <tr><td><strong>Someone who trains hard</strong></td><td><a href="{{link:zone-meal-delivery/}}">Zone lunches</a><br><span class="muted small">6 macro-balanced lunches, about 30 g protein each</span></td><td class="num">{{price:zone_lunch}}</td></tr>
+          <tr><td><strong>Someone avoiding grains and dairy</strong></td><td><a href="{{link:paleo-meal-delivery/}}">Paleo dinners</a><br><span class="muted small">6 dinners: no grains, no dairy, no added sugar</span></td><td class="num">{{price:paleo_dinner}}</td></tr>
+          <tr><td><strong>Someone eating lighter</strong></td><td><a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free lunches</a><br><span class="muted small">6 lunches for one</span></td><td class="num">{{price:lcdf_lunch}}</td></tr>
+          <tr><td><strong>A little extra</strong></td><td>Soup of the week or a 1-gallon bag of fresh-cut fruit<br><span class="muted small">Add to any meal order</span></td><td class="num">{{price:family_soup}} / {{price:fruit}}</td></tr>
+          <tr><td><strong>Anyone, anytime</strong></td><td>A gift card<br><span class="muted small">They pick the menu and the week</span></td><td class="num">from {{price:gift_from}}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note mt-1">Prices before NC sales tax. See <a href="{{link:pricing/}}">every price on one page</a> or <a href="{{link:menus/}}">this week's menus</a>.</p>
+  </div>
+</section>
+
+<section class="section section--dark" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How gifting works</span>
+      <h2>Three steps to <em>their table.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="step-num">01</span><span class="step-icon">{{icon:gift}}</span><h3>Choose the gift</h3><p>A gift card from {{price:gift_from}}, or a week of meals from the newest menu, posted every {{menu_posted}}.</p><span class="step-when">JOMB Store</span></div>
+      <div class="step reveal"><span class="step-num">02</span><span class="step-icon">{{icon:pin}}</span><h3>Add their details</h3><p>For meals, enter their name and delivery address at checkout before {{cutoff}}, or email them to us.</p><span class="step-when">By {{cutoff_short}}</span></div>
+      <div class="step reveal"><span class="step-num">03</span><span class="step-icon">{{icon:truck}}</span><h3>They eat well</h3><p>Meals arrive {{delivery_day}}. Not home? A cooler with ice packs by the door does the job.</p><span class="step-when">{{delivery_day}} · {{delivery_window}}</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" id="corporate">
+  <div class="container">
+    <div class="svc-inquiry">
+      <div class="svc-ticket reveal">
+        <span class="eyebrow">Client &amp; team gifts</span>
+        <h3>Sending to several people?</h3>
+        <p>Closing gifts, client thank-yous, a team that just shipped something big. Email the list and we'll help you set it up.</p>
+        <ul class="svc-list">
+          <li>{{icon:users}}<div><b>How many gifts</b><span>And who they're for</span></div></li>
+          <li>{{icon:gift}}<div><b>Gift cards or meals</b><span>Gift card amount, or which meals to send</span></div></li>
+          <li>{{icon:calendar}}<div><b>When they should arrive</b><span>Meals arrive on a {{delivery_day}}</span></div></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="mailto:{{email}}?subject=Client%20and%20team%20gifts&amp;body=Hi%20JOMB%20team%2C%0A%0AI%27d%20like%20to%20send%20meals%20or%20gift%20cards%20to%20several%20people.%0A%0ACompany%3A%0AHow%20many%20gifts%3A%0AGift%20card%20amount%20or%20meals%3A%0AWhen%20they%20should%20arrive%3A%0A%0AName%3A%0APhone%3A%0A">{{icon:mail}}Email the gift list</a>
+          <a class="btn btn--ghost" href="tel:{{tel}}">{{icon:phone}}Call {{phone}}</a>
+        </div>
+      </div>
+      <div class="svc-aside reveal">
+        <div class="media-frame">{{img:meals-containers|(min-width: 940px) 40vw, 100vw}}<span class="media-caption">A week of meals, packed for delivery</span></div>
+        <div class="svc-note-card">
+          <h3>Or make it <em>an evening.</em></h3>
+          <p>For a once-in-a-while gift, give a plated <a href="{{link:private-chef-raleigh/}}">private chef dinner</a> cooked in their home.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Good questions</span><h2>Gifting, <em>answered</em></h2></div>
+    {{faq:gifts}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See all FAQs</a></p>
+  </div>
+</section>
+
+<section class="section section--tight svc-band">
+  <div class="container">
+    <div class="cta-band reveal">{{img:salmon-plated|100vw}}
+      <div class="cta-band-inner">
+        <span class="eyebrow">Gift season is here</span>
+        <h2>The gift they'll <em>actually use.</em></h2>
+        <p>A gift card from {{price:gift_from}}, or a week of chef-made dinners at their door on {{delivery_day}}.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:gift}}Buy a gift card</a>
+          <a class="btn btn--outline-light btn--lg" href="{{link:menus/}}">See this week's menu</a>
+        </div>
+        <p class="small">Questions? Call <a href="tel:{{tel}}">{{phone}}</a> or email <a href="mailto:{{email}}">{{email}}</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>

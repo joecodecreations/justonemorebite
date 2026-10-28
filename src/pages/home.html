@@ -1,0 +1,191 @@
+<!--meta
+{
+  "title": "Just One More Bite | Chef-Made Meal Delivery in Raleigh, NC",
+  "og_title": "A steakhouse chef cooks your whole week · Just One More Bite",
+  "description": "A steakhouse-trained chef cooks your week: new Zone, Paleo, Low-Carb Dairy-Free and Family menus every week, delivered Tuesdays in Raleigh, Cary and RTP.",
+  "path": "",
+  "og": "og-home",
+  "nav": "",
+  "page_type": "WebPage"
+}
+-->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1><span class="eyebrow">Chef-made meal delivery in Raleigh, NC</span>A steakhouse chef cooks your <em>whole week.</em></h1>
+      <p class="lead">Chef Michael Saunders ran kitchens at Morton's, The Ore House and Oryx. Now he writes a brand-new menu every week, cooks it from scratch in Raleigh, and delivers it every {{delivery_day}} to your home, office or gym. You heat, plate and enjoy.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order this week</a>
+        <a class="btn btn--ghost btn--lg" href="{{link:menus/}}">See this week's menu</a>
+      </div>
+      <ul class="hero-points">
+        <li>{{icon:sparkle}}<span>A new menu every {{menu_posted}}. Never the same rotation.</span></li>
+        <li>{{icon:list}}<span>Zone, Paleo, Low-Carb Dairy-Free and Family dinners</span></li>
+        <li>{{icon:leaf}}<span>Made from scratch with USDA Choice meats and local produce when possible</span></li>
+      </ul>
+      <p class="hero-cutoff"><span class="dot" aria-hidden="true"></span><span>Order by <b>{{cutoff}}</b></span><span>Delivered <b>{{delivery_day}}</b></span></p>
+    </div>
+    <div class="hero-media">
+      <div class="hero-photo">{{img:lamb|(min-width: 980px) 48vw, 100vw||eager}}</div>
+      <div class="hero-photo-2">{{img:meals-rows|20vw}}</div>
+      <div class="stamp" aria-hidden="true"><div><span>Meals from</span><strong>{{per:zone_breakfast}}</strong></div></div>
+      <div class="float-card">{{icon:chef}}<p><b>Braised Pork Osso Buco</b>with spring vegetables and white wine risotto, on the latest menu</p></div>
+    </div>
+  </div>
+</section>
+
+{{creds}}
+{{marquee}}
+
+<section class="section" id="plans">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Four menus, one chef</span>
+      <h2>Pick the way you <em>want to eat.</em></h2>
+      <p>Every plan is cooked fresh each week by Chef Mike. Order one week or every week. There's no contract.</p>
+    </div>
+    {{plans}}
+    <p class="mt-2 muted center">Also from the JOMB kitchen: <a href="{{link:protein-by-the-pound/}}">cooked protein by the pound</a> · <a href="{{link:gift-cards/}}">gift cards</a> · <a href="{{link:pricing/}}">every price on one page</a></p>
+  </div>
+</section>
+
+<section class="section section--tomato section--tight" id="membership">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">New · JOMB Membership</span>
+      <h2>Never think about <em>dinner</em> again.</h2>
+      <p class="lead" style="color:#fff3ee">Pick a weekly plan for one, two or the whole family, from 2 to 7 days a week. Subscribers save up to 12%, lock in their price, and can skip or pause any week.</p>
+      <div class="btn-row"><a class="btn btn--light btn--lg" href="{{link:meal-plans/}}#builder">Build your plan</a><a class="btn btn--outline-light btn--lg" href="{{link:meal-plans/}}">See every plan</a></div>
+      <p class="mt-1">{{proposal}}</p>
+    </div>
+    <div class="reveal">{{membership_mini}}</div>
+  </div>
+</section>
+
+<section class="section section--dark" id="how-it-works">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps. <em>Zero dishes.</em></h2>
+      <p>No shopping, no prep, no cleanup, and no subscription to manage. Just a fridge full of real food every {{delivery_day}}.</p>
+    </div>
+    {{steps}}
+    <div class="split mt-4 reveal">
+      <div>
+        <h3>Delivered across the Raleigh area</h3>
+        <p class="muted">To your door, your office or your CrossFit gym. Not home? Leave a cooler with ice packs and we'll tuck your meals inside.</p>
+        {{towns_chips}}
+        <a class="text-link" href="{{link:delivery-area/}}">See the delivery area</a>
+      </div>
+      <div class="media-frame media-frame--wide">{{img:meals-tray|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">Packed and ready for Tuesday</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">On the menu</span>
+      <h2>Fresh from the <em>JOMB kitchen</em></h2>
+      <p>Real food, written fresh every week. Here's the latest family menu. The Zone, Paleo and Low-Carb Dairy-Free menus come from the same kitchen, tuned to each plan.</p>
+    </div>
+    <div class="reveal">{{menu:family}}</div>
+    <div class="btn-row mt-2"><a class="btn btn--ghost" href="{{link:menus/}}">See all four menus</a></div>
+  </div>
+</section>
+
+<section class="section" id="chef">
+  <div class="container split split--reverse">
+    <div class="reveal">
+      <span class="eyebrow">Meet your chef</span>
+      <h2>From Morton's to <em>your fridge.</em></h2>
+      <p class="lead">Chef Michael Saunders spent {{chef_years}} years in professional kitchens: Executive Sous Chef at Morton's The Steakhouse in Dallas, then Executive Chef at The Ore House in Steamboat Springs and at Oryx in Raleigh.</p>
+      <p>Then he asked a simple question: why should restaurant-quality food only happen at a restaurant? Just One More Bite is his answer. Gourmet, fresh, healthy meals your family enjoys at home, without the shopping, the prep or the cleanup.</p>
+      <div class="callout"><p><em class="serif-em">“Three of the greatest things in life are good food, good drinks and good company. Just One More Bite will provide the first. It's up to you to provide the rest.”</em><br><span class="muted small">— Chef Michael Saunders</span></p></div>
+      <a class="text-link" href="{{link:chef-michael-saunders/}}">Read Chef Mike's story</a>
+    </div>
+    <div class="media-frame media-frame--tall reveal">{{img:chef-label|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">Quality-checking a house vinaigrette</span></div>
+  </div>
+</section>
+
+<section class="section section--sand" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Real clients, real tables</span>
+      <h2>Raleigh has been <em>eating well</em> for years.</h2>
+    </div>
+    <div class="stat-row reveal">
+      <div class="stat"><b>5 yrs</b><span>fueling a competitive strongman and Morrisville CrossFit gym owner: Jonathan A.</span></div>
+      <div class="stat"><b>≈40 lb</b><span>lost by Ben over about six months, on a plan built around the foods he loves*</span></div>
+      <div class="stat"><b>93</b><span>years young, and eating weekly no-sugar, no-gluten meals from Chef Mike after a hospital stay</span></div>
+    </div>
+    {{quotes:jonathan|feature,anna,tara}}
+    <p class="note mt-2">*Individual results vary. JOMB meals support your goals; they aren't medical treatment.</p>
+    <a class="text-link mt-1" href="{{link:reviews/}}">Read every review</a>
+  </div>
+</section>
+
+<section class="section" id="compare">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why local wins</span>
+      <h2>Not a meal kit. <em>A chef.</em></h2>
+      <p>National services ship you a box. Just One More Bite is a Raleigh chef cooking for Raleigh tables.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="table table--compare">
+        <thead><tr><th></th><th>Just One More Bite</th><th>Typical national meal service</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Who cooks</strong></td><td>An executive chef, here in Raleigh</td><td>Large central kitchens</td></tr>
+          <tr><td><strong>The menu</strong></td><td>Brand-new every week</td><td>A rotating catalog</td></tr>
+          <tr><td><strong>How it arrives</strong></td><td>Delivered {{delivery_day}} to your home, office or gym</td><td>Shipped in a box by a carrier</td></tr>
+          <tr><td><strong>Ingredients</strong></td><td>From scratch, USDA Choice meats, local and fresh when possible</td><td>Varies by company</td></tr>
+          <tr><td><strong>Your effort</strong></td><td>Heat, plate, enjoy</td><td>Heat and eat, or prep and cook (meal kits)</td></tr>
+          <tr><td><strong>Questions</strong></td><td>Call or email Chef Mike's team directly</td><td>A customer-service queue</td></tr>
+          <tr><td><strong>Commitment</strong></td><td>Order any week. No contract.</td><td>Usually a subscription to manage</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="events">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Beyond the weekly box</span>
+      <h2>When it's a <em>big night.</em></h2>
+      <p>Birthdays, anniversaries, rehearsal dinners and holiday parties. Chef Mike is booking holiday dinners and events now.</p>
+    </div>
+    <div class="service-cards">
+      <a class="service-card reveal" href="{{link:private-chef-raleigh/}}">{{img:dinner-candles|(min-width: 760px) 33vw, 100vw}}<div><h3>Private chef dinners</h3><p>Plated, restaurant-style dinners in your home, customized to the occasion.</p><span class="text-link">Plan a dinner</span></div></a>
+      <a class="service-card reveal" href="{{link:catering-weddings/}}">{{img:catering-tuna|(min-width: 760px) 33vw, 100vw}}<div><h3>Catering &amp; weddings</h3><p>Buffets, plated dinners and passed hors d'oeuvres, built around what you love.</p><span class="text-link">Get a quote</span></div></a>
+      <a class="service-card reveal" href="{{link:gift-cards/}}">{{img:table-fall|(min-width: 760px) 33vw, 100vw}}<div><h3>Gift cards</h3><p>From {{price:gift_from}}, or send a week of dinners to someone who needs a break.</p><span class="text-link">Give a gift</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-label="Photos from the JOMB kitchen">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">From the kitchen</span><h2>Made by hand. <em>Every week.</em></h2></div>
+    <div class="gallery reveal">
+      <figure>{{img:salmon-plated|(min-width: 800px) 50vw, 50vw}}</figure>
+      <figure>{{img:tuna|(min-width: 800px) 25vw, 50vw}}</figure>
+      <figure>{{img:scallop|(min-width: 800px) 25vw, 50vw}}</figure>
+      <figure>{{img:soup|(min-width: 800px) 25vw, 50vw}}</figure>
+      <figure>{{img:dessert|(min-width: 800px) 25vw, 50vw}}</figure>
+      <figure>{{img:catering-platter|(min-width: 800px) 50vw, 50vw}}</figure>
+      <figure>{{img:produce|(min-width: 800px) 25vw, 50vw}}</figure>
+      <figure>{{img:meals-containers|(min-width: 800px) 25vw, 50vw}}</figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Good questions</span><h2>Before you <em>order</em></h2></div>
+    {{faq:ordering}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See all FAQs</a></p>
+  </div>
+</section>
+
+{{cta_band:meals-rows}}

@@ -1,0 +1,109 @@
+{
+  "_note": "FAQ groups for the service pages (private chef, catering, gift cards, contact, reviews). Owner: services agent. Facts only from site.json, testimonials.json and the brand guide. No invented prices, minimums, staffing, rentals or lead times.",
+  "private": [
+    {
+      "q": "What is a private chef dinner with Just One More Bite?",
+      "a": "Executive Chef Michael Saunders cooks a plated, restaurant-style dinner in your home for your occasion: a birthday, an anniversary, a holiday dinner or a milestone party. The menu is written for your guests, the season and any dietary needs. Before Just One More Bite, Chef Mike was Executive Sous Chef at Morton's The Steakhouse in Dallas and Executive Chef at The Ore House and at Oryx in Raleigh."
+    },
+    {
+      "q": "How much does a private chef dinner cost in Raleigh?",
+      "a": "Every dinner is quoted for the occasion, and there are no fixed packages. Tell us your budget along with your date, guest count and the kind of meal you have in mind, and Chef Mike will design the menu around it. Email <a href=\"mailto:{{email}}\">{{email}}</a> or call {{phone_link}}."
+    },
+    {
+      "q": "Where does Chef Mike cook private dinners?",
+      "a": "In your home, in Raleigh and the surrounding Triangle. Tell us your town when you inquire. If you're farther out, ask: we'll tell you honestly whether we can make it work."
+    },
+    {
+      "q": "Can the menu work around allergies and dietary needs?",
+      "a": "Yes. List every allergy and dietary need when you inquire, and the menu is written around them. Chef Mike cooks gluten-free, dairy-free, Paleo and low-carb food every week for JOMB's meal plans, so a restricted guest still gets a real plate."
+    },
+    {
+      "q": "How many guests can a private dinner serve?",
+      "a": "Private dinners are plated, restaurant-style, so they suit a dinner-party table. For a bigger crowd, Chef Mike also caters with buffet, plated and cocktail hors d'oeuvres service; see <a href=\"{{link:catering-weddings/}}\">catering &amp; weddings</a>. Tell us your guest count and he'll recommend the right format."
+    },
+    {
+      "q": "Can Chef Mike cook our Thanksgiving or holiday dinner?",
+      "a": "Holiday dinners are one of the occasions Chef Mike cooks for, and he's booking holiday dinners and events now. Thanksgiving is Thursday, November 26, 2026. Send your date, guest count and town as soon as you know them."
+    }
+  ],
+  "catering": [
+    {
+      "q": "What kind of catering does Just One More Bite offer?",
+      "a": "Buffet, plated dinners and cocktail hors d'oeuvres, all cooked from scratch by Executive Chef Michael Saunders and customized to your event. Every menu is built around what you and your guests love."
+    },
+    {
+      "q": "Do you cater weddings in Raleigh?",
+      "a": "Yes: weddings and receptions, rehearsal dinners, showers and engagement parties in Raleigh and the Triangle. Send your date, venue and guest count to <a href=\"mailto:{{email}}\">{{email}}</a> to start a custom menu."
+    },
+    {
+      "q": "How much does catering cost?",
+      "a": "Every event is quoted individually, because the menu is written for it. Tell us your guest count, the style of service you want and your budget, and Chef Mike will design a menu that fits."
+    },
+    {
+      "q": "Do you cater office lunches and corporate events in RTP?",
+      "a": "Yes. Just One More Bite caters office lunches, client events and team celebrations in Raleigh, Cary, Morrisville and Research Triangle Park. For everyday meals, offices can also get JOMB's weekly menus delivered every {{delivery_day}}; see <a href=\"{{link:how-it-works/}}\">how it works</a>."
+    },
+    {
+      "q": "Are you booking holiday parties?",
+      "a": "Yes. Chef Mike is booking holiday parties and holiday dinners now, from office parties to family gatherings. Thanksgiving is Thursday, November 26, 2026. Email your date and guest count as early as you can."
+    },
+    {
+      "q": "What's included in a catering quote?",
+      "a": "It depends on the event, so ask for exactly what you need. Tell us about service, setup, rentals or anything else when you inquire, and your quote will spell out what Chef Mike provides."
+    }
+  ],
+  "gifts": [
+    {
+      "q": "How much are Just One More Bite gift cards?",
+      "a": "Gift cards start at {{price:gift_from}} and are sold in the <a href=\"{{store}}\">JOMB Store</a>, where every weekly menu is ordered."
+    },
+    {
+      "q": "Can I send a week of meals to someone else?",
+      "a": "Yes. Order their meals in the JOMB Store and enter the recipient's name and delivery address at checkout, or email <a href=\"mailto:{{email}}\">{{email}}</a> with their details. Meals arrive {{delivery_day}}, {{delivery_window}}."
+    },
+    {
+      "q": "Where can gift meals be delivered?",
+      "a": "Across the Raleigh area: {{towns_sentence}}. Somewhere else in the Triangle? Ask before you order and we'll tell you if we can reach them."
+    },
+    {
+      "q": "What if they aren't home on delivery day?",
+      "a": "Ask them to leave a cooler outside with ice packs, and our driver will put the meals inside. A 48-quart cooler holds most orders."
+    },
+    {
+      "q": "What's a good gift for new parents?",
+      "a": "Family dinners. Each one feeds three adults, or two adults and two small children, at {{price:family_meal}} a dinner with a two-dinner minimum. They heat it, plate it and eat a real dinner without cooking."
+    }
+  ],
+  "contact": [
+    {
+      "q": "What's the fastest way to order?",
+      "a": "Online, in the <a href=\"{{store}}\">JOMB Store</a>. The new menu posts every {{menu_posted}}; order by {{cutoff}} for delivery on {{delivery_day}}, {{delivery_window}}."
+    },
+    {
+      "q": "How do I ask about catering or a private dinner?",
+      "a": "Email <a href=\"mailto:{{email}}\">{{email}}</a> or call {{phone_link}} with your date, guest count, location, occasion, dietary needs and budget. Chef Mike will come back with ideas for a custom menu."
+    },
+    {
+      "q": "Can I pick up my order in person?",
+      "a": "Meals are delivered to your home, your office or your CrossFit gym every {{delivery_day}}, {{delivery_window}}. Just One More Bite doesn't have a walk-in storefront."
+    },
+    {
+      "q": "Do you deliver to my town?",
+      "a": "We deliver to {{towns_sentence}}. Somewhere else in the Triangle? Email your town and ZIP code and we'll tell you whether we can reach you."
+    }
+  ],
+  "reviews": [
+    {
+      "q": "Are these Just One More Bite reviews from real clients?",
+      "a": "Yes. Every testimonial on this page was written by a real client or colleague of Chef Michael Saunders and first appeared on JOMB's original website. We show first names and last initials."
+    },
+    {
+      "q": "Where can I leave a review for Just One More Bite?",
+      "a": "On Google (search \"Just One More Bite Raleigh NC\" and choose <i>Write a review</i>) or on JOMB's <a href=\"{{facebook}}\">Facebook page</a>. We ask every client the same way and never offer anything in return for a review."
+    },
+    {
+      "q": "Will I get the same results as the clients on this page?",
+      "a": "Individual results vary. JOMB meals are chef-made food that supports your goals; they aren't medical treatment. Talk with your doctor about any medical diet."
+    }
+  ]
+}

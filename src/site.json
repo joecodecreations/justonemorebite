@@ -1,0 +1,313 @@
+{
+  "_note": "ONE place for every business fact. Change a value here, run `python3 build.py`, and every page, the structured data, llms.txt and the sitemap update together. Values marked CONFIRM still need Mike's OK.",
+  "preview": true,
+  "preview_note": "Private preview for Chef Michael Saunders' review. Not launched yet. Ordering buttons go to the current JOMB Store.",
+  "base_url": "https://joecodecreations.github.io/justonemorebite",
+  "production_url": "https://www.justonemorebitenc.com",
+  "name": "Just One More Bite",
+  "short_name": "JOMB",
+  "legal_name": "Just One More Bite, LLC",
+  "tagline": "Chef-made meals, delivered every Tuesday in the Triangle",
+  "entity": "Just One More Bite (JOMB) is a chef-made weekly meal delivery service in Raleigh, North Carolina, run by Executive Chef Michael Saunders. Every week JOMB writes a new Zone, Paleo, Low-Carb Dairy-Free and Family menu, cooks it from scratch in Raleigh, and delivers it on Tuesday to homes, offices and CrossFit gyms. JOMB also offers protein by the pound, private chef dinners, catering and weddings.",
+  "phone_display": "(919) 443-5408",
+  "phone_tel": "+19194435408",
+  "phone_confirm": "CONFIRM: site footer shows 443-5408; tap-to-call links dial 756-5662; /contact shows 830-2568",
+  "email": "jomborders@gmail.com",
+  "menu_posted": "Wednesday evening",
+  "cutoff_day": "Saturday",
+  "cutoff_time": "8 PM",
+  "cutoff_confirm": "CONFIRM: current site lists Fri 7 PM, Sat 5 PM, Sat 8 PM, Sun 10 AM and Sun 6 PM",
+  "delivery_day": "Tuesday",
+  "delivery_window": "10 AM – 5 PM",
+  "towns": [
+    "Raleigh",
+    "Cary",
+    "Morrisville",
+    "Research Triangle Park (RTP)",
+    "Knightdale"
+  ],
+  "towns_confirm": "CONFIRM: from the NoStove listing + 'RTP clients' on the current site",
+  "store_url": "https://www.justonemorebitenc.com/jomb-store",
+  "instagram": "https://www.instagram.com/justonemorebitenc/",
+  "facebook": "https://www.facebook.com/justonemorebitenc/",
+  "chef": {
+    "name": "Michael Saunders",
+    "display": "Chef Michael Saunders",
+    "nick": "Chef Mike",
+    "title": "Executive Chef & Owner",
+    "years": "20+",
+    "years_confirm": "CONFIRM: bio (last edited 2019) says 17 years",
+    "resume": [
+      {
+        "role": "Executive Sous Chef",
+        "place": "Morton's The Steakhouse",
+        "city": "Dallas, TX"
+      },
+      {
+        "role": "Executive Chef",
+        "place": "The Ore House",
+        "city": "Steamboat Springs, CO"
+      },
+      {
+        "role": "Executive Chef",
+        "place": "Oryx",
+        "city": "Raleigh, NC"
+      }
+    ]
+  },
+  "prices": {
+    "zone_all": {
+      "label": "Zone · all meals",
+      "price": 253,
+      "meals": 18,
+      "per": "14.05",
+      "desc": "6 breakfasts, 6 lunches and 6 dinners for one"
+    },
+    "zone_double": {
+      "label": "Zone · all meals, double",
+      "price": 486,
+      "meals": 36,
+      "per": "13.50",
+      "desc": "6 breakfasts, 6 lunches and 6 dinners for two"
+    },
+    "zone_breakfast": {
+      "label": "Zone · breakfasts",
+      "price": 73.5,
+      "meals": 6,
+      "per": "12.25",
+      "desc": "6 breakfasts for one"
+    },
+    "zone_lunch": {
+      "label": "Zone · lunches",
+      "price": 81,
+      "meals": 6,
+      "per": "13.50",
+      "desc": "6 lunches for one"
+    },
+    "zone_dinner": {
+      "label": "Zone · dinners",
+      "price": 108,
+      "meals": 6,
+      "per": "18.00",
+      "desc": "6 dinners for one"
+    },
+    "lcdf_lunch": {
+      "label": "Low-Carb Dairy-Free · lunches",
+      "price": 75,
+      "meals": 6,
+      "per": "12.50",
+      "desc": "6 lunches for one"
+    },
+    "lcdf_dinner": {
+      "label": "Low-Carb Dairy-Free · dinners",
+      "price": 108,
+      "meals": 6,
+      "per": "18.00",
+      "desc": "6 dinners for one"
+    },
+    "paleo_lunch": {
+      "label": "Paleo · lunches",
+      "price": 87,
+      "meals": 6,
+      "per": "14.50",
+      "desc": "6 lunches for one"
+    },
+    "paleo_dinner": {
+      "label": "Paleo · dinners",
+      "price": 117,
+      "meals": 6,
+      "per": "19.50",
+      "desc": "6 dinners for one"
+    },
+    "family_meal": {
+      "label": "Family dinner",
+      "price": 75,
+      "meals": 1,
+      "per": "25.00",
+      "desc": "One family dinner feeds 3 adults, or 2 adults and 2 small kids (2-meal minimum)"
+    },
+    "family_soup": {
+      "label": "Soup of the week",
+      "price": 20
+    },
+    "family_salad": {
+      "label": "Entrée salad",
+      "price": 35
+    },
+    "fruit": {
+      "label": "Fresh-cut fruit, 1-gallon bag",
+      "price": 35
+    },
+    "protein_chicken": {
+      "label": "Chicken, per lb (cooked)",
+      "price": 10.99
+    },
+    "protein_beef": {
+      "label": "CAB beef, per lb (cooked)",
+      "price": 13.99
+    },
+    "protein_pork": {
+      "label": "Pork, per lb (cooked)",
+      "price": 14.99
+    },
+    "protein_seafood": {
+      "label": "Seafood, per lb (cooked)",
+      "price": 18.99
+    },
+    "gift_from": {
+      "label": "Gift cards from",
+      "price": 50
+    }
+  },
+  "prices_confirm": "Prices from the JOMB Store on 2026-10-28, before tax. Zone double shows $13.50/meal ($486 / 36); the old site says $14.50.",
+  "compliance": {
+    "enabled": false,
+    "line": "ServSafe-certified chef · Licensed & inspected kitchen",
+    "_note": "Turn on (true) at launch, once the permit and ServSafe Manager certification are in hand. Adds the trust line to the footer and the 'Who cooks' FAQ."
+  },
+  "membership": {
+    "_note": "PROPOSED for Mike's review: weekly subscription plans built from his real a-la-carte prices. Tune discounts here; every price on the site recalculates.",
+    "name": "JOMB Membership",
+    "status": "proposed",
+    "days": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "discount": {
+      "2": 0.05,
+      "3": 0.05,
+      "4": 0.08,
+      "5": 0.1,
+      "7": 0.12
+    },
+    "deliveries": {
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "7": 2
+    },
+    "delivery_note": "Delivered Tuesday; 5- and 7-day plans get a second delivery Friday so every meal is fresh",
+    "weeks_per_month": 4.33,
+    "households": [
+      {
+        "key": "one",
+        "label": "Just me",
+        "people": 1
+      },
+      {
+        "key": "two",
+        "label": "Two of us",
+        "people": 2
+      },
+      {
+        "key": "family",
+        "label": "Family of 3–4",
+        "family_dinners": 1,
+        "note": "One family dinner feeds 3 adults, or 2 adults + 2 small kids"
+      },
+      {
+        "key": "bigfamily",
+        "label": "Big family (5–6)",
+        "family_dinners": 2,
+        "note": "Two family dinners a night feed up to 6"
+      }
+    ],
+    "menus": {
+      "zone": {
+        "label": "Zone",
+        "breakfast": 12.25,
+        "lunch": 13.5,
+        "dinner": 18.0
+      },
+      "paleo": {
+        "label": "Paleo",
+        "lunch": 14.5,
+        "dinner": 19.5
+      },
+      "lcdf": {
+        "label": "Low-Carb Dairy-Free",
+        "lunch": 12.5,
+        "dinner": 18.0
+      }
+    },
+    "coverage": [
+      {
+        "key": "dinner",
+        "label": "Dinner only",
+        "meals": [
+          "dinner"
+        ]
+      },
+      {
+        "key": "lunch_dinner",
+        "label": "Lunch + dinner",
+        "meals": [
+          "lunch",
+          "dinner"
+        ]
+      },
+      {
+        "key": "all",
+        "label": "Breakfast, lunch + dinner",
+        "meals": [
+          "breakfast",
+          "lunch",
+          "dinner"
+        ],
+        "menus": [
+          "zone"
+        ]
+      }
+    ],
+    "family_dinner": 75,
+    "perks": [
+      "Subscriber pricing, locked in while you stay subscribed",
+      "Skip or pause any week by Saturday 8 PM",
+      "Switch menus or plan size anytime",
+      "First pick of holiday dinners and catering dates",
+      "See next week's menu before everyone else"
+    ],
+    "featured": [
+      {
+        "name": "Family 3",
+        "tag": "Weeknight hero",
+        "household": "family",
+        "days": 3,
+        "coverage": "dinner",
+        "menu": "family",
+        "blurb": "Three chef-made family dinners a week. The busiest nights, handled."
+      },
+      {
+        "name": "Family 5",
+        "tag": "Most popular",
+        "household": "family",
+        "days": 5,
+        "coverage": "dinner",
+        "menu": "family",
+        "blurb": "Monday-to-Friday dinners for the whole table. Weekends are yours."
+      },
+      {
+        "name": "Dinners for Two",
+        "tag": "Date night, nightly",
+        "household": "two",
+        "days": 5,
+        "coverage": "dinner",
+        "menu": "lcdf",
+        "blurb": "Five lighter, low-carb dinners for two. Sit down together instead of cooking."
+      },
+      {
+        "name": "Zone Athlete 7",
+        "tag": "Full fuel",
+        "household": "one",
+        "days": 7,
+        "coverage": "all",
+        "menu": "zone",
+        "blurb": "Breakfast, lunch and dinner every day, built to 4-block macros."
+      }
+    ]
+  }
+}

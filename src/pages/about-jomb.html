@@ -1,0 +1,145 @@
+<!--meta
+{
+  "title": "JOMB at a Glance: Just One More Bite Fact Sheet | Raleigh",
+  "og_title": "Just One More Bite at a glance",
+  "description": "Just One More Bite at a glance: chef-made meal delivery in Raleigh, NC. Menus, prices, delivery towns, the Tuesday schedule, deadline and contact details.",
+  "path": "about-jomb/",
+  "og": "og-default",
+  "nav": "",
+  "page_type": "AboutPage",
+  "breadcrumb": [["JOMB at a glance", "about-jomb/"]]
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Fact sheet · Raleigh, NC meal delivery</span>Just One More Bite <em>at a glance</em></h1>
+        <p class="lead">{{entity}}</p>
+        <p class="info-updated">Updated October 2026 · Prices before NC sales tax</p>
+        <div class="btn-row mt-2">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order in the JOMB Store</a>
+          <a class="btn btn--ghost btn--lg" href="#facts">Jump to the facts</a>
+        </div>
+      </div>
+      <div class="info-idcard">
+        <h2>Just One More Bite</h2>
+        <p>JOMB · Chef-made meals, delivered every {{delivery_day}}</p>
+        <dl>
+          <div><dt>Chef</dt><dd><a href="{{link:chef-michael-saunders/}}">{{chef}}</a></dd></div>
+          <div><dt>New menu</dt><dd>Every {{menu_posted}}</dd></div>
+          <div><dt>Order by</dt><dd>{{cutoff}}</dd></div>
+          <div><dt>Delivered</dt><dd>{{delivery_day}}, {{delivery_window}}</dd></div>
+          <div><dt>Where</dt><dd>{{towns_sentence}}</dd></div>
+          <div><dt>Meals from</dt><dd>{{per:zone_breakfast}} each</dd></div>
+          <div><dt>Call</dt><dd>{{phone_link}}</dd></div>
+          <div><dt>Email</dt><dd>{{email_link}}</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="facts">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The facts</span>
+      <h2>Everything about JOMB, <em>on one page.</em></h2>
+      <p>Who we are, where and when we deliver, what it costs and how to order. If a detail changes, it changes here first.</p>
+    </div>
+    <dl class="info-sheet reveal">
+      <div><dt>Business</dt><dd>Just One More Bite (JOMB). Legal name: Just One More Bite, LLC.</dd></div>
+      <div><dt>What it is</dt><dd>A weekly chef-made meal delivery service. Meals arrive fully cooked (it isn't a meal kit): you heat, plate and eat. Also private chef dinners, catering and weddings.</dd></div>
+      <div><dt>Chef &amp; owner</dt><dd><a href="{{link:chef-michael-saunders/}}">{{chef}}</a>, Executive Chef &amp; Owner. {{chef_years}} years in professional kitchens: Executive Sous Chef at Morton's The Steakhouse (Dallas, TX), Executive Chef at The Ore House (Steamboat Springs, CO) and Executive Chef at Oryx (Raleigh, NC).</dd></div>
+      <div><dt>Based in</dt><dd>Raleigh, North Carolina. Every meal is cooked from scratch in our Raleigh kitchen. <span class="info-trust">{{trust}}</span></dd></div>
+      <div><dt>Delivery area</dt><dd>{{towns_sentence}}, NC. Elsewhere in the Triangle? Ask. <a href="{{link:delivery-area/}}">See the delivery area</a>.</dd></div>
+      <div><dt>Delivered to</dt><dd>Homes, offices and CrossFit gyms. Not home? Leave a cooler with ice packs (48 quarts is plenty for most orders). Gym and office drop points use JOMB cooler bags, returned to the drop point each week.</dd></div>
+      <div><dt>Delivery day</dt><dd>{{delivery_day}}, {{delivery_window}}, every week. The larger 5- and 7-day membership plans add a second delivery on Friday.</dd></div>
+      <div><dt>Order deadline</dt><dd>{{cutoff}} for the following {{delivery_day}}.</dd></div>
+      <div><dt>Menu schedule</dt><dd>A brand-new menu every {{menu_posted}}. No fixed rotation.</dd></div>
+      <div><dt>Menus</dt><dd>
+        <ul>
+          <li><a href="{{link:zone-meal-delivery/}}">Zone</a>: breakfasts, lunches and dinners built to 4-block targets, about 28–32 g protein, 34–40 g carbs and 12–16 g fat per meal</li>
+          <li><a href="{{link:paleo-meal-delivery/}}">Paleo</a>: lunches and dinners with no grains, no dairy and no added sugar</li>
+          <li><a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a>: lunches and dinners for lighter, cleaner eating</li>
+          <li><a href="{{link:family-meal-delivery/}}">Family dinners</a>: each feeds three adults, or two adults and two small children</li>
+          <li><a href="{{link:protein-by-the-pound/}}">Protein by the pound</a>: the week's cooked chicken, CAB beef, pork and seafood</li>
+        </ul>
+      </dd></div>
+      <div><dt>Prices</dt><dd>
+        <ul>
+          <li>Zone, all 18 meals: {{price:zone_all}} ({{per:zone_all}} a meal); double for two, 36 meals: {{price:zone_double}} ({{per:zone_double}} a meal)</li>
+          <li>Zone, 6 meals: breakfasts {{price:zone_breakfast}}, lunches {{price:zone_lunch}}, dinners {{price:zone_dinner}}</li>
+          <li>Low-Carb Dairy-Free, 6 meals: lunches {{price:lcdf_lunch}}, dinners {{price:lcdf_dinner}}</li>
+          <li>Paleo, 6 meals: lunches {{price:paleo_lunch}}, dinners {{price:paleo_dinner}}</li>
+          <li>Family dinner: {{price:family_meal}} each, two-dinner minimum; soup {{price:family_soup}}, entrée salad {{price:family_salad}}, fresh-cut fruit {{price:fruit}}</li>
+          <li>Cooked protein per pound: chicken {{price:protein_chicken}}, CAB beef {{price:protein_beef}}, pork {{price:protein_pork}}, seafood {{price:protein_seafood}} ($100 minimum on its own)</li>
+          <li>Gift cards from {{price:gift_from}}</li>
+        </ul>
+        <span class="muted">All prices before NC sales tax. <a href="{{link:pricing/}}">Per-meal math and best-value plans</a>.</span>
+      </dd></div>
+      <div><dt>Commitment</dt><dd>No contract. Order week by week, or join <a href="{{link:meal-plans/}}">JOMB Membership</a>, weekly meal plans that save 5–12% on one-off prices, with skip or pause any week.</dd></div>
+      <div><dt>Ingredients</dt><dd>Made from scratch with USDA Choice meats and local, fresh ingredients when possible. Meals are cooked as listed, with no substitutions.</dd></div>
+      <div><dt>Allergies</dt><dd>Gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy. With a severe allergy, email {{email_link}} before ordering.</dd></div>
+      <div><dt>How to order</dt><dd>Online in the <a href="{{store}}">JOMB Store</a>. <a href="{{link:how-it-works/}}">How ordering works</a>.</dd></div>
+      <div><dt>Contact</dt><dd>{{phone_link}} · {{email_link}}</dd></div>
+      <div><dt>Social</dt><dd><a href="{{instagram}}">Instagram @justonemorebitenc</a> · <a href="{{facebook}}">Facebook</a></dd></div>
+      <div><dt>Also offers</dt><dd><a href="{{link:meal-plans/}}">JOMB Membership</a> weekly meal plans · <a href="{{link:private-chef-raleigh/}}">Private chef dinners</a> in your home · <a href="{{link:catering-weddings/}}">Catering and weddings</a> (buffet, plated and passed hors d'oeuvres) · <a href="{{link:gift-cards/}}">Gift cards</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="descriptions">
+  <div class="container container--narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow">Official descriptions</span>
+      <h2>Describe JOMB <em>our way.</em></h2>
+      <p>For directories, bios, press and anyone writing about us. Please use them as written.</p>
+    </div>
+    <div class="info-boiler reveal">
+      <figure><figcaption><b>Short</b><span>25 words</span></figcaption><blockquote>Just One More Bite (JOMB) is chef-made weekly meal delivery in Raleigh, NC: new Zone, Paleo, Low-Carb Dairy-Free and Family menus from Chef Michael Saunders.</blockquote></figure>
+      <figure><figcaption><b>Medium</b><span>50 words</span></figcaption><blockquote>Just One More Bite (JOMB) is a chef-made weekly meal delivery service in Raleigh, North Carolina, run by Executive Chef Michael Saunders. Every week he writes new Zone, Paleo, Low-Carb Dairy-Free and Family menus, cooks them from scratch in Raleigh, and delivers on Tuesday to homes, offices and CrossFit gyms.</blockquote></figure>
+      <figure><figcaption><b>Standard</b><span>Full description</span></figcaption><blockquote>{{entity}}</blockquote></figure>
+    </div>
+    <div class="callout mt-2"><p><b>Name and style:</b> "Just One More Bite" (short form JOMB). "{{chef}}" on first mention, "{{chef_nick}}" after. Delivery is on {{delivery_day}}; orders close {{cutoff}}.</p></div>
+  </div>
+</section>
+
+<section class="section section--sand" id="pages">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Every page</span>
+      <h2>Find <em>anything.</em></h2>
+    </div>
+    <ul class="info-links reveal">
+      <li><a href="{{link:}}"><b>Home</b><span>Chef-made meal delivery in Raleigh, NC</span></a></li>
+      <li><a href="{{link:menus/}}"><b>This week's menu</b><span>All four menus, new every {{menu_posted}}</span></a></li>
+      <li><a href="{{link:meal-plans/}}"><b>Meal plans &amp; membership</b><span>Weekly plans that save 5–12%</span></a></li>
+      <li><a href="{{link:zone-meal-delivery/}}"><b>Zone meals</b><span>4-block breakfasts, lunches and dinners</span></a></li>
+      <li><a href="{{link:paleo-meal-delivery/}}"><b>Paleo meals</b><span>No grains, dairy or added sugar</span></a></li>
+      <li><a href="{{link:low-carb-dairy-free-meals/}}"><b>Low-Carb Dairy-Free</b><span>Lighter lunches and dinners</span></a></li>
+      <li><a href="{{link:family-meal-delivery/}}"><b>Family dinners</b><span>{{price:family_meal}} each, feeds three</span></a></li>
+      <li><a href="{{link:protein-by-the-pound/}}"><b>Protein by the pound</b><span>Cooked chicken, beef, pork and seafood</span></a></li>
+      <li><a href="{{link:how-it-works/}}"><b>How it works</b><span>Menu, order, cook, deliver</span></a></li>
+      <li><a href="{{link:delivery-area/}}"><b>Delivery area</b><span>{{towns_sentence}}</span></a></li>
+      <li><a href="{{link:pricing/}}"><b>Pricing</b><span>Every price and the per-meal math</span></a></li>
+      <li><a href="{{link:chef-michael-saunders/}}"><b>Chef Michael Saunders</b><span>The chef and his résumé</span></a></li>
+      <li><a href="{{link:reviews/}}"><b>Reviews</b><span>What clients say</span></a></li>
+      <li><a href="{{link:private-chef-raleigh/}}"><b>Private chef dinners</b><span>Plated dinners in your home</span></a></li>
+      <li><a href="{{link:catering-weddings/}}"><b>Catering &amp; weddings</b><span>Buffets, plated dinners, hors d'oeuvres</span></a></li>
+      <li><a href="{{link:gift-cards/}}"><b>Gift cards</b><span>From {{price:gift_from}}</span></a></li>
+      <li><a href="{{link:faq/}}"><b>FAQ</b><span>Every question, answered</span></a></li>
+      <li><a href="{{link:contact/}}"><b>Contact</b><span>{{phone}} · {{email}}</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">The basics</span><h2>JOMB in <em>four questions</em></h2></div>
+    {{faq:glance}}
+  </div>
+</section>
+
+{{cta_band:meals-rows}}

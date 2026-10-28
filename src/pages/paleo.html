@@ -1,0 +1,173 @@
+<!--meta
+{
+  "title": "Paleo Meal Delivery in Raleigh, NC | Just One More Bite",
+  "og_title": "Paleo meals with real flavor · Just One More Bite",
+  "description": "Chef-made Paleo lunches and dinners with no grains, dairy or added sugar, delivered Tuesdays in Raleigh, Cary and RTP. 6 lunches $87, 6 dinners $117.",
+  "path": "paleo-meal-delivery/",
+  "og": "og-paleo",
+  "nav": "menus",
+  "page_type": "WebPage",
+  "breadcrumb": [["Menus", "menus/"], ["Paleo", "paleo-meal-delivery/"]],
+  "service": {"name": "Paleo meal delivery", "description": "Chef-made Paleo lunches and dinners built on meat, vegetables, fruit, nuts and seeds, with no grains, no dairy and no added sugar, delivered every Tuesday in the Raleigh area. 6 lunches and/or 6 dinners for one.", "type": "Meal delivery", "offers": ["paleo_lunch", "paleo_dinner"]}
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Paleo meal delivery · Raleigh, NC</span>Meat, vegetables, <em>real flavor.</em></h1>
+        <p class="lead">Just One More Bite's Paleo plan is 6 chef-made lunches and/or 6 dinners a week, built on meat, vegetables, fruit, nuts and seeds, with no grains, no dairy and no added sugar. Lunches are {{per:paleo_lunch}} and dinners {{per:paleo_dinner}}. Chef Michael Saunders writes a new Paleo menu every {{menu_posted}}; order by {{cutoff}} and it's delivered {{delivery_day}} in {{towns_sentence}}.</p>
+        <div class="price-chips">
+          <div class="price-chip"><b>{{per:paleo_lunch}}</b><span>per lunch · 6 for {{price:paleo_lunch}}</span></div>
+          <div class="price-chip"><b>{{per:paleo_dinner}}</b><span>per dinner · 6 for {{price:paleo_dinner}}</span></div>
+          <div class="price-chip"><b>Zero</b><span>grains, dairy, added sugar</span></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order Paleo meals</a>
+          <a class="btn btn--ghost btn--lg" href="#menu">This week's Paleo menu</a>
+        </div>
+        <a class="menus-sub" href="{{link:meal-plans/}}"><span class="menus-sub-icon">{{icon:calendar}}</span><span><b>Want this every week?</b> Subscribers save up to 12% and can skip any week.</span><span class="menus-sub-go">Meal plans</span></a>
+        <p class="menus-lead-note">New to Just One More Bite? Here's <a href="{{link:how-it-works/}}">how ordering and delivery work</a>.</p>
+      </div>
+      <div class="menus-hero-collage">
+        <div class="media-frame">{{img:paleo-plate|(min-width: 960px) 28vw, 58vw||eager}}</div>
+        <div class="media-frame">{{img:seared-tuna-slaw|(min-width: 960px) 20vw, 40vw}}</div>
+        <div class="media-frame">{{img:produce|(min-width: 960px) 20vw, 40vw}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="rules">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Paleo rules</span>
+      <h2>What's out. <em>What's on the plate.</em></h2>
+      <p>Paleo takes its cue from the Paleolithic era: foods people could hunt, fish or gather. Chef Mike keeps the rules simple and makes them taste like a restaurant.</p>
+    </div>
+    <div class="menus-rules reveal" role="list">
+      <div class="menus-rule" role="listitem"><b>No</b><span>Grains</span></div>
+      <div class="menus-rule" role="listitem"><b>No</b><span>Dairy</span></div>
+      <div class="menus-rule" role="listitem"><b>No</b><span>Added sugar</span></div>
+    </div>
+    <div class="menus-yes reveal">
+      <b>On the plate:</b>
+      <ul>
+        <li>Meat</li><li>Vegetables</li><li>Fruit</li><li>Nuts</li><li>Seeds</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper menus-anchor" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">This week's Paleo menu</span>
+      <h2>Six lunches. Six dinners. <em>All new.</em></h2>
+      <p>Lunches and dinners come two of each of three dishes. A brand-new Paleo menu posts every {{menu_posted}}, and every meal is cooked exactly as listed.</p>
+    </div>
+    <div class="reveal">{{menu:paleo}}</div>
+    <p class="mt-2 muted">Comparing plans? See <a href="{{link:menus/}}">all of this week's menus on one page</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="who">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Who orders Paleo</span>
+      <h2>You already eat Paleo. <em>Now stop cooking it.</em></h2>
+      <p class="lead">Grain-free, dairy-free cooking takes time: more shopping, more chopping, more pans. The Paleo plan hands that job to a steakhouse-trained chef.</p>
+      <ul class="checks">
+        <li>You eat grain-free and dairy-free and you're tired of doing all the cooking</li>
+        <li>You train hard and want real protein at lunch and at dinner</li>
+        <li>Your workday lunch is handled: six of them, delivered {{delivery_day}} to your home or office</li>
+        <li>You want chef-level flavor, not plain chicken and steamed broccoli</li>
+      </ul>
+      <p><a class="text-link" href="{{link:zone-meal-delivery/}}">Prefer counted macros? See the Zone plan</a></p>
+    </div>
+    <div class="menus-photo-pair reveal">
+      <div class="media-frame">{{img:steaks-grill|(min-width: 900px) 22vw, 50vw}}</div>
+      <div class="media-frame">{{img:salmon-plated|(min-width: 900px) 22vw, 50vw}}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Paleo prices</span>
+      <h2>Order lunches, dinners <em>or both.</em></h2>
+      <p>Six days of each, for one person. Prices are before NC sales tax, and there's no contract.</p>
+    </div>
+    <div class="grid grid--2">
+      <article class="menus-option menus-option--feature reveal">
+        <div><span class="menus-option-tag">Lunches</span><h3>6 Paleo lunches</h3></div>
+        <p>Two each of three dishes, for one</p>
+        <div class="menus-option-price"><b>{{price:paleo_lunch}}</b><span>{{per:paleo_lunch}} a lunch</span></div>
+      </article>
+      <article class="menus-option menus-option--feature menus-option--alt reveal">
+        <div><span class="menus-option-tag">Dinners</span><h3>6 Paleo dinners</h3></div>
+        <p>Two each of three dishes, for one</p>
+        <div class="menus-option-price"><b>{{price:paleo_dinner}}</b><span>{{per:paleo_dinner}} a dinner</span></div>
+      </article>
+    </div>
+    <h3 class="mt-4 reveal">Paleo, Low-Carb Dairy-Free or Zone?</h3>
+    <div class="table-wrap reveal">
+      <table class="table table--compare">
+        <thead><tr><th></th><th>Paleo</th><th>Low-Carb Dairy-Free</th><th>Zone</th></tr></thead>
+        <tbody>
+          <tr><td><strong>The idea</strong></td><td>No grains, no dairy, no added sugar</td><td>Lighter, cleaner eating with no dairy</td><td>Balanced 40/30/30, 4 blocks a meal</td></tr>
+          <tr><td><strong>Meals</strong></td><td>Lunches and dinners</td><td>Lunches and dinners</td><td>Breakfasts, lunches and dinners</td></tr>
+          <tr><td><strong>Lunch</strong></td><td>{{per:paleo_lunch}}</td><td>{{per:lcdf_lunch}}</td><td>{{per:zone_lunch}}</td></tr>
+          <tr><td><strong>Dinner</strong></td><td>{{per:paleo_dinner}}</td><td>{{per:lcdf_dinner}}</td><td>{{per:zone_dinner}}</td></tr>
+          <tr><td><strong>Macro targets</strong></td><td>Not published</td><td>Not published</td><td>28–32 g protein per meal</td></tr>
+          <tr><td><strong>Good fit for</strong></td><td>Grain-free, dairy-free eaters</td><td>A 3–4 week clean-eating run</td><td>Athletes, fat loss and lean muscle</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note mt-1">Prices per meal, before tax. <a href="{{link:pricing/}}">See every price</a> · <a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a> · <a href="{{link:zone-meal-delivery/}}">Zone</a></p>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="split split--wide-media menus-align-start">
+      <div class="media-frame media-frame--tall reveal">{{img:chef-label|(min-width: 900px) 50vw, 100vw}}<span class="media-caption">Chef Mike checking a batch of house vinaigrette</span></div>
+      <div>
+        <div class="section-head reveal">
+          <span class="eyebrow">What people say</span>
+          <h2>Fresh, fair, and <em>easy to use.</em></h2>
+        </div>
+        <div class="menus-quote-stack">{{quote:nan}}{{quote:steve}}</div>
+        <p class="mt-2"><a class="text-link" href="{{link:reviews/}}">Read every review</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Paleo questions</span><h2>Paleo meal delivery <em>FAQ</em></h2></div>
+    {{faq:paleo}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a></p>
+  </div>
+</section>
+
+<section class="section" id="related">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Other plans from Chef Mike</span>
+      <h2>Mix it up <em>next week.</em></h2>
+    </div>
+    <div class="menus-plans-3">{{plans:zone,lcdf,family}}</div>
+    <ul class="menus-pill-links reveal">
+      <li><a href="{{link:protein-by-the-pound/}}">{{icon:flame}}Extra protein by the pound</a></li>
+      <li><a href="{{link:delivery-area/}}">{{icon:pin}}Where we deliver</a></li>
+      <li><a href="{{link:chef-michael-saunders/}}">{{icon:chef}}Meet Chef Mike</a></li>
+      <li><a href="{{link:gift-cards/}}">{{icon:gift}}Give a week of meals</a></li>
+    </ul>
+  </div>
+</section>
+
+{{cta_band:produce}}

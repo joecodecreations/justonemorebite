@@ -1,0 +1,207 @@
+<!--meta
+{
+  "title": "Meal Prep Prices in Raleigh, NC | Just One More Bite",
+  "og_title": "What chef-made meals really cost · Just One More Bite",
+  "description": "Chef-made meal prep in Raleigh from $12.25 a meal: the Zone plan is $14.05 a meal and Family dinners are $75 (feed 3). Every price and the per-meal math.",
+  "path": "pricing/",
+  "og": "og-default",
+  "nav": "pricing",
+  "page_type": "WebPage",
+  "breadcrumb": [["Pricing", "pricing/"]],
+  "service": {"name": "Chef-made weekly meal delivery", "description": "Weekly chef-made Zone, Paleo, Low-Carb Dairy-Free and Family meals, cooked from scratch in Raleigh, NC and delivered on Tuesday. Prices before NC sales tax.", "type": "Meal delivery", "offers": ["zone_all", "zone_double", "zone_breakfast", "zone_lunch", "zone_dinner", "lcdf_lunch", "lcdf_dinner", "paleo_lunch", "paleo_dinner", "family_meal"]}
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Meal prep prices · Raleigh, NC</span>What chef-made meals <em>really cost.</em></h1>
+        <p class="lead">Just One More Bite meals cost {{per:zone_breakfast}} to {{per:paleo_dinner}} each, before tax. The full Zone plan is {{price:zone_all}} for 18 meals ({{per:zone_all}} a meal), or {{per:zone_double}} a meal for two, and a {{price:family_meal}} Family dinner feeds three adults. Everything is cooked from scratch by {{chef}} and delivered {{delivery_day}}. No contract.</p>
+        <div class="price-chips info-chips-tight">
+          <div class="price-chip"><b>{{per:zone_all}}</b><span>per meal · Zone full plan</span></div>
+          <div class="price-chip"><b>{{per:zone_double}}</b><span>per meal · Zone for two</span></div>
+          <div class="price-chip"><b>$25</b><span>per adult · Family dinner</span></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order this week</a>
+          <a class="btn btn--ghost btn--lg" href="#best-value">Find my best value</a>
+        </div>
+      </div>
+      <div class="info-hero-media">
+        <div class="media-frame media-frame--square">{{img:meals-tray|(min-width: 960px) 46vw, 100vw||eager}}<span class="media-caption">Chicken, brown rice and green beans, ready for Tuesday</span></div>
+        <div class="stamp" aria-hidden="true"><div><span>Meals from</span><strong>{{per:zone_breakfast}}</strong></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="price-list">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The full price list</span>
+      <h2>Every price, <em>one table.</em></h2>
+      <p>Straight from the JOMB Store. Meal plans are sold as sets of six, so "per meal" is simply the price divided by the meals you get.</p>
+    </div>
+    <div class="reveal info-pricetable">{{price_table}}</div>
+    <p class="mt-2">See what's cooking for each plan: <a href="{{link:zone-meal-delivery/}}">Zone</a> · <a href="{{link:paleo-meal-delivery/}}">Paleo</a> · <a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a> · <a href="{{link:family-meal-delivery/}}">Family dinners</a> · <a href="{{link:protein-by-the-pound/}}">Protein by the pound</a></p>
+  </div>
+</section>
+
+<section class="section" id="per-meal-math">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The per-meal math</span>
+      <h2>Show your <em>work.</em></h2>
+      <p>No teaser prices and no first-box discount that disappears. Here's how each plan breaks down, at the same one-off prices you pay at checkout.</p>
+    </div>
+    <div class="info-math reveal">
+      <div class="is-best">
+        <h3>Zone · full plan</h3>
+        <p class="info-eq"><span>{{price:zone_all}}</span><i>÷</i><span>18 meals</span><i>=</i><b>{{per:zone_all}}</b></p>
+        <p>Breakfast, lunch and dinner for six days: $42.17 a day for three chef-made meals.</p>
+      </div>
+      <div>
+        <h3>Zone · double, for two</h3>
+        <p class="info-eq"><span>{{price:zone_double}}</span><i>÷</i><span>36 meals</span><i>=</i><b>{{per:zone_double}}</b></p>
+        <p>The lowest per-meal price on the menu. Every meal for two people is $81 a day, or $40.50 each.</p>
+      </div>
+      <div>
+        <h3>Family dinner</h3>
+        <p class="info-eq"><span>{{price:family_meal}}</span><i>÷</i><span>3 adults</span><i>=</i><b>$25</b></p>
+        <p>Or $18.75 a person for two adults and two small kids. Two-dinner minimum.</p>
+      </div>
+      <div>
+        <h3>Low-Carb Dairy-Free · lunch + dinner</h3>
+        <p class="info-eq"><span>$183</span><i>÷</i><span>12 meals</span><i>=</i><b>$15.25</b></p>
+        <p>6 lunches ({{price:lcdf_lunch}}) plus 6 dinners ({{price:lcdf_dinner}}).</p>
+      </div>
+      <div>
+        <h3>Zone · lunch + dinner</h3>
+        <p class="info-eq"><span>$189</span><i>÷</i><span>12 meals</span><i>=</i><b>$15.75</b></p>
+        <p>6 lunches ({{price:zone_lunch}}) plus 6 dinners ({{price:zone_dinner}}), if breakfast is already handled.</p>
+      </div>
+      <div>
+        <h3>Paleo · lunch + dinner</h3>
+        <p class="info-eq"><span>$204</span><i>÷</i><span>12 meals</span><i>=</i><b>$17.00</b></p>
+        <p>6 lunches ({{price:paleo_lunch}}) plus 6 dinners ({{price:paleo_dinner}}). No grains, no dairy, no added sugar.</p>
+      </div>
+    </div>
+    <p class="note mt-2">All figures before NC sales tax. Per-meal prices are rounded to the cent.</p>
+  </div>
+</section>
+
+<section class="section section--sand" id="best-value">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Which plan is the best value for me?</span>
+      <h2>Match the plan <em>to your week.</em></h2>
+      <p>The right plan depends on how many meals you actually want handled. Find yourself below.</p>
+    </div>
+    <div class="info-cards info-cards--3">
+      <article class="info-card reveal">
+        <span class="info-card-kicker">Best value overall</span>
+        <h3>“I want every meal handled.”</h3>
+        <p>Get the <a href="{{link:zone-meal-delivery/}}">Zone full plan</a>. At {{per:zone_all}} a meal it beats buying dinners alone ({{per:zone_dinner}}). The three Zone sets bought separately cost $262.50; the full plan is {{price:zone_all}}, $9.50 less every week.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-kicker">Lowest price per meal</span>
+        <h3>“There are two of us.”</h3>
+        <p>Get the Zone double: {{price:zone_double}} for 36 meals, {{per:zone_double}} each, and $20 less than two single plans. Double portions of <a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a> are available too; just ask.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-kicker">Best for households</span>
+        <h3>“I'm feeding a family.”</h3>
+        <p><a href="{{link:family-meal-delivery/}}">Family dinners</a> are {{price:family_meal}} each and feed three adults ($25 each) or two adults and two small kids ($18.75 each). The two-dinner minimum is $150. Add a soup ({{price:family_soup}}) or entrée salad ({{price:family_salad}}) to stretch a night.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-kicker">Best for workdays</span>
+        <h3>“I just need lunches.”</h3>
+        <p>Six lunches cost {{price:lcdf_lunch}} on Low-Carb Dairy-Free ({{per:lcdf_lunch}} each), {{price:zone_lunch}} on Zone ({{per:zone_lunch}}) or {{price:paleo_lunch}} on <a href="{{link:paleo-meal-delivery/}}">Paleo</a> ({{per:paleo_lunch}}). We deliver to offices, too.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-kicker">Most chef time per plate</span>
+        <h3>“I only want dinners.”</h3>
+        <p>Six dinners are {{price:zone_dinner}} on Zone or Low-Carb Dairy-Free ({{per:zone_dinner}} each) and {{price:paleo_dinner}} on Paleo ({{per:paleo_dinner}}). Dinner is the priciest meal to buy on its own; add lunches and your average drops.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-kicker">Best for home cooks</span>
+        <h3>“I'll handle the sides.”</h3>
+        <p>Buy the week's cooked protein <a href="{{link:protein-by-the-pound/}}">by the pound</a>: chicken {{price:protein_chicken}}, CAB beef {{price:protein_beef}}, pork {{price:protein_pork}} or seafood {{price:protein_seafood}} per pound. Add it to any order, or order it alone with a $100 minimum.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="subscribe">
+  <div class="container split split--reverse">
+    <div class="reveal">
+      <span class="eyebrow">Subscribe &amp; save</span>
+      <h2>Eating with us every week? <em>Pay less for it.</em></h2>
+      {{proposal}}
+      <p class="lead">JOMB Membership turns your usual order into a weekly plan, and subscribers save 5–12% on one-off prices. The more days a week Chef Mike cooks for you, the bigger the saving.</p>
+      {{membership_perks}}
+      <div class="btn-row"><a class="btn btn--primary btn--lg" href="{{link:meal-plans/}}">Build my weekly plan</a><a class="btn btn--outline-light btn--lg" href="{{store}}">Order one week</a></div>
+    </div>
+    <div class="media-frame media-frame--tall reveal">{{img:bbq-chicken-broccoli|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">Barbecue chicken, broccoli and pasta, packed for the week</span></div>
+  </div>
+</section>
+
+<section class="section" id="vs-eating-out">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Compared with eating out</span>
+      <h2>The menu price is <em>never the whole price.</em></h2>
+      <p>We won't guess what your usual spots charge. You know that number better than we do. Here's what to put next to ours.</p>
+    </div>
+    <div class="info-vs reveal">
+      <div>
+        <h3>A week of eating out</h3>
+        <dl>
+          <div><dt>What you pay</dt><dd>The menu price, then tax, the tip, and either delivery-app fees or the drive</dd></div>
+          <div><dt>Who cooks</dt><dd>A different kitchen every night, one meal at a time</dd></div>
+          <div><dt>Your time</dt><dd>Deciding, ordering and waiting, meal after meal</dd></div>
+          <div><dt>Your goals</dt><dd>Portions built for one night out</dd></div>
+          <div><dt>Variety</dt><dd>The same few go-to places</dd></div>
+        </dl>
+      </div>
+      <div class="is-us">
+        <h3>A week of Just One More Bite</h3>
+        <dl>
+          <div><dt>What you pay</dt><dd>{{per:zone_breakfast}} to {{per:paleo_dinner}} a meal, before NC sales tax. You see the total at checkout.</dd></div>
+          <div><dt>Who cooks</dt><dd>{{chef}}, formerly of Morton's The Steakhouse, The Ore House and Oryx</dd></div>
+          <div><dt>Your time</dt><dd>One order a week, by {{cutoff}}</dd></div>
+          <div><dt>Your goals</dt><dd>Portioned meals, with Zone meals built to about 28–32 g protein, 34–40 g carbs and 12–16 g fat</dd></div>
+          <div><dt>Variety</dt><dd>A brand-new menu every week</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper section--tight" id="good-to-know">
+  <div class="container">
+    <div class="info-cards info-cards--3">
+      <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:gift}}</span><h3>Gift cards</h3><p>From {{price:gift_from}} in the JOMB Store, or send a week of meals straight to someone's door.</p><a class="text-link" href="{{link:gift-cards/}}">Give a gift</a></div>
+      <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:list}}</span><h3>Sales tax</h3><p>Every price on this site is before North Carolina sales tax, which is added at checkout. You see your full total before you pay.</p></div>
+      <div class="info-card reveal"><span class="info-card-icon info-card-icon--tomato">{{icon:check}}</span><h3>Minimums</h3><p>Plans come in sets of six meals. Family dinners have a two-dinner minimum, and protein by the pound has a $100 minimum on its own.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand section--tight" id="reviews">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Worth it?</span><h2>“Exceptional, fresh, <em>fairly priced.</em>”</h2></div>
+    {{quotes:nan,tara}}
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Price questions</span><h2>What it costs, <em>answered</em></h2></div>
+    {{faq:pricing,plans}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a> · <a class="text-link" href="{{link:how-it-works/}}">How ordering works</a></p>
+  </div>
+</section>
+
+{{cta_band:family-plate}}

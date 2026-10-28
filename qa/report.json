@@ -1,0 +1,491 @@
+{
+ "generated": "2026-10-28T16:07:45",
+ "result": "PASS",
+ "fails": 0,
+ "warnings": 2,
+ "site_score": 100,
+ "pages": {
+  "home": {
+   "score": 100,
+   "status": {
+    "seo": "PASS",
+    "schema": "PASS",
+    "facts": "PASS",
+    "responsive": null,
+    "a11y": null,
+    "perf": "PASS"
+   },
+   "stats": {
+    "title": "Just One More Bite | Chef-Made Meal Delivery in Raleigh, NC",
+    "title_len": 59,
+    "description_len": 153,
+    "h1": [
+     "Chef-made meal delivery in Raleigh, NCA steakhouse chef cooks your whole week."
+    ],
+    "canonical": "https://joecodecreations.github.io/justonemorebite/",
+    "robots": "noindex, nofollow",
+    "internal_links_in_main": [
+     "catering-weddings",
+     "chef-michael-saunders",
+     "delivery-area",
+     "family-meal-delivery",
+     "faq",
+     "gift-cards",
+     "low-carb-dairy-free-meals",
+     "meal-plans",
+     "menus",
+     "paleo-meal-delivery",
+     "pricing",
+     "private-chef-raleigh",
+     "protein-by-the-pound",
+     "reviews",
+     "zone-meal-delivery"
+    ],
+    "schema_types": {
+     "FoodEstablishment": 1,
+     "PostalAddress": 1,
+     "Place": 5,
+     "OrderAction": 1,
+     "OfferCatalog": 1,
+     "Offer": 7,
+     "Service": 7,
+     "Person": 1,
+     "WebSite": 1,
+     "WebPage": 1,
+     "BreadcrumbList": 1,
+     "ListItem": 1,
+     "FAQPage": 1,
+     "Question": 6,
+     "Answer": 6
+    }
+   },
+   "facts_found": {
+    "phones": [
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408",
+     "(919) 443-5408"
+    ],
+    "deadlines": [
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Order by Saturday",
+     "Saturday at 8 PM.",
+     "Saturday · 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Saturday at 8 PM.",
+     "close Saturday",
+     "Saturday at 8 PM",
+     "Order by Saturday",
+     "Saturday 8 PM",
+     "Order by Saturday"
+    ],
+    "delivery": [
+     "Delivered Tuesday",
+     "Delivered Tuesday",
+     "arrives Tuesday",
+     "Tuesday · 10 AM",
+     "delivered Tuesday",
+     "Delivered Tuesday",
+     "Tuesday between 10 AM",
+     "delivered on Tuesday",
+     "delivers Tuesday.",
+     "Delivered Tuesday",
+     "delivered Tuesdays",
+     "delivered Tuesdays",
+     "Tuesday delivery",
+     "Tuesday delivery"
+    ],
+    "menu_posted": [
+     "menu every Wednesday",
+     "menu drops every Wednesday",
+     "menu posts every Wednesday",
+     "menu every Wednesday",
+     "menu goes up every Wednesday",
+     "menu every Wednesday",
+     "menu every Wednesday"
+    ],
+    "prices": [
+     "$12.25",
+     "$14.05",
+     "$14.50",
+     "$12.50",
+     "$75",
+     "$213.75",
+     "$71.25",
+     "$337.50",
+     "$67.50",
+     "$162.00",
+     "$16.20",
+     "$269.50",
+     "$12.83",
+     "$75",
+     "$20",
+     "$35",
+     "$35",
+     "$50"
+    ],
+    "membership_prices": [
+     "$213.75",
+     "$71.25",
+     "$337.50",
+     "$67.50",
+     "$162.00",
+     "$16.20",
+     "$269.50",
+     "$12.83"
+    ],
+    "windows": [
+     "10 AM – 5 PM",
+     "10 AM – 5 PM"
+    ],
+    "years": [
+     "20+ years"
+    ],
+    "emails": [
+     "jomborders@gmail.com",
+     "jomborders@gmail.com",
+     "jomborders@gmail.com"
+    ]
+   },
+   "lighthouse": {
+    "mobile": {
+     "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+     },
+     "lcp_ms": 1069.4567,
+     "cls": 0,
+     "tbt_ms": 28.364175000000046,
+     "fcp_ms": 1069.4567,
+     "si_ms": 1147.2564759211732,
+     "bytes": 520507,
+     "failing": [
+      {
+       "cat": "performance",
+       "id": "cache-insight",
+       "title": "Use efficient cache lifetimes",
+       "score": 0.5,
+       "display": "Est savings of 441 KiB",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/img/zone-plate-800.webp",
+        "http://127.0.0.1:59351/justonemorebite/img/paleo-plate-800.webp",
+        "http://127.0.0.1:59351/justonemorebite/img/family-plate-800.webp"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "forced-reflow-insight",
+       "title": "Forced reflow",
+       "score": 0,
+       "display": "",
+       "weight": 0,
+       "examples": []
+      },
+      {
+       "cat": "performance",
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "display": "",
+       "weight": 0,
+       "examples": []
+      },
+      {
+       "cat": "performance",
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0,
+       "display": "Est savings of 150 ms",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "unminified-css",
+       "title": "Minify CSS",
+       "score": 0.5,
+       "display": "Est savings of 3 KiB",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "unused-css-rules",
+       "title": "Reduce unused CSS",
+       "score": 0.5,
+       "display": "Est savings of 14 KiB",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
+       ]
+      },
+      {
+       "cat": "seo",
+       "id": "is-crawlable",
+       "title": "Page is blocked from indexing",
+       "score": 0,
+       "display": "",
+       "weight": 4.043478260869565,
+       "examples": []
+      }
+     ],
+     "seo_excl_crawlable": 100
+    },
+    "desktop": {
+     "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 66
+     },
+     "lcp_ms": 542.0414999999999,
+     "cls": 0,
+     "tbt_ms": 0,
+     "fcp_ms": 265.0415,
+     "si_ms": 645.2560994055788,
+     "bytes": 473857,
+     "failing": [
+      {
+       "cat": "performance",
+       "id": "cache-insight",
+       "title": "Use efficient cache lifetimes",
+       "score": 0,
+       "display": "Est savings of 400 KiB",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/img/meals-tray-800.webp",
+        "http://127.0.0.1:59351/justonemorebite/assets/fonts/fraunces-latin.woff2",
+        "http://127.0.0.1:59351/justonemorebite/img/paleo-plate-480.webp"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "forced-reflow-insight",
+       "title": "Forced reflow",
+       "score": 0,
+       "display": "",
+       "weight": 0,
+       "examples": []
+      },
+      {
+       "cat": "performance",
+       "id": "image-delivery-insight",
+       "title": "Improve image delivery",
+       "score": 0,
+       "display": "Est savings of 173 KiB",
+       "weight": 0,
+       "examples": [
+        "div.plans > article.plan > div.plan-photo > img",
+        "div.plans > article.plan > div.plan-photo > img",
+        "div.container > div.hero-media > div.hero-photo-2 > img"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "network-dependency-tree-insight",
+       "title": "Network dependency tree",
+       "score": 0,
+       "display": "",
+       "weight": 0,
+       "examples": []
+      },
+      {
+       "cat": "performance",
+       "id": "render-blocking-insight",
+       "title": "Render-blocking requests",
+       "score": 0,
+       "display": "Est savings of 40 ms",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "unminified-css",
+       "title": "Minify CSS",
+       "score": 0.5,
+       "display": "Est savings of 3 KiB",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
+       ]
+      },
+      {
+       "cat": "performance",
+       "id": "unused-css-rules",
+       "title": "Reduce unused CSS",
+       "score": 0.5,
+       "display": "Est savings of 14 KiB",
+       "weight": 0,
+       "examples": [
+        "http://127.0.0.1:59351/justonemorebite/assets/css/site.css"
+       ]
+      },
+      {
+       "cat": "seo",
+       "id": "is-crawlable",
+       "title": "Page is blocked from indexing",
+       "score": 0,
+       "display": "",
+       "weight": 4.043478260869565,
+       "examples": []
+      }
+     ],
+     "seo_excl_crawlable": 100
+    },
+    "prod_seo": 100
+   }
+  }
+ },
+ "issues": [
+  {
+   "page": "home",
+   "cat": "schema",
+   "sev": "INFO",
+   "check": "offer-price",
+   "msg": "7 OfferCatalog entries have no price (fine for a catalog listing)",
+   "el": "JSON-LD site graph",
+   "fix": "Optional: add a \"from\" price via priceSpecification.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "site-json",
+   "msg": "prices.zone_all: $253 ÷ 18 meals = $14.0556, which rounds to $14.06, but per = $14.05",
+   "el": "src/site.json",
+   "fix": "Confirm the per-meal figure with the JOMB Store (the store may show the truncated value), then make per match.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.zone.breakfast duplicates prices.zone_breakfast.per (12.25); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.zone.lunch duplicates prices.zone_lunch.per (13.50); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.zone.dinner duplicates prices.zone_dinner.per (18.00); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.paleo.lunch duplicates prices.paleo_lunch.per (14.50); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.paleo.dinner duplicates prices.paleo_dinner.per (19.50); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.lcdf.lunch duplicates prices.lcdf_lunch.per (12.50); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "site-json",
+   "msg": "membership.menus.lcdf.dinner duplicates prices.lcdf_dinner.per (18.00); it matches today",
+   "el": "src/site.json",
+   "fix": "Derive it from prices.* in build.py so the two can't drift.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "WARN",
+   "check": "proposed-offer",
+   "msg": "membership status is \"proposed\" but 13 page(s) present it as a live offer (\"save 5–12%\", prices, sign-up); only 3 say proposed/draft: about-jomb, delivery-area, family-meal-delivery, faq, how-it-works, home, low-carb-dairy-free-meals, meal-plans, menus, paleo-meal-delivery, pricing, protein-by-the-pound, zone-meal-delivery",
+   "el": "src/site.json membership",
+   "fix": "BRAND_GUIDE §2: proposed offers are never shown as live. Gate the membership blocks on a membership.enabled switch (off in preview, like compliance), or label them \"Proposed\" until Mike approves.",
+   "owner": "system"
+  },
+  {
+   "page": "(site)",
+   "cat": "facts",
+   "sev": "INFO",
+   "check": "proposed-offer",
+   "msg": "membership adds a Friday second delivery (Delivered Tuesday; 5- and 7-day plans get a second delivery Friday so every meal is fresh); that's a new operational promise beyond site.json's Tuesday delivery",
+   "el": "src/site.json membership",
+   "fix": "Confirm with Mike before it goes live.",
+   "owner": "system"
+  }
+ ],
+ "production_pass": {
+  "base_url": "https://www.justonemorebitenc.com",
+  "pages": {
+   "home": {
+    "robots": "index, follow, max-image-preview:large",
+    "canonical": "https://www.justonemorebitenc.com/",
+    "lighthouse_seo": 100
+   }
+  }
+ },
+ "build_warnings": [],
+ "config": {
+  "widths": [
+   320,
+   360,
+   390,
+   414,
+   768,
+   1024,
+   1280,
+   1440
+  ],
+  "browser": false,
+  "lighthouse": true,
+  "allow_pending": true
+ }
+}

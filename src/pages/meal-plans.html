@@ -1,0 +1,241 @@
+<!--meta
+{
+  "title": "Meal Plan Subscriptions in Raleigh, NC | Just One More Bite",
+  "og_title": "Set it once. Eat well every week. · JOMB Membership",
+  "description": "Chef-made weekly meal plans in Raleigh, NC for 1 to 6 people, 2 to 7 days a week. Members save up to 12%, skip or pause any week, and sign no contract.",
+  "path": "meal-plans/",
+  "og": "og-family",
+  "nav": "plans",
+  "page_type": "WebPage",
+  "breadcrumb": [["Meal Plans", "meal-plans/"]],
+  "service": {"name": "JOMB Membership: weekly meal plan subscriptions", "description": "Weekly chef-made meal plan subscriptions in Raleigh, NC: Family dinners or Zone, Paleo and Low-Carb Dairy-Free meals for one or two, 2 to 7 days a week, at subscriber prices below one-off orders. Delivered every Tuesday, with a second Friday delivery on 5- and 7-day plans. Skip, pause or cancel any week.", "type": "Meal subscription"}
+}
+-->
+<section class="page-hero mbr-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <p class="mbr-proposal">{{proposal}}</p>
+        <h1><span class="eyebrow">Weekly meal plan subscriptions · Raleigh, NC</span>Set it once. <em>Eat well every week.</em></h1>
+        <p class="lead">JOMB Membership is a weekly meal plan subscription from Just One More Bite in Raleigh, NC. Choose who's eating (just you, the two of you, or a family of up to six), 2 to 7 days a week, and dinner only or lunch and dinner. {{chef}} cooks it from scratch and delivers it every {{delivery_day}}. Members pay up to <span data-mbr="maxsave">12%</span> less than one-off orders, with plans from <span data-mbr="from">$34.20</span> a week, and can skip or pause any week by {{cutoff}}. No contract.</p>
+        <div class="price-chips">
+          <div class="price-chip"><b>Up to <span data-mbr="maxsave">12%</span></b><span>less than one-off orders</span></div>
+          <div class="price-chip"><b>2 to 7 days</b><span>a week, your call</span></div>
+          <div class="price-chip"><b>1 to 6 people</b><span>solo, couples, big families</span></div>
+          <div class="price-chip"><b>{{cutoff_short}}</b><span>skip or pause deadline</span></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="#builder">{{icon:sparkle}}Build your plan</a>
+          <a class="btn btn--ghost btn--lg" href="#plans">See the plans</a>
+        </div>
+      </div>
+      <div class="mbr-hero-media">
+        <div class="media-frame media-frame--square">{{img:meals-rows|(min-width: 960px) 46vw, 100vw||eager|Rows of Just One More Bite meals packed for a week of subscriber deliveries}}</div>
+        <div class="stamp" aria-hidden="true"><div><span>Members save</span><strong><span data-mbr="maxsave">12%</span></strong><span>every week</span></div></div>
+        <div class="float-card">{{icon:truck}}<p><b>Delivered every {{delivery_day}}</b>5- and 7-day plans get a second delivery Friday, so every meal is fresh.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="plans">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Ready-made plans</span>
+      <h2>Four plans. <em>Zero planning.</em></h2>
+      <p>Four ready-to-go plans for the way most households eat, each with the weekly price, the savings and the per-meal math. Want a different mix? <a href="#builder">Build your own</a>.</p>
+    </div>
+    {{membership_featured}}
+    <p class="note mt-2 center">Prices before NC sales tax. Change, skip or pause any plan by {{cutoff}}.</p>
+  </div>
+</section>
+
+<section class="section section--sand" id="builder">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Plan builder</span>
+      <h2>Your week, <em>your way.</em></h2>
+      <p>Four quick choices. Your weekly price, per-meal price and savings update with every tap, and one button sends your plan to Chef Mike.</p>
+    </div>
+    <noscript><div class="callout"><p>The plan builder needs JavaScript. Every plan and price is in the <a href="#prices">price charts below</a>, or call {{phone_link}} and we'll price your plan with you.</p></div></noscript>
+    <div class="builder" data-builder data-first-day="{{delivery_day}}" data-second-day="Friday" hidden>
+      <form class="builder-form" aria-label="Build your meal plan">
+        <fieldset class="builder-q" data-q="household">
+          <legend><span class="builder-n" aria-hidden="true">1</span>Who's eating?</legend>
+          <div class="builder-chips builder-chips--4" data-options="household"></div>
+        </fieldset>
+        <fieldset class="builder-q" data-q="days">
+          <legend><span class="builder-n" aria-hidden="true">2</span>How many days a week?</legend>
+          <div class="builder-chips builder-chips--days" data-options="days"></div>
+          <p class="builder-hint">The more days, the more you save. 5- and 7-day plans get a second delivery on Friday.</p>
+        </fieldset>
+        <fieldset class="builder-q" data-q="menu" data-for="individual">
+          <legend><span class="builder-n" aria-hidden="true">3</span>Which menu?</legend>
+          <div class="builder-chips builder-chips--3" data-options="menu"></div>
+          <p class="builder-hint">Compare this week's <a href="{{link:zone-meal-delivery/}}">Zone</a>, <a href="{{link:paleo-meal-delivery/}}">Paleo</a> and <a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a> menus.</p>
+        </fieldset>
+        <fieldset class="builder-q" data-q="coverage" data-for="individual">
+          <legend><span class="builder-n" aria-hidden="true">4</span>Which meals?</legend>
+          <div class="builder-chips builder-chips--3" data-options="coverage"></div>
+          <p class="builder-hint" data-out="coveragehint">Breakfast is on the Zone menu.</p>
+        </fieldset>
+        <div class="builder-q builder-family" data-for="family">
+          <span class="builder-n" aria-hidden="true">3</span>
+          <div>
+            <h3>Family-menu dinners</h3>
+            <p data-out="familynote">One family dinner feeds 3 adults, or 2 adults + 2 small kids.</p>
+            <p class="builder-addons">Every dinner comes from that week's Family menu, cooked from scratch. Want more on the table? Add the soup of the week ({{price:family_soup}}), an entrée salad ({{price:family_salad}}) or fresh-cut fruit ({{price:fruit}}) in the JOMB Store any week.</p>
+            <a class="text-link" href="{{link:family-meal-delivery/}}">See the latest family menu</a>
+          </div>
+        </div>
+      </form>
+
+      <aside class="builder-summary" id="builder-summary" aria-labelledby="builder-sum-title">
+        <div class="builder-card">
+          <p class="builder-kicker"><span>Your plan</span><span class="builder-badge" data-out="tag" hidden></span></p>
+          <h3 id="builder-sum-title" data-out="name">Your plan</h3>
+          <p class="builder-detail" data-out="detail"></p>
+          <div class="builder-price"><strong data-out="price" data-money>$0.00</strong><span>/ week</span></div>
+          <p class="builder-was"><s data-out="base"></s><span class="builder-was-label">one-off price</span><span class="builder-save" data-out="save"></span></p>
+          <dl class="builder-stats">
+            <div><dt data-out="perlabel">Per meal</dt><dd data-out="per"></dd></div>
+            <div><dt>About a month</dt><dd data-out="monthly"></dd></div>
+            <div><dt>Each week</dt><dd data-out="meals"></dd></div>
+            <div><dt>Deliveries</dt><dd data-out="deliveries"></dd></div>
+          </dl>
+          <div class="builder-week" data-out="week" aria-hidden="true"></div>
+          <a class="btn btn--primary btn--lg builder-start" data-out="mailto" href="mailto:{{email}}">{{icon:mail}}Start this plan</a>
+          <p class="builder-fine">Opens an email to Chef Mike with your plan filled in. Skip or pause any week by {{cutoff}}. No contract. Prices before NC sales tax.</p>
+          <p class="sr-only" aria-live="polite" aria-atomic="true" data-out="live"></p>
+        </div>
+      </aside>
+    </div>
+    <div class="builder-bar" data-builder-bar aria-hidden="true">
+      <div class="builder-bar-text"><span><strong data-out="price" data-money>$0.00</strong> / week</span><small data-out="barsub"></small></div>
+      <a class="btn btn--primary btn--sm" href="#builder-summary" tabindex="-1">See my plan</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why members love it</span>
+      <h2>Dinner, decided. <em>Every week.</em></h2>
+      <p>A membership is the same chef-made food our weekly clients already love, on autopilot and at a better price.</p>
+    </div>
+    <div class="mbr-why">
+      <article class="mbr-why-card reveal"><span class="mbr-why-icon">{{icon:calendar}}</span><h3>Never think about dinner again</h3><p>Your plan shows up every {{delivery_day}} without a single click. No weekly checkout, no grocery run, no 5 PM "what's for dinner?"</p></article>
+      <article class="mbr-why-card reveal"><span class="mbr-why-icon">{{icon:chef}}</span><h3>Chef Mike plans your week</h3><p>A steakhouse-trained chef writes a brand-new menu every {{menu_posted}} and cooks your whole week from scratch. You open the fridge and eat.</p></article>
+      <article class="mbr-why-card reveal"><span class="mbr-why-icon">{{icon:check}}</span><h3>Your price, locked in</h3><p>Subscriber pricing sits below one-off prices every week, and it stays locked for as long as you stay a member.</p></article>
+    </div>
+    <div class="split mt-4">
+      <div class="media-frame media-frame--tall reveal">{{img:chef-plating|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">Chef Mike plating for the week ahead</span></div>
+      <div class="reveal">
+        <h3 class="mbr-perks-title">Every membership includes</h3>
+        {{membership_perks}}
+        <p class="muted">Members eat from the same weekly <a href="{{link:menus/}}">Zone, Paleo, Low-Carb Dairy-Free and Family menus</a>, made from scratch with USDA Choice meats and local produce when possible.</p>
+        <div class="btn-row mt-2"><a class="btn btn--primary" href="#builder">Build your plan</a><a class="btn btn--ghost" href="{{link:how-it-works/}}">How JOMB works</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="prices">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Every plan, every price</span>
+      <h2>The full <em>price chart.</em></h2>
+      <p>Weekly member prices for every combination, with the per-meal price under each. One-off prices are on the <a href="{{link:pricing/}}">pricing page</a>.</p>
+    </div>
+    <div class="mbr-chart reveal">
+      <div class="mbr-chart-head">
+        <h3>Family dinners</h3>
+        <p>From the <a href="{{link:family-meal-delivery/}}">Family menu</a>. One family dinner feeds 3 adults, or 2 adults + 2 small kids.</p>
+      </div>
+      <p class="mbr-swipe" aria-hidden="true">Swipe the chart to see more days →</p>
+      {{membership_table:family}}
+    </div>
+    <div class="mbr-chart reveal mt-3">
+      <div class="mbr-chart-head">
+        <h3>Individual plans</h3>
+        <p>Weekly price for one person on the <a href="{{link:zone-meal-delivery/}}">Zone</a>, <a href="{{link:paleo-meal-delivery/}}">Paleo</a> or <a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a> menu. Two of you? Double it; the per-meal price stays the same.</p>
+      </div>
+      <p class="mbr-swipe" aria-hidden="true">Swipe the chart to see more days →</p>
+      {{membership_table:individual}}
+    </div>
+    <div class="mbr-chart-notes mt-2">
+      <p>{{icon:truck}}<span>2- to 4-day plans arrive {{delivery_day}}. 5- and 7-day plans arrive {{delivery_day}} and Friday, so the end of your week is as fresh as the start.</span></p>
+      <p>{{icon:sparkle}}<span>Bigger plans get every dish on the week's menu, plus Chef Mike's pick of repeat favorites to fill the extra days. Never the same week twice.</span></p>
+    </div>
+    <p class="note mt-1">Prices before NC sales tax.</p>
+  </div>
+</section>
+
+<section class="section" id="compare">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">One-off order vs. membership</span>
+      <h2>Same chef. Same food. <em>Better deal.</em></h2>
+      <p>Ordering week by week still works. Members simply pay less, never have to remember the deadline, and get first pick of the busy dates.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="table table--compare mbr-compare">
+        <thead><tr><th><span class="sr-only">Feature</span></th><th>JOMB Membership</th><th>One-off weekly order</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Price</strong></td><td>Subscriber pricing, below one-off prices every week</td><td>Regular menu prices</td></tr>
+          <tr><td><strong>Your price over time</strong></td><td>Locked in while you stay subscribed</td><td>Whatever that week's price is</td></tr>
+          <tr><td><strong>Ordering</strong></td><td>Automatic. Your plan just arrives.</td><td>Check out in the JOMB Store by {{cutoff}}, every week</td></tr>
+          <tr><td><strong>Deliveries</strong></td><td>{{delivery_day}}, plus Friday on 5- and 7-day plans</td><td>{{delivery_day}}</td></tr>
+          <tr><td><strong>Flexibility</strong></td><td>Skip, pause or change any week by {{cutoff}}</td><td>Order the weeks you want</td></tr>
+          <tr><td><strong>Next week's menu</strong></td><td>See it before everyone else</td><td>Posted every {{menu_posted}}</td></tr>
+          <tr><td><strong>Holiday dinners &amp; catering</strong></td><td>First pick of dates</td><td>When dates are open</td></tr>
+          <tr><td><strong>Contract</strong></td><td>None. Cancel anytime.</td><td>None</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2 muted">Rather order week by week? That's fine too: <a href="{{store}}">order this week in the JOMB Store</a> or see <a href="{{link:menus/}}">this week's menus</a>.</p>
+  </div>
+</section>
+
+<section class="section section--dark" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How the membership works</span>
+      <h2>Three steps. <em>Then it's automatic.</em></h2>
+      <p>Pick it once, and your fridge fills up every {{delivery_day}} until you tell us otherwise.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="step-num">01</span><span class="step-icon">{{icon:list}}</span><h3>Pick your plan</h3><p>Choose who's eating, how many days and which menu, then tap Start. Chef Mike confirms your first delivery by email.</p><span class="step-when">Today</span></div>
+      <div class="step reveal"><span class="step-num">02</span><span class="step-icon">{{icon:truck}}</span><h3>We cook and deliver, weekly</h3><p>A brand-new menu every {{menu_posted}}, cooked from scratch and delivered {{delivery_day}}, {{delivery_window}}. 5- and 7-day plans get a Friday delivery too.</p><span class="step-when">Every {{delivery_day}}</span></div>
+      <div class="step reveal"><span class="step-num">03</span><span class="step-icon">{{icon:calendar}}</span><h3>Skip, pause or change anytime</h3><p>Away next week? Want lunches too? Growing family? Tell us by {{cutoff}} and it's done. No contract.</p><span class="step-when">By {{cutoff_short}}</span></div>
+    </div>
+    <p class="mt-3">Delivered to homes, offices and CrossFit gyms across {{towns_sentence}}. <a href="{{link:delivery-area/}}">Check the delivery area</a> · <a href="{{link:how-it-works/}}">How weekly delivery works</a></p>
+  </div>
+</section>
+
+<section class="section section--sand" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Real weekly clients</span>
+      <h2>Raleigh tables, <em>fed every week.</em></h2>
+      <p>Long before there was a membership, these clients ordered from Chef Mike week after week.</p>
+    </div>
+    {{quotes:anna,tara|feature,jonathan}}
+    <a class="text-link mt-2" href="{{link:reviews/}}">Read every review</a>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Membership questions</span><h2>How the <em>membership</em> works</h2></div>
+    {{faq:membership}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See all FAQs</a></p>
+  </div>
+</section>
+
+{{cta_band:family-plate}}
+
+{{membership_json}}
+<script src="{{asset:assets/js/plan-builder.js}}" defer></script>

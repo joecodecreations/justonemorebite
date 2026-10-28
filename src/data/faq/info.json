@@ -1,0 +1,46 @@
+{
+  "_note": "FAQ groups owned by the info pages (how-it-works, delivery-area, pricing, chef, about-jomb). Only facts from site.json, menu.json, testimonials.json, faq.json and the brand guide. Derived numbers (bundle savings, per-day and per-person math) are arithmetic on site.json prices: recheck them if a price changes.",
+
+  "how": [
+    {"q": "What do I get in a week of Zone meals?", "a": "The full Zone plan is 18 meals for one person: 6 breakfasts (two dishes, 3 of each), 6 lunches (three dishes, 2 of each) and 6 dinners (three dishes, 2 of each). It costs {{price:zone_all}} before tax, or {{per:zone_all}} a meal. You can also order just the breakfasts, lunches or dinners."},
+    {"q": "What do I get on the Paleo or Low-Carb Dairy-Free menu?", "a": "Each menu is sold as 6 lunches and/or 6 dinners for one person: three dishes, 2 of each. Low-Carb Dairy-Free is {{price:lcdf_lunch}} for the lunches and {{price:lcdf_dinner}} for the dinners. Paleo is {{price:paleo_lunch}} and {{price:paleo_dinner}}. Double portions of Low-Carb Dairy-Free are available for two; just ask."},
+    {"q": "Can I order from more than one menu in the same week?", "a": "Yes. Each plan is its own item in the <a href=\"{{store}}\">JOMB Store</a>, so you can put more than one in your cart. For example, Zone lunches for you and two Family dinners for the house, all delivered together on {{delivery_day}}."},
+    {"q": "Can meals be delivered to my office?", "a": "Yes. We deliver to workplaces as well as homes, including offices in Research Triangle Park (RTP). Shared office and gym drop points get JOMB cooler bags, which go back to the same drop point before the next delivery. Call {{phone_link}} to set one up."},
+    {"q": "Can I pick up my meals at my CrossFit gym?", "a": "Yes. JOMB delivers to CrossFit gyms on {{delivery_day}}, and your meals wait there in JOMB cooler bags. Return the bags to the gym before the next delivery. Ask us which gyms are on the route, or whether yours can be added."},
+    {"q": "Can I send meals to someone else?", "a": "Yes. Order as usual and send us their delivery address, and Chef Mike's meals arrive at their door on {{delivery_day}}. Clients have done this for an aging parent and for family going through a hard stretch. Gift cards start at {{price:gift_from}} in the <a href=\"{{store}}\">JOMB Store</a>."}
+  ],
+
+  "area": [
+    {"q": "Does Just One More Bite deliver to Cary?", "a": "Yes. Cary is one of our five regular delivery towns. Meals arrive on {{delivery_day}} between {{delivery_window}} at your home, your office or your gym. Order by {{cutoff}}."},
+    {"q": "Does Just One More Bite deliver to Morrisville?", "a": "Yes. Morrisville homes, workplaces and CrossFit gyms get deliveries every {{delivery_day}}, {{delivery_window}}. JOMB has fed Morrisville athletes for years, including Jonathan A., a Morrisville CrossFit gym owner."},
+    {"q": "Do you deliver to offices in Research Triangle Park (RTP)?", "a": "Yes. Offices in Research Triangle Park are on the regular {{delivery_day}} route, with meals arriving between {{delivery_window}}. Shared drop points use JOMB cooler bags that go back to the drop point each week."},
+    {"q": "Does Just One More Bite deliver to Knightdale?", "a": "Yes. Knightdale, just east of Raleigh, is on the regular {{delivery_day}} route. Not home during the {{delivery_window}} window? Leave a cooler with ice packs and the driver will pack your meals into it."},
+    {"q": "Do you deliver to Durham, Apex, Wake Forest or Garner?", "a": "They aren't on our regular list of {{towns_sentence}}, but ask anyway. Call {{phone_link}} or email {{email_link}} with your address or ZIP code and we'll tell you honestly whether we can reach you on {{delivery_day}}."},
+    {"q": "How do gym and office drop points work?", "a": "We deliver everyone's meals to the drop point in JOMB cooler bags on {{delivery_day}}. You pick up your bag, take your meals home and bring the bag back to the same drop point before the next delivery."},
+    {"q": "What day do you deliver?", "a": "Weekly orders arrive on {{delivery_day}} between {{delivery_window}}, cooked fresh for that day. The new menu posts every {{menu_posted}}, and orders close {{cutoff}}. The larger 5- and 7-day <a href=\"{{link:meal-plans/}}\">JOMB Membership</a> plans add a second delivery on Friday."}
+  ],
+
+  "pricing": [
+    {"q": "How much does meal prep cost in Raleigh with Just One More Bite?", "a": "Individual meals cost {{per:zone_breakfast}} to {{per:paleo_dinner}} each before tax, depending on the menu and the meal. The full Zone plan is {{price:zone_all}} for 18 meals ({{per:zone_all}} a meal), and a Family dinner is {{price:family_meal}} and feeds three adults. Every price is on the <a href=\"{{link:pricing/}}\">pricing page</a>."},
+    {"q": "What is the cheapest way to order?", "a": "Per meal, Zone breakfasts ({{per:zone_breakfast}}) and Low-Carb Dairy-Free lunches ({{per:lcdf_lunch}}) are the lowest prices. For a whole week of eating, the full Zone plan is the best value: 18 meals at {{per:zone_all}} each, or {{per:zone_double}} each when you order the double portion for two."},
+    {"q": "Is the full Zone plan cheaper than buying meals separately?", "a": "Yes. Bought separately, 6 Zone breakfasts, lunches and dinners come to $262.50. The full plan is {{price:zone_all}}, which saves $9.50 a week. The double portion for two is {{price:zone_double}}, $20 less than two single plans."},
+    {"q": "How much is a family dinner per person?", "a": "A Family dinner is {{price:family_meal}} and feeds three adults, so it works out to $25 per adult. Fed to two adults and two small children, it's $18.75 a person. There's a two-meal minimum."},
+    {"q": "Do prices include sales tax?", "a": "No. Every price on this site is before North Carolina sales tax, which is added at checkout in the <a href=\"{{store}}\">JOMB Store</a>. You see your full total before you pay."},
+    {"q": "Is there a minimum order at Just One More Bite?", "a": "Meal plans are sold as sets of 6 (6 breakfasts, 6 lunches or 6 dinners). Family dinners have a two-meal minimum. Cooked protein by the pound has a $100 minimum when you order it on its own, or you can add it to any meal order."}
+  ],
+
+  "chef": [
+    {"q": "Who is Chef Michael Saunders?", "a": "Chef Michael Saunders is the executive chef and owner of Just One More Bite (JOMB), a weekly chef-made meal delivery service in Raleigh, North Carolina. He has {{chef_years}} years in professional kitchens, including Executive Sous Chef at Morton's The Steakhouse in Dallas, Executive Chef at The Ore House in Steamboat Springs, Colorado, and Executive Chef at Oryx in Raleigh."},
+    {"q": "What is Chef Mike's background?", "a": "He trained in classic and contemporary cooking technique and has cooked in fine dining, country clubs and high-volume casual restaurants. He ran steakhouse kitchens in Dallas and Steamboat Springs before leading the kitchen at Oryx in Raleigh and starting Just One More Bite."},
+    {"q": "Does Chef Mike cook the meals himself?", "a": "Yes. Chef Mike writes every weekly menu and cooks everything from scratch in Raleigh, with USDA Choice meats and local, fresh ingredients when possible."},
+    {"q": "Can I hire Chef Mike for a private dinner or an event?", "a": "Yes. He cooks plated private dinners in your home and caters weddings and parties. See <a href=\"{{link:private-chef-raleigh/}}\">private chef dinners</a> and <a href=\"{{link:catering-weddings/}}\">catering &amp; weddings</a>, or call {{phone_link}}."},
+    {"q": "How do I contact Chef Mike?", "a": "Call {{phone_link}} or email {{email_link}}. Questions about an order, an allergy or an event go straight to Chef Mike and JOMB, not a call center."}
+  ],
+
+  "glance": [
+    {"q": "What is Just One More Bite (JOMB)?", "a": "{{entity}}"},
+    {"q": "Who owns Just One More Bite?", "a": "{{chef}}, Executive Chef and owner, runs Just One More Bite. The company's legal name is Just One More Bite, LLC, based in Raleigh, North Carolina."},
+    {"q": "Is Just One More Bite a meal kit?", "a": "No. JOMB meals arrive fully cooked, so there's nothing to chop or cook. You heat, plate and eat. The menu is new every week and written by an executive chef."},
+    {"q": "How do I order from Just One More Bite?", "a": "Order online in the <a href=\"{{store}}\">JOMB Store</a> by {{cutoff}} for delivery the following {{delivery_day}}, {{delivery_window}}. Questions? Call {{phone_link}} or email {{email_link}}."}
+  ]
+}

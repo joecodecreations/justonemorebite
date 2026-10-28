@@ -1,0 +1,205 @@
+<!--meta
+{
+  "title": "How Our Raleigh Meal Delivery Works | Just One More Bite",
+  "og_title": "Order by Saturday, eat well all week · Just One More Bite",
+  "description": "New chef-made menu every Wednesday, order by Saturday 8 PM, delivered Tuesday 10–5 to homes, offices and CrossFit gyms in Raleigh, Cary, Morrisville & RTP.",
+  "path": "how-it-works/",
+  "og": "og-default",
+  "nav": "how",
+  "page_type": "WebPage",
+  "breadcrumb": [["How it works", "how-it-works/"]]
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">How it works · Raleigh meal delivery</span>Order by Saturday. <em>Eat well</em> all week.</h1>
+        <p class="lead">Just One More Bite is a weekly, chef-made meal delivery service in Raleigh, NC. {{chef}} posts a new menu every {{menu_posted}}, you order online by {{cutoff}}, and your meals arrive {{delivery_day}} between {{delivery_window}} at your home, office or CrossFit gym. Meals start at {{per:zone_breakfast}}, and there's no contract.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order this week</a>
+          <a class="btn btn--ghost btn--lg" href="{{link:menus/}}">See this week's menu</a>
+        </div>
+        <ul class="info-hero-chips" aria-label="The weekly schedule">
+          <li>{{icon:sparkle}}<span>New menu <b>{{menu_posted}}</b></span></li>
+          <li>{{icon:clock}}<span>Order by <b>{{cutoff_short}}</b></span></li>
+          <li>{{icon:truck}}<span>Delivered <b>{{delivery_day}} {{delivery_window}}</b></span></li>
+        </ul>
+      </div>
+      <div class="media-frame media-frame--square">{{img:meals-rows|(min-width: 960px) 46vw, 100vw||eager|A week of Just One More Bite meals packed in rows for Tuesday delivery}}<span class="media-caption">Packed for Tuesday, cooked from scratch in Raleigh</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="the-week">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Your week, start to finish</span>
+      <h2>One order. <em>Six days</em> of real food.</h2>
+      <p>The rhythm never changes, so it fits around your life. Here's exactly what happens between the new menu and your first bite.</p>
+    </div>
+    <ol class="info-timeline reveal">
+      <li>
+        <span class="info-tl-icon">{{icon:calendar}}</span>
+        <div>
+          <span class="info-tl-when">{{menu_posted}}</span>
+          <h3>The new menu posts</h3>
+          <p>Chef Mike writes brand-new Zone, Paleo, Low-Carb Dairy-Free and Family menus every week. They go up on the <a href="{{link:menus/}}">menu page</a> and in the JOMB Store.</p>
+        </div>
+      </li>
+      <li>
+        <span class="info-tl-icon">{{icon:cart}}</span>
+        <div>
+          <span class="info-tl-when">Until {{cutoff_short}}</span>
+          <h3>You order online</h3>
+          <p>Pick a full week of Zone meals, just lunches, a few Family dinners or protein by the pound, and pay securely in the <a href="{{store}}">JOMB Store</a>. On a <a href="{{link:meal-plans/}}">weekly plan</a>? Your week is already set.</p>
+        </div>
+      </li>
+      <li class="is-key">
+        <span class="info-tl-icon">{{icon:clock}}</span>
+        <div>
+          <span class="info-tl-when">{{cutoff}}</span>
+          <h3>Orders close</h3>
+          <p>That's the cutoff for next {{delivery_day}}. Missed it? The next menu goes up {{menu_posted}}.</p>
+        </div>
+      </li>
+      <li>
+        <span class="info-tl-icon">{{icon:chef}}</span>
+        <div>
+          <span class="info-tl-when">After the cutoff</span>
+          <h3>Chef Mike cooks</h3>
+          <p>Chef Mike shops and cooks your week from scratch in Raleigh, with USDA Choice meats and local produce when possible, then portions and packs every meal. <span class="info-trust">{{trust}}</span></p>
+        </div>
+      </li>
+      <li class="is-key">
+        <span class="info-tl-icon">{{icon:truck}}</span>
+        <div>
+          <span class="info-tl-when">{{delivery_day}} · {{delivery_window}}</span>
+          <h3>Your week arrives</h3>
+          <p>Delivered to your home, office or gym. Heat, plate, eat. No shopping, no prep and no dishes until next {{delivery_day}}.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="delivery-options">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Three ways to get your meals</span>
+      <h2>Home, office or <em>gym.</em> Your call.</h2>
+      <p>We deliver every {{delivery_day}} across {{towns_sentence}}. You don't need to be home. You just need somewhere cold for us to leave your week.</p>
+    </div>
+    <div class="info-cards info-cards--3">
+      <article class="info-card reveal">
+        <span class="info-card-icon">{{icon:pin}}</span>
+        <h3>At home</h3>
+        <p>Not home on {{delivery_day}}? Leave a cooler outside with ice packs. The driver transfers your meals into it, and the ice packs do the rest.</p>
+        <ul class="checks">
+          <li>A 48-quart cooler is plenty for most orders</li>
+          <li>Delivered between {{delivery_window}}</li>
+          <li>Also how to send meals to someone else's door</li>
+        </ul>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-icon">{{icon:briefcase}}</span>
+        <h3>At the office</h3>
+        <p>Lunch for the week, waiting at work. We deliver to workplaces across the area, including offices in Research Triangle Park. Shared office drops arrive in JOMB cooler bags.</p>
+        <ul class="checks">
+          <li>One drop for the whole team</li>
+          <li>Cooler bags go back to the drop point each week</li>
+          <li>Nan V. found JOMB through her estate tax attorney, whose office uses it</li>
+        </ul>
+      </article>
+      <article class="info-card reveal">
+        <span class="info-card-icon">{{icon:dumbbell}}</span>
+        <h3>At your CrossFit gym</h3>
+        <p>Train, grab your bag, go home. Gyms on our route are drop points: your meals wait in a JOMB cooler bag, and the bag goes back to the gym before next week.</p>
+        <ul class="checks">
+          <li>Built for <a href="{{link:zone-meal-delivery/}}">Zone</a> and performance eaters</li>
+          <li>Jonathan A., a Morrisville CrossFit owner, has eaten JOMB for 5 years</li>
+          <li>Want your gym added? Ask us</li>
+        </ul>
+      </article>
+    </div>
+    <p class="mt-2"><a class="text-link" href="{{link:delivery-area/}}">See every town we deliver to</a></p>
+  </div>
+</section>
+
+<section class="section section--sand" id="what-you-get">
+  <div class="container split split--wide-media">
+    <div class="reveal">
+      <span class="eyebrow">What's in the bag</span>
+      <h2>Six days of meals, <em>portioned</em> and ready.</h2>
+      <p class="lead">Every menu gives you variety within the week: breakfasts come as two dishes, three of each, and lunches and dinners as three dishes, two of each. So you're never eating the same thing six days running.</p>
+      <ul class="info-rows mt-2">
+        <li><span class="info-row-name"><a href="{{link:zone-meal-delivery/}}">Zone</a>, full plan</span><span class="info-row-price">{{price:zone_all}}<small>{{per:zone_all}} a meal</small></span><p>6 breakfasts, 6 lunches and 6 dinners for one, built to 4-block targets. Or order breakfasts, lunches or dinners on their own.</p></li>
+        <li><span class="info-row-name"><a href="{{link:paleo-meal-delivery/}}">Paleo</a></span><span class="info-row-price">{{per:paleo_lunch}}–{{per:paleo_dinner}}<small>a meal</small></span><p>6 lunches ({{price:paleo_lunch}}) and/or 6 dinners ({{price:paleo_dinner}}). No grains, no dairy, no added sugar.</p></li>
+        <li><span class="info-row-name"><a href="{{link:low-carb-dairy-free-meals/}}">Low-Carb Dairy-Free</a></span><span class="info-row-price">{{per:lcdf_lunch}}–{{per:lcdf_dinner}}<small>a meal</small></span><p>6 lunches ({{price:lcdf_lunch}}) and/or 6 dinners ({{price:lcdf_dinner}}). Double portions for two on request.</p></li>
+        <li><span class="info-row-name"><a href="{{link:family-meal-delivery/}}">Family dinners</a></span><span class="info-row-price">{{price:family_meal}}<small>each · feeds 3</small></span><p>Each dinner feeds three adults, or two adults and two small kids. Two-meal minimum. Add a soup ({{price:family_soup}}), an entrée salad ({{price:family_salad}}) or fresh-cut fruit ({{price:fruit}}).</p></li>
+        <li><span class="info-row-name"><a href="{{link:protein-by-the-pound/}}">Protein by the pound</a></span><span class="info-row-price">from {{price:protein_chicken}}<small>per lb, cooked</small></span><p>The week's cooked chicken, CAB beef, pork or seafood, for when you like to build your own bowls.</p></li>
+      </ul>
+      <p class="small muted mt-1">Prices before NC sales tax. <a href="{{link:pricing/}}">See every price and the per-meal math</a>.</p>
+      <div class="btn-row mt-2">
+        <a class="btn btn--primary" href="{{store}}">{{icon:cart}}Build my order</a>
+        <a class="text-link" href="{{link:meal-plans/}}">Or subscribe and save 5–12%</a>
+      </div>
+    </div>
+    <div class="media-frame media-frame--tall reveal">{{img:meals-containers|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">Chicken, rice and snap peas, portioned for the week</span></div>
+  </div>
+</section>
+
+<section class="section section--dark" id="fine-print">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The fine print, in plain English</span>
+      <h2>No contract. <em>No surprises.</em></h2>
+    </div>
+    <div class="info-fine reveal">
+      <div>{{icon:calendar}}<h3>Order any week, or subscribe</h3><p>Order week by week with no contract. Or join a <a href="{{link:meal-plans/}}">JOMB Membership weekly plan</a> and save 5–12%, with skip or pause any week by {{cutoff}}.</p></div>
+      <div>{{icon:list}}<h3>Cooked as listed</h3><p>Meals are made exactly as they appear on the weekly menu, with no substitutions. That's how Chef Mike keeps quality high and prices fair.</p></div>
+      <div>{{icon:heart}}<h3>Allergies</h3><p>Gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy. Severe allergy? Email <a href="mailto:{{email}}">{{email}}</a> before you order.</p></div>
+      <div>{{icon:phone}}<h3>Real people</h3><p>Questions go to Chef Mike and JOMB, not a call center. Call {{phone_link}} or email us, and a real person answers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gifts">
+  <div class="container split">
+    <div class="media-frame media-frame--tall reveal">{{img:family-plate|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">A Family dinner: glazed braised short rib</span></div>
+    <div class="reveal">
+      <span class="eyebrow">Order for someone else</span>
+      <h2>Send a week of dinners <em>to their door.</em></h2>
+      <p class="lead">New baby, a parent living alone, a friend who needs a break: order as usual, send us their address, and Chef Mike's meals arrive on {{delivery_day}}.</p>
+      {{quote:sandi_mom}}
+      <ul class="checks">
+        <li>Family dinners feed three for {{price:family_meal}}, two-meal minimum</li>
+        <li>Gift cards from {{price:gift_from}} let them choose their own week</li>
+        <li>Tell us about allergies or delivery notes before you order</li>
+      </ul>
+      <div class="btn-row"><a class="btn btn--primary" href="{{store}}">{{icon:gift}}Send meals</a><a class="text-link" href="{{link:gift-cards/}}">Gift cards</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand section--tight" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What clients notice first</span>
+      <h2>“So easy <em>to use.</em>”</h2>
+    </div>
+    {{quotes:tara,nan}}
+    <p class="mt-2"><a class="text-link" href="{{link:reviews/}}">Read every review</a></p>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Ordering questions</span><h2>How it works, <em>answered</em></h2></div>
+    {{faq:ordering,how,food}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a></p>
+  </div>
+</section>
+
+{{cta_band:meals-tray}}

@@ -1,0 +1,83 @@
+{
+  "_note": "FAQ entries by group. Answers may use {{placeholders}} and simple HTML. Rendered with {{faq:group}} (adds FAQPage structured data that matches the visible text). Only real facts; site.json holds the assumed ones.",
+  "ordering": [
+    {
+      "q": "How does Just One More Bite work?",
+      "a": "Chef Michael Saunders posts a brand-new menu every {{menu_posted}}. You order online in the JOMB Store by {{cutoff}}, the kitchen cooks everything from scratch in Raleigh, and your meals are delivered on {{delivery_day}} between {{delivery_window}} to your home, office or CrossFit gym."
+    },
+    {
+      "q": "Where do you deliver?",
+      "a": "We deliver across the Raleigh area, including {{towns_sentence}}. Meals can go to your home, your workplace or your CrossFit gym. Somewhere else in the Triangle? Call or email us at {{phone_link}} / {{email_link}} and we'll tell you whether we can reach you."
+    },
+    {
+      "q": "When is the order deadline?",
+      "a": "Orders for the next {{delivery_day}} close {{cutoff}}. The new menu goes up every {{menu_posted}}, so you have a few days to choose."
+    },
+    {
+      "q": "What if I'm not home on delivery day?",
+      "a": "No problem. Leave a cooler outside with ice packs and our driver will transfer your meals into it. A 48-quart cooler is plenty for most orders. If you pick up at a gym or office drop point, meals arrive in JOMB cooler bags, and those go back to the drop point before the next delivery."
+    },
+    {
+      "q": "Do I have to subscribe?",
+      "a": "No. You can order any single week, no contract. If you'd like dinner handled every week, the <a href=\"{{link:meal-plans/}}\">JOMB Membership</a> plans save 5–12% and you can skip or pause any week by {{cutoff}}. Chef Mike recommends at least 3–4 weeks in a row on the Low-Carb Dairy-Free plan to really feel the difference."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Checkout is online and secure in the <a href=\"{{store}}\">JOMB Store</a>. Prices are listed before sales tax."
+    }
+  ],
+  "food": [
+    {
+      "q": "Who cooks the food?",
+      "a": "Executive Chef Michael Saunders. Chef Mike was Executive Sous Chef at Morton's The Steakhouse in Dallas and Executive Chef at The Ore House in Steamboat Springs and at Oryx in Raleigh before starting Just One More Bite."
+    },
+    {
+      "q": "What ingredients do you use?",
+      "a": "Everything is made from scratch, with local and fresh ingredients whenever possible and USDA Choice meats. The menu changes every week, so you're never stuck in a rotation."
+    },
+    {
+      "q": "Can I make substitutions?",
+      "a": "Meals are cooked exactly as listed on the weekly menu, with no substitutions. That's how we keep quality high and prices fair."
+    },
+    {
+      "q": "What about food allergies?",
+      "a": "Our gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy. If you have a severe allergy, email <a href=\"mailto:{{email}}\">{{email}}</a> before ordering so we can talk it through."
+    },
+    {
+      "q": "Do you provide nutrition information?",
+      "a": "The Zone menu is built to 4-block targets: about 28–32 g protein, 34–40 g carbohydrates and 12–16 g fat per meal. Because every menu is new each week, we don't publish full nutrition labels for the other menus, and the Zone numbers are targets rather than lab-tested values."
+    }
+  ],
+  "plans": [
+    {
+      "q": "How much does Just One More Bite cost?",
+      "a": "Zone meals run {{per:zone_all}} per meal on the full plan ({{price:zone_all}} for 18 meals), or {{per:zone_double}} per meal for two people. Low-Carb Dairy-Free lunches are {{per:lcdf_lunch}} and dinners {{per:lcdf_dinner}}; Paleo lunches are {{per:paleo_lunch}} and dinners {{per:paleo_dinner}}. Family dinners are {{price:family_meal}} each and feed three adults. All prices are before tax. See the <a href=\"{{link:pricing/}}\">full price list</a>."
+    },
+    {
+      "q": "Which menu should I pick?",
+      "a": "<b>Zone</b> if you train hard or want fat loss with lean muscle (breakfast, lunch and dinner, macro-balanced). <b>Paleo</b> if you avoid grains, dairy and added sugar. <b>Low-Carb Dairy-Free</b> for cleaner, lighter eating. <b>Family</b> for real dinners the whole house will eat."
+    },
+    {
+      "q": "How many people does a family meal feed?",
+      "a": "One family dinner feeds three adults, or two adults and two small children. There's a two-meal minimum. The soup, entrée salad and vegetarian options are a little smaller and usually serve two adults."
+    },
+    {
+      "q": "Can two people share a plan?",
+      "a": "Yes. The Zone plan comes in a double portion ({{price:zone_double}} for 36 meals, {{per:zone_double}} each), and double portions of the Low-Carb Dairy-Free plan are available too; just ask."
+    }
+  ],
+  "events": [
+    {
+      "q": "Do you do private chef dinners?",
+      "a": "Yes. Chef Mike cooks plated, restaurant-style dinners in your home for birthdays, anniversaries, holidays and any celebration, customized to your menu. <a href=\"{{link:private-chef-raleigh/}}\">See private dining</a>."
+    },
+    {
+      "q": "Do you cater weddings and parties?",
+      "a": "Yes: buffet, plated dinners and passed cocktail hors d'oeuvres, customized to what you love. <a href=\"{{link:catering-weddings/}}\">See catering &amp; weddings</a>."
+    },
+    {
+      "q": "Do you offer gift cards?",
+      "a": "Yes. Gift cards start at {{price:gift_from}} in the <a href=\"{{store}}\">JOMB Store</a>, or you can send a week of meals straight to someone else's door."
+    }
+  ]
+}

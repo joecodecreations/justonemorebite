@@ -1,0 +1,183 @@
+<!--meta
+{
+  "title": "Meal Delivery: Raleigh, Cary, Morrisville & RTP | JOMB",
+  "og_title": "Where Just One More Bite delivers every Tuesday",
+  "description": "Chef-made meals delivered every Tuesday, 10 AM–5 PM, to homes, offices and CrossFit gyms in Raleigh, Cary, Morrisville, RTP and Knightdale, NC.",
+  "path": "delivery-area/",
+  "og": "og-default",
+  "nav": "how",
+  "page_type": "WebPage",
+  "breadcrumb": [["How it works", "how-it-works/"], ["Delivery area", "delivery-area/"]]
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Meal delivery · Raleigh, Cary, Morrisville, RTP &amp; Knightdale</span>Every Tuesday, from Raleigh <em>to your door.</em></h1>
+        <p class="lead">Just One More Bite delivers chef-made meals every {{delivery_day}} between {{delivery_window}} to homes, offices and CrossFit gyms in {{towns_sentence}}, North Carolina. Order in the JOMB Store by {{cutoff}}. Somewhere else in the Triangle? Ask, and we'll tell you straight.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order for Tuesday</a>
+          <a class="btn btn--ghost btn--lg" href="#not-listed">Not on the list?</a>
+        </div>
+      </div>
+      <figure class="info-map reveal">
+        <svg viewBox="0 0 560 420" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Schematic map of the Just One More Bite delivery area</title>
+          <desc id="map-desc">A simplified, not-to-scale sketch of the Triangle. Raleigh, home base, sits center-east. Cary is just west of Raleigh, Morrisville is northwest of Cary, Research Triangle Park is north of Morrisville between Raleigh and Durham, and Knightdale is east of Raleigh. Durham, to the northwest, is outside the regular area.</desc>
+          <rect class="m-land" x="0" y="0" width="560" height="420" rx="18"/>
+          <path class="m-zone" d="M112 140 C130 129 174 134 205 150 C236 166 264 220 300 235 C336 250 385 234 420 238 C455 242 494 246 508 262 C522 278 518 320 505 335 C492 350 461 350 430 352 C399 354 358 352 320 350 C282 348 237 346 205 338 C173 330 148 320 130 300 C112 280 103 242 100 215 C97 188 94 151 112 140 Z"/>
+          <path class="m-road" d="M40 120 C49 125 77 138 95 150 C113 162 132 180 150 195 C168 210 182 226 200 240 C218 254 233 267 255 282 C277 297 302 318 330 330 C358 342 387 342 420 352 C453 362 512 385 530 392"/>
+          <path class="m-road" d="M345 292 C354 292 382 293 400 292 C418 291 434 290 456 287 C478 284 518 278 530 276"/>
+          <text class="m-road-label" x="466" y="396">I-40</text>
+          <text class="m-road-label" x="486" y="262">US-64</text>
+          <circle class="m-ref" cx="120" cy="86" r="9"/>
+          <text class="m-label m-label--ref" x="136" y="82">Durham</text>
+          <text class="m-sub" x="136" y="104">Ask us</text>
+          <circle class="m-dot" cx="152" cy="180" r="10"/>
+          <text class="m-label" x="136" y="176" text-anchor="end">RTP</text>
+          <text class="m-sub" x="136" y="197" text-anchor="end">Offices</text>
+          <circle class="m-dot" cx="178" cy="252" r="10"/>
+          <text class="m-label" x="163" y="250" text-anchor="end">Morrisville</text>
+          <text class="m-sub" x="163" y="271" text-anchor="end">Gyms</text>
+          <circle class="m-dot" cx="222" cy="290" r="10"/>
+          <text class="m-label" x="222" y="332" text-anchor="middle">Cary</text>
+          <circle class="m-ring" cx="330" cy="296" r="24"/>
+          <circle class="m-dot m-dot--home" cx="330" cy="296" r="13"/>
+          <text class="m-label" x="330" y="236" text-anchor="middle">Raleigh</text>
+          <text class="m-sub" x="330" y="258" text-anchor="middle">Home base</text>
+          <circle class="m-dot" cx="456" cy="287" r="10"/>
+          <text class="m-label" x="456" y="330" text-anchor="middle">Knightdale</text>
+          <g transform="translate(516 40)"><path class="m-north-arrow" d="M0 -16 L8 6 L0 1 L-8 6 Z"/><text class="m-north" x="0" y="24" text-anchor="middle">N</text></g>
+        </svg>
+        <figcaption><span class="info-map-key"><i aria-hidden="true"></i>Regular {{delivery_day}} delivery</span><span class="info-map-key"><i class="ref" aria-hidden="true"></i>Ask first</span><span>Schematic, not to scale</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight section--paper">
+  <div class="container">
+    {{facts}}
+  </div>
+</section>
+
+<section class="section" id="towns">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Town by town</span>
+      <h2>Five towns. <em>One Tuesday.</em></h2>
+      <p>Every town on the list gets the same thing: {{delivery_day}} delivery between {{delivery_window}}, to your home, your office or your gym. Here's what that looks like where you live.</p>
+    </div>
+    <div class="info-towns">
+      <article class="info-town info-town--wide reveal" id="raleigh">
+        <div>
+          <div class="info-town-head"><span class="info-town-pin">{{icon:chef}}</span><div><h3>Raleigh</h3><span>Home base · homes, offices, gyms</span></div></div>
+          <p>Raleigh is home base. Every Just One More Bite meal is cooked from scratch in Raleigh by {{chef}}, who was Executive Chef at Oryx in Raleigh before he started JOMB. Every {{delivery_day}} delivery starts here, with drops to homes and workplaces across the city.</p>
+          <p>At work on {{delivery_day}}? Leave a cooler with ice packs by the door and your week is waiting when you get back, or have it delivered to your office instead.</p>
+        </div>
+        <ul class="checks">
+          <li>Cooked from scratch in Raleigh, with USDA Choice meats and local produce when possible</li>
+          <li>Family dinners at {{price:family_meal}} feed three: a weeknight answer for Raleigh households</li>
+          <li>Gift a week to someone across town: order as usual and send us their address</li>
+          <li>Private chef dinners and catering are booked in Raleigh too: <a href="{{link:private-chef-raleigh/}}">private dining</a></li>
+        </ul>
+      </article>
+
+      <article class="info-town reveal" id="cary">
+        <div class="info-town-head"><span class="info-town-pin">{{icon:pin}}</span><div><h3>Cary</h3><span>West of Raleigh · homes and workplaces</span></div></div>
+        <p>Cary sits just west of Raleigh, between Raleigh and RTP, so it's a natural stop on the {{delivery_day}} run. Orders go to homes and to workplaces.</p>
+        <p>Live in Cary but work in the Park? Have your meals delivered to whichever address is easier on a {{delivery_day}}. Feeding a household? Two Family dinners ({{price:family_meal}} each) cover three adults twice.</p>
+        <ul class="checks">
+          <li>Home delivery with a cooler and ice packs if you're out</li>
+          <li>Lunch plans from {{price:lcdf_lunch}} for six workday lunches</li>
+        </ul>
+      </article>
+
+      <article class="info-town reveal" id="morrisville">
+        <div class="info-town-head"><span class="info-town-pin">{{icon:dumbbell}}</span><div><h3>Morrisville</h3><span>Between Cary &amp; RTP · gyms and homes</span></div></div>
+        <p>In Morrisville, JOMB feeds athletes. A CrossFit gym can be a drop point: members' meals arrive in JOMB cooler bags on {{delivery_day}}, and the bags go back to the gym before the next week.</p>
+        <blockquote>“Food for athletic performance doesn't have to be bland and monotonous.”<cite>Jonathan A., a Morrisville CrossFit gym owner and a competitive lightweight strongman, 5 years on JOMB meals</cite></blockquote>
+        <ul class="checks">
+          <li><a href="{{link:zone-meal-delivery/}}">Zone meals</a> built to 4-block targets, {{per:zone_all}} each on the full plan</li>
+          <li>Ask whether your gym is already on the route</li>
+        </ul>
+      </article>
+
+      <article class="info-town reveal" id="rtp">
+        <div class="info-town-head"><span class="info-town-pin">{{icon:briefcase}}</span><div><h3>Research Triangle Park</h3><span>RTP · offices and workplaces</span></div></div>
+        <p>JOMB's menus have talked about "our RTP clients" for years. Offices in the Park get a {{delivery_day}} drop between {{delivery_window}}, inside the workday, and shared office drops arrive in JOMB cooler bags that go back to the drop point each week.</p>
+        <p>A week of desk lunches costs {{price:lcdf_lunch}} on Low-Carb Dairy-Free, {{price:zone_lunch}} on Zone or {{price:paleo_lunch}} on Paleo, for six chef-made lunches.</p>
+        <ul class="checks">
+          <li>One drop for the whole team</li>
+          <li>Want a drop at your office? Call {{phone_link}}</li>
+        </ul>
+      </article>
+
+      <article class="info-town reveal" id="knightdale">
+        <div class="info-town-head"><span class="info-town-pin">{{icon:pin}}</span><div><h3>Knightdale</h3><span>East of Raleigh · homes</span></div></div>
+        <p>Knightdale, just east of Raleigh along US-64, is the eastern end of our delivery list. For home deliveries, the cooler routine is all you need: leave it out with ice packs, and the driver packs your meals inside.</p>
+        <ul class="checks">
+          <li>A 48-quart cooler holds most weekly orders</li>
+          <li>Family dinners, Zone, Paleo and Low-Carb Dairy-Free, same as everywhere else</li>
+          <li>Sending meals to family in Knightdale? Order as usual and send us their address</li>
+        </ul>
+      </article>
+
+      <article class="info-town info-town--wide reveal" id="not-listed">
+        <div>
+        <div class="info-town-head"><span class="info-town-pin">{{icon:mail}}</span><div><h3>Not on the list?</h3><span>Durham, Apex, Garner, Wake Forest…</span></div></div>
+        <p>Our regular area is {{towns_sentence}}. If you're close by, ask anyway. Send your address or ZIP code and we'll tell you honestly whether we can reach you on a {{delivery_day}}, or whether a nearby office or gym drop point would work.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--sm" href="mailto:{{email}}?subject=Do%20you%20deliver%20to%20my%20area%3F">{{icon:mail}}Email your ZIP</a>
+          <a class="btn btn--ghost btn--sm" href="tel:{{tel}}">{{icon:phone}}{{phone}}</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="drop-points">
+  <div class="container split split--wide-media">
+    <div class="reveal">
+      <span class="eyebrow">Gym and office drop points</span>
+      <h2>Pick up your week <em>where you already are.</em></h2>
+      <p class="lead">Drop points let a whole gym or office get Chef Mike's meals in one stop. Here's the routine.</p>
+      <ol class="info-timeline info-timeline--stack">
+        <li><span class="info-tl-icon">{{icon:truck}}</span><div><span class="info-tl-when">{{delivery_day}} · {{delivery_window}}</span><h3>We drop everyone's meals</h3><p>Each order is packed in a JOMB cooler bag and left at the gym or office.</p></div></li>
+        <li><span class="info-tl-icon">{{icon:cooler}}</span><div><span class="info-tl-when">After work or training</span><h3>You grab your bag</h3><p>Take your meals home and get them into the fridge.</p></div></li>
+        <li class="is-key"><span class="info-tl-icon">{{icon:check}}</span><div><span class="info-tl-when">Before next {{delivery_day}}</span><h3>The bag goes back</h3><p>Return your JOMB cooler bag to the same drop point, ready for next week.</p></div></li>
+      </ol>
+      <p class="mt-2">Want your gym or office to be a drop point? Call {{phone_link}} or email {{email_link}} and we'll talk it through.</p>
+    </div>
+    <div class="media-frame media-frame--tall reveal">{{img:athletes|(min-width: 900px) 45vw, 100vw}}<span class="media-caption">JOMB Athletes at a CrossFit competition</span></div>
+  </div>
+</section>
+
+<section class="section" id="home-delivery">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Home delivery</span>
+      <h2>You don't have to <em>be home.</em></h2>
+      <p>Meals come chilled and need to stay cold until you're back, so set out a cooler on {{delivery_day}} morning.</p>
+    </div>
+    <div class="info-cards info-cards--3">
+      <div class="info-card reveal"><span class="info-card-icon">{{icon:cooler}}</span><h3>Leave a cooler</h3><p>Put it by the door with ice packs inside. A 48-quart cooler is plenty for most orders.</p></div>
+      <div class="info-card reveal"><span class="info-card-icon">{{icon:truck}}</span><h3>We pack it</h3><p>The driver transfers your meals into your cooler between {{delivery_window}}.</p></div>
+      <div class="info-card reveal"><span class="info-card-icon">{{icon:plate}}</span><h3>Fridge, then dinner</h3><p>Move everything to the fridge when you get in. Heat, plate and eat all week.</p></div>
+    </div>
+    <p class="mt-2"><a class="text-link" href="{{link:how-it-works/}}">See the whole weekly routine</a> · <a class="text-link" href="{{link:pricing/}}">See every price</a></p>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Delivery questions</span><h2>Do you deliver <em>to me?</em></h2></div>
+    {{faq:area}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a></p>
+  </div>
+</section>
+
+{{cta_band:meals-rows}}

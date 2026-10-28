@@ -1,0 +1,290 @@
+<!--meta
+{
+  "title": "This Week's Menus · Meal Delivery in Raleigh, NC | JOMB",
+  "og_title": "This week's menus from Chef Mike · Just One More Bite",
+  "description": "This week's Zone, Paleo, Low-Carb Dairy-Free and Family menus from Chef Mike, plus protein by the pound. Order by Sat 8 PM; delivered Tuesday in Raleigh.",
+  "path": "menus/",
+  "og": "og-default",
+  "nav": "menus",
+  "page_type": "CollectionPage",
+  "breadcrumb": [["Menus", "menus/"]]
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Weekly meal delivery menus · Raleigh, NC</span>This week's menus, <em>all on one page.</em></h1>
+        <p class="lead">Every {{menu_posted}}, Chef Michael Saunders writes four brand-new menus (Zone, Paleo, Low-Carb Dairy-Free and Family) and lists the cooked proteins he sells by the pound. Order in the JOMB Store by {{cutoff}}. Chef Mike cooks everything from scratch in Raleigh and delivers it {{delivery_day}}, {{delivery_window}}, to homes, offices and CrossFit gyms. Meals start at {{per:zone_breakfast}}; family dinners are {{price:family_meal}} and feed three.</p>
+        <dl class="menus-ticket">
+          <div><dt><span class="dot" aria-hidden="true"></span>On the board now</dt><dd>{{week_label}}</dd></div>
+          <div><dt>Order deadline</dt><dd>{{cutoff_short}}</dd></div>
+          <div><dt>Delivery</dt><dd>{{delivery_day}}<small>{{delivery_window}}</small></dd></div>
+          <div><dt>New menu</dt><dd>Every week<small>{{menu_posted}}</small></dd></div>
+          <div><dt>Ordering</dt><dd>Any week<small>or subscribe &amp; save up to 12%</small></dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order this week</a>
+          <a class="btn btn--ghost btn--lg" href="#zone">Read the menus</a>
+        </div>
+        <a class="menus-sub" href="{{link:meal-plans/}}"><span class="menus-sub-icon">{{icon:calendar}}</span><span><b>Want this every week?</b> Subscribers save up to 12% and can skip any week.</span><span class="menus-sub-go">Meal plans</span></a>
+      </div>
+      <div>
+      <div class="menus-hero-collage">
+        <div class="media-frame">{{img:meals-containers|(min-width: 960px) 28vw, 58vw||eager}}</div>
+        <div class="media-frame">{{img:zone-plate|(min-width: 960px) 20vw, 40vw}}</div>
+        <div class="media-frame">{{img:family-plate|(min-width: 960px) 20vw, 40vw}}</div>
+      </div>
+      <div class="price-chips" aria-label="Prices at a glance">
+        <div class="price-chip"><b>{{per:zone_all}}</b><span>Zone meal, full week</span></div>
+        <div class="price-chip"><b>{{per:paleo_lunch}}</b><span>Paleo lunch</span></div>
+        <div class="price-chip"><b>{{per:lcdf_lunch}}</b><span>Low-Carb DF lunch</span></div>
+        <div class="price-chip"><b>{{price:family_meal}}</b><span>Family dinner, feeds 3</span></div>
+        <div class="price-chip"><b>{{price:protein_chicken}}</b><span>Cooked chicken, per lb</span></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="menus-jump" aria-label="Jump to a menu">
+  <div class="menus-jump-inner">
+    <span class="menus-jump-label">Jump to</span>
+    <a href="#zone">{{icon:dumbbell}}Zone</a>
+    <a href="#paleo">{{icon:leaf}}Paleo</a>
+    <a href="#lcdf">{{icon:sparkle}}Low-Carb Dairy-Free</a>
+    <a href="#family">{{icon:users}}Family</a>
+    <a href="#protein">{{icon:flame}}Protein by the lb</a>
+    <a href="#prices">{{icon:list}}Prices</a>
+    <a class="is-order" href="{{store}}">{{icon:cart}}Order</a>
+  </div>
+</nav>
+
+<section class="section section--tight menus-anchor" id="zone">
+  <div class="container">
+    <div class="menus-head reveal">
+      <div class="menus-head-main">
+        <div class="menus-head-top">
+        <div class="menus-thumb">{{img:zone-plate|116px}}</div>
+          <div>
+          <span class="eyebrow">Menu 1 · Most popular</span>
+          <h2>Zone: <em>4-block meals,</em> breakfast to dinner</h2>
+          </div>
+        </div>
+        <p>Six days of breakfasts, lunches and dinners, each built to about 28–32 g protein, 34–40 g carbs and 12–16 g fat. Popular with CrossFit athletes. <a href="{{link:zone-meal-delivery/}}">How Zone meals work</a>.</p>
+      </div>
+      <div class="menus-head-side">
+        <div class="price-chips">
+          <div class="price-chip"><b>{{price:zone_all}}</b><span>18 meals · {{per:zone_all}} each</span></div>
+          <div class="price-chip"><b>{{per:zone_double}}</b><span>per meal for two</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">{{menu:zone}}</div>
+  </div>
+</section>
+
+<section class="section section--tight section--paper menus-anchor" id="paleo">
+  <div class="container">
+    <div class="menus-head reveal">
+      <div class="menus-head-main">
+        <div class="menus-head-top">
+        <div class="menus-thumb">{{img:paleo-plate|116px}}</div>
+          <div>
+          <span class="eyebrow">Menu 2 · No grains · no dairy</span>
+          <h2>Paleo: <em>meat, vegetables,</em> real flavor</h2>
+          </div>
+        </div>
+        <p>Lunches and dinners built on meat, vegetables, fruit, nuts and seeds, with no grains, no dairy and no added sugar. <a href="{{link:paleo-meal-delivery/}}">About the Paleo plan</a>.</p>
+      </div>
+      <div class="menus-head-side">
+        <div class="price-chips">
+          <div class="price-chip"><b>{{per:paleo_lunch}}</b><span>per lunch · 6 for {{price:paleo_lunch}}</span></div>
+          <div class="price-chip"><b>{{per:paleo_dinner}}</b><span>per dinner · 6 for {{price:paleo_dinner}}</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">{{menu:paleo}}</div>
+  </div>
+</section>
+
+<section class="section section--tight menus-anchor" id="lcdf">
+  <div class="container">
+    <div class="menus-head reveal">
+      <div class="menus-head-main">
+        <div class="menus-head-top">
+        <div class="menus-thumb">{{img:lcdf-plate|116px}}</div>
+          <div>
+          <span class="eyebrow">Menu 3 · Lighter &amp; cleaner</span>
+          <h2>Low-Carb Dairy-Free: <em>lighter,</em> still dinner</h2>
+          </div>
+        </div>
+        <p>Lunches and dinners for cleaner, lighter eating. Chef Mike recommends 3–4 weeks in a row, and double portions for two adults are available. <a href="{{link:low-carb-dairy-free-meals/}}">About Low-Carb Dairy-Free</a>.</p>
+      </div>
+      <div class="menus-head-side">
+        <div class="price-chips">
+          <div class="price-chip"><b>{{per:lcdf_lunch}}</b><span>per lunch · 6 for {{price:lcdf_lunch}}</span></div>
+          <div class="price-chip"><b>{{per:lcdf_dinner}}</b><span>per dinner · 6 for {{price:lcdf_dinner}}</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">{{menu:lcdf}}</div>
+  </div>
+</section>
+
+<section class="section section--tight section--sand menus-anchor" id="family">
+  <div class="container">
+    <div class="menus-head reveal">
+      <div class="menus-head-main">
+        <div class="menus-head-top">
+        <div class="menus-thumb">{{img:family-plate|116px}}</div>
+          <div>
+          <span class="eyebrow">Menu 4 · Feeds 3</span>
+          <h2>Family: <em>dinner for the table,</em> {{price:family_meal}}</h2>
+          </div>
+        </div>
+        <p>Four family-size dinners a week. Each feeds three adults, or two adults and two small kids, with a two-dinner minimum. Add soup, an entrée salad or fresh-cut fruit. <a href="{{link:family-meal-delivery/}}">About family dinners</a>.</p>
+      </div>
+      <div class="menus-head-side">
+        <div class="price-chips">
+          <div class="price-chip"><b>{{price:family_meal}}</b><span>per dinner · feeds 3</span></div>
+          <div class="price-chip"><b>{{per:family_meal}}</b><span>per adult serving</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">{{menu:family}}</div>
+  </div>
+</section>
+
+<section class="section section--tight section--paper menus-anchor" id="protein">
+  <div class="container">
+    <div class="menus-head reveal">
+      <div class="menus-head-main">
+        <div class="menus-head-top">
+        <div class="menus-thumb">{{img:osso-buco-style|116px}}</div>
+          <div>
+          <span class="eyebrow">Plus · Protein by the pound</span>
+          <h2>This week's proteins, <em>by the pound</em></h2>
+          </div>
+        </div>
+        <p>The cooked proteins from this week's menus, sold by cooked weight. Add them to any order, or order protein on its own with a $100 minimum. <a href="{{link:protein-by-the-pound/}}">How protein by the pound works</a>.</p>
+      </div>
+      <div class="menus-head-side">
+        <div class="price-chips">
+          <div class="price-chip"><b>{{price:protein_chicken}}</b><span>chicken / lb</span></div>
+          <div class="price-chip"><b>{{price:protein_beef}}</b><span>CAB beef / lb</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="menus-split-tight menus-split-tight--flip">
+      <div class="reveal">{{menu:protein}}</div>
+      <div class="menus-photo-pair reveal">
+        <div class="media-frame">{{img:steaks-grill|(min-width: 960px) 20vw, 50vw}}</div>
+        <div class="media-frame">{{img:shrimp|(min-width: 960px) 20vw, 50vw}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section menus-anchor" id="prices">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Every price, one glance</span>
+      <h2>What a week <em>costs.</em></h2>
+      <p>Before NC sales tax. Every plan is for one person unless it says otherwise, and there's no contract: order the weeks you want, or <a href="{{link:meal-plans/}}">subscribe and save up to 12%</a>.</p>
+    </div>
+    <div class="menus-prices">
+      <article class="menus-price-card menus-price-card--dark reveal">
+        <h3>Zone</h3>
+        <p>4-block breakfasts, lunches and dinners</p>
+        <ul class="menus-pricelist">
+          <li><span>All 18 meals<small>{{per:zone_all}} a meal</small></span><i></i><b>{{price:zone_all}}</b></li>
+          <li><span>All 36 meals, for two<small>{{per:zone_double}} a meal</small></span><i></i><b>{{price:zone_double}}</b></li>
+          <li><span>6 breakfasts</span><i></i><b>{{price:zone_breakfast}}</b></li>
+          <li><span>6 lunches</span><i></i><b>{{price:zone_lunch}}</b></li>
+          <li><span>6 dinners</span><i></i><b>{{price:zone_dinner}}</b></li>
+        </ul>
+        <a class="text-link" href="{{link:zone-meal-delivery/}}">Zone meal delivery</a>
+      </article>
+      <article class="menus-price-card reveal">
+        <h3>Paleo</h3>
+        <p>No grains, no dairy, no added sugar</p>
+        <ul class="menus-pricelist">
+          <li><span>6 lunches<small>{{per:paleo_lunch}} each</small></span><i></i><b>{{price:paleo_lunch}}</b></li>
+          <li><span>6 dinners<small>{{per:paleo_dinner}} each</small></span><i></i><b>{{price:paleo_dinner}}</b></li>
+        </ul>
+        <a class="text-link" href="{{link:paleo-meal-delivery/}}">Paleo meal delivery</a>
+      </article>
+      <article class="menus-price-card reveal">
+        <h3>Low-Carb Dairy-Free</h3>
+        <p>Lighter, cleaner lunches and dinners</p>
+        <ul class="menus-pricelist">
+          <li><span>6 lunches<small>{{per:lcdf_lunch}} each</small></span><i></i><b>{{price:lcdf_lunch}}</b></li>
+          <li><span>6 dinners<small>{{per:lcdf_dinner}} each</small></span><i></i><b>{{price:lcdf_dinner}}</b></li>
+          <li><span>Double portions for two<small>Call or email to set up</small></span><i></i><b>Ask</b></li>
+        </ul>
+        <a class="text-link" href="{{link:low-carb-dairy-free-meals/}}">Low-carb, dairy-free meals</a>
+      </article>
+      <article class="menus-price-card reveal">
+        <h3>Family</h3>
+        <p>Feeds 3 adults, or 2 adults + 2 small kids</p>
+        <ul class="menus-pricelist">
+          <li><span>Family dinner<small>2-dinner minimum</small></span><i></i><b>{{price:family_meal}}</b></li>
+          <li><span>Soup of the week</span><i></i><b>{{price:family_soup}}</b></li>
+          <li><span>Entrée salad</span><i></i><b>{{price:family_salad}}</b></li>
+          <li><span>Fresh-cut fruit, 1 gallon</span><i></i><b>{{price:fruit}}</b></li>
+        </ul>
+        <a class="text-link" href="{{link:family-meal-delivery/}}">Family meal delivery</a>
+      </article>
+      <article class="menus-price-card reveal">
+        <h3>Protein by the pound</h3>
+        <p>Cooked weight · $100 minimum on its own</p>
+        <ul class="menus-pricelist">
+          <li><span>Chicken</span><i></i><b>{{price:protein_chicken}}</b></li>
+          <li><span>CAB beef</span><i></i><b>{{price:protein_beef}}</b></li>
+          <li><span>Pork</span><i></i><b>{{price:protein_pork}}</b></li>
+          <li><span>Seafood</span><i></i><b>{{price:protein_seafood}}</b></li>
+        </ul>
+        <a class="text-link" href="{{link:protein-by-the-pound/}}">Protein by the pound</a>
+      </article>
+      <article class="menus-price-card reveal">
+        <h3>Gifts &amp; events</h3>
+        <p>Beyond the weekly menus</p>
+        <ul class="menus-pricelist">
+          <li><span>Gift cards, from</span><i></i><b>{{price:gift_from}}</b></li>
+          <li><span>Private chef dinners</span><i></i><b>Quote</b></li>
+          <li><span>Catering &amp; weddings</span><i></i><b>Quote</b></li>
+        </ul>
+        <a class="text-link" href="{{link:pricing/}}">See the full price list</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The weekly rhythm</span>
+      <h2>Menu Wednesday. <em>Dinner Tuesday.</em></h2>
+      <p>Same rhythm every week, so it's easy to build into your routine. Not home on {{delivery_day}}? Leave a cooler with ice packs and we'll tuck your meals inside.</p>
+    </div>
+    {{steps}}
+    <ul class="menus-pill-links reveal">
+      <li><a href="{{link:how-it-works/}}">{{icon:list}}How it works, step by step</a></li>
+      <li><a href="{{link:delivery-area/}}">{{icon:pin}}Where we deliver</a></li>
+      <li><a href="{{link:chef-michael-saunders/}}">{{icon:chef}}Meet Chef Mike</a></li>
+      <li><a href="{{link:reviews/}}">{{icon:star}}Read client reviews</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Reading the menu</span><h2>Menu <em>questions</em></h2></div>
+    {{faq:menus}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a></p>
+  </div>
+</section>
+
+{{cta_band:meals-rows}}

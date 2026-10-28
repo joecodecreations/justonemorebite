@@ -1,0 +1,144 @@
+<!--meta
+{
+  "title": "Low-Carb, Dairy-Free Meal Delivery in Raleigh | JOMB",
+  "og_title": "Low-carb, dairy-free meals, cooked by a chef · Just One More Bite",
+  "description": "Low-carb, dairy-free lunches and dinners, chef-made and delivered Tuesdays in Raleigh, Cary and RTP. 6 lunches $75 ($12.50 each), 6 dinners $108.",
+  "path": "low-carb-dairy-free-meals/",
+  "og": "og-lcdf",
+  "nav": "menus",
+  "page_type": "WebPage",
+  "breadcrumb": [["Menus", "menus/"], ["Low-Carb Dairy-Free", "low-carb-dairy-free-meals/"]],
+  "service": {"name": "Low-carb, dairy-free meal delivery", "description": "Chef-made low-carb, dairy-free lunches and dinners delivered every Tuesday in the Raleigh area. 6 lunches and/or 6 dinners for one, with double portions for two adults available.", "type": "Meal delivery", "offers": ["lcdf_lunch", "lcdf_dinner"]}
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Low-carb, dairy-free meal delivery · Raleigh</span>Lighter eating that <em>still tastes like a restaurant.</em></h1>
+        <p class="lead">Just One More Bite's Low-Carb Dairy-Free plan is 6 lunches ({{price:lcdf_lunch}}, {{per:lcdf_lunch}} each) and/or 6 dinners ({{price:lcdf_dinner}}, {{per:lcdf_dinner}} each) a week, cooked from scratch by Chef Michael Saunders and delivered every {{delivery_day}} in {{towns_sentence}}. Double portions for two adults are available, and Chef Mike recommends 3–4 weeks in a row to really feel the difference. Order by {{cutoff}}.</p>
+        <div class="price-chips">
+          <div class="price-chip"><b>{{per:lcdf_lunch}}</b><span>per lunch</span></div>
+          <div class="price-chip"><b>{{per:lcdf_dinner}}</b><span>per dinner</span></div>
+          <div class="price-chip"><b>×2</b><span>double portions for two</span></div>
+          <div class="price-chip"><b>3–4 wks</b><span>Chef Mike's advice</span></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order Low-Carb DF</a>
+          <a class="btn btn--ghost btn--lg" href="#menu">This week's menu</a>
+        </div>
+        <a class="menus-sub" href="{{link:meal-plans/}}"><span class="menus-sub-icon">{{icon:calendar}}</span><span><b>Want this every week?</b> Subscribers save up to 12% and can skip any week.</span><span class="menus-sub-go">Meal plans</span></a>
+      </div>
+      <div class="hero-media menus-hero-media">
+        <div class="media-frame media-frame--wide">{{img:lcdf-plate|(min-width: 960px) 46vw, 100vw||eager}}</div>
+        <div class="float-card">{{icon:leaf}}<p><b>No dairy, lighter on carbs</b>Lunches and dinners for cleaner eating, new every week</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="run">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Chef Mike's advice</span>
+      <h2>Give it <em>three or four weeks.</em></h2>
+      <p>One week is a welcome break from cooking. Three or four in a row is when lighter eating turns into a routine. That's why Chef Mike recommends a 3–4 week run, though you're welcome to order any week you like.</p>
+    </div>
+    <div class="menus-track-cap reveal" aria-hidden="true"><span>Getting started</span><span>Weeks 3–4: the recommended run</span></div>
+    <div class="menus-track reveal" aria-hidden="true"></div>
+    <ol class="menus-weeks" role="list">
+      <li class="menus-wk reveal"><span class="menus-wk-n">Week <b>1</b></span><h3>The fridge is stocked</h3><p>Lunch and dinner arrive {{delivery_day}}. No shopping, no cooking, no dishes.</p></li>
+      <li class="menus-wk reveal"><span class="menus-wk-n">Week <b>2</b></span><h3>New menu, new dishes</h3><p>Every menu is brand-new, so the run never feels like a rotation.</p></li>
+      <li class="menus-wk menus-wk--goal reveal"><span class="menus-wk-n">Week <b>3</b></span><h3>The routine sticks</h3><p>Ordering by {{cutoff_short}} becomes as automatic as the delivery.</p></li>
+      <li class="menus-wk menus-wk--goal reveal"><span class="menus-wk-n">Week <b>4</b></span><h3>Your call</h3><p>Keep going, switch to <a href="{{link:paleo-meal-delivery/}}">Paleo</a> or <a href="{{link:zone-meal-delivery/}}">Zone</a>, or take a week off. No contract.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--paper menus-anchor" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">This week's menu</span>
+      <h2>On the <em>Low-Carb Dairy-Free</em> menu</h2>
+      <p>Lunches and dinners come two of each of three dishes. A new menu posts every {{menu_posted}}, and every meal is cooked exactly as listed.</p>
+    </div>
+    <div class="reveal">{{menu:lcdf}}</div>
+    <p class="mt-2 muted">See how it compares with the other plans on <a href="{{link:menus/}}">this week's menus</a>, or check <a href="{{link:pricing/}}">every price on one page</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="details">
+  <div class="container">
+    <div class="menus-pair">
+      <div class="menus-pair-a reveal">
+        <h3>{{icon:users}}Cooking for two?</h3>
+        <p>Double portions for two adults are available on the Low-Carb Dairy-Free plan, so you and your partner can eat the same way all week.</p>
+        <p>Call {{phone_link}} or email {{email_link}} and we'll set it up.</p>
+      </div>
+      <div class="menus-pair-b reveal">
+        <h3>{{icon:heart}}A note on allergies</h3>
+        <p>Gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy.</p>
+        <p>If you have a severe allergy, email {{email_link}} before ordering so we can talk it through.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" id="who">
+  <div class="container split split--reverse">
+    <div class="reveal">
+      <span class="eyebrow">Who orders Low-Carb Dairy-Free</span>
+      <h2>Lighter, <em>never bland.</em></h2>
+      <p class="lead">This is the plan for weeks when you want to eat clean without living on salads, and without giving up your evenings to cooking.</p>
+      <ul class="checks">
+        <li>You're cutting out dairy and want meals that don't miss it</li>
+        <li>You want lighter lunches you'll actually look forward to</li>
+        <li>You're getting back on track after the holidays, a vacation or a busy stretch</li>
+        <li>You and a partner want to eat the same way (double portions are available)</li>
+      </ul>
+      <p><a class="text-link" href="{{link:paleo-meal-delivery/}}">Want grain-free too? See the Paleo plan</a></p>
+    </div>
+    <div class="menus-photo-pair reveal">
+      <div class="media-frame">{{img:tuna|(min-width: 900px) 22vw, 50vw}}</div>
+      <div class="media-frame">{{img:shrimp|(min-width: 900px) 22vw, 50vw}}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark menus-dark-quotes" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Real clients</span>
+      <h2>Healthy food people <em>look forward to.</em></h2>
+    </div>
+    {{quotes:sandi_mom,anna}}
+    <p class="mt-2"><a class="text-link" href="{{link:reviews/}}">Read more reviews</a></p>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Low-Carb Dairy-Free questions</span><h2>Before you <em>start</em></h2></div>
+    {{faq:lcdf}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a></p>
+  </div>
+</section>
+
+<section class="section" id="related">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Other plans from Chef Mike</span>
+      <h2>Same chef, <em>different goals.</em></h2>
+    </div>
+    <div class="menus-plans-3">{{plans:zone,paleo,family}}</div>
+    <ul class="menus-pill-links reveal">
+      <li><a href="{{link:how-it-works/}}">{{icon:calendar}}How ordering works</a></li>
+      <li><a href="{{link:delivery-area/}}">{{icon:pin}}Where we deliver</a></li>
+      <li><a href="{{link:protein-by-the-pound/}}">{{icon:flame}}Protein by the pound</a></li>
+      <li><a href="{{link:chef-michael-saunders/}}">{{icon:chef}}Meet Chef Mike</a></li>
+    </ul>
+  </div>
+</section>
+
+{{cta_band:meals-containers}}

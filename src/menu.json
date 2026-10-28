@@ -1,0 +1,78 @@
+{
+  "_note": "The weekly menu. Every Wednesday: update week_label, order_by and the dishes below, then run `python3 build.py`. Every menu page, the homepage and llms.txt pick it up.",
+  "week_label": "Latest menu · delivered Tuesday, October 20, 2026",
+  "order_by": "Orders for next Tuesday close Saturday at 8 PM",
+
+  "zone": {
+    "breakfasts": {"note": "3 of each", "items": [
+      "Mandarin Ginger Cottage Cheese",
+      "Roasted Potato Hash with Chorizo, Green Chilis, Cheddar and a Fried Egg"
+    ]},
+    "lunches": {"note": "2 of each", "items": [
+      "Pumpkin Bisque with Candied Pecans and Smoked Pork",
+      "Organic Superfood Greens with Herb-Crusted Chicken, Olives, Red Onion, Cucumber and Lemon Garlic Vinaigrette",
+      "Southwestern Shredded Chicken Tacos with Salsa Verde, Black Bean Salad and Cumin-Lime Grilled Vegetables"
+    ]},
+    "dinners": {"note": "2 of each", "items": [
+      "Deconstructed Sirloin Burger with Tomato, Pickles and Cheese, Maple Bacon Baked Beans and Loaded Potato Casserole",
+      "Herb & Lavender Crusted Chicken Breast with Spiced Apples, Cornbread Stuffing and Succotash",
+      "Braised Pork Osso Buco with Spring Vegetables and White Wine Risotto"
+    ]}
+  },
+
+  "paleo": {
+    "lunches": {"note": "2 of each", "items": [
+      "Pumpkin Bisque with Candied Pecans and Smoked Pork",
+      "Organic Superfood Greens with Herb-Crusted Chicken, Olives, Red Onion, Cucumber and Lemon Garlic Vinaigrette",
+      "Southwestern Shredded Chicken Tacos with Salsa Verde and Cumin-Lime Grilled Vegetables"
+    ]},
+    "dinners": {"note": "2 of each", "items": [
+      "Deconstructed Sirloin Burger with Tomato, Pickles and Grilled Vegetables",
+      "Herb & Lavender Crusted Chicken Breast with Spiced Apples, Cornbread Stuffing and Succotash",
+      "Braised Pork Osso Buco with Spring Vegetables"
+    ]}
+  },
+
+  "lcdf": {
+    "lunches": {"note": "2 of each", "items": [
+      "Pumpkin Bisque with Candied Pecans and Smoked Pork",
+      "Organic Superfood Greens with Herb-Crusted Chicken, Olives, Red Onion, Cucumber and Lemon Garlic Vinaigrette",
+      "Southwestern Shredded Chicken Tacos with Salsa Verde, Black Bean Salad and Cumin-Lime Grilled Vegetables"
+    ]},
+    "dinners": {"note": "2 of each", "items": [
+      "Deconstructed Sirloin Burger with Tomato, Pickles, Maple Bacon Baked Beans and Loaded Potato Casserole",
+      "Herb & Lavender Crusted Chicken Breast with Spiced Apples, Cornbread Stuffing and Succotash",
+      "Braised Pork Osso Buco with Spring Vegetables and White Wine Risotto"
+    ]}
+  },
+
+  "family": {
+    "dinners": {"note": "$75 each · feeds 3 adults or 2 adults + 2 small kids", "items": [
+      "CAB Beef Deconstructed Sirloin Burger with Tomato, Pickles and Cheese, Maple Bacon Baked Beans and Loaded Potato Casserole",
+      "Braised Pork Osso Buco with Spring Vegetables, White Wine Risotto and French Bread",
+      "Herb & Lavender Crusted Chicken Breast with Spiced Apples, Cornbread Stuffing and Succotash",
+      "Southwestern Shredded Chicken Tacos with Salsa Verde, Black Bean Salad and Cumin-Lime Grilled Vegetables"
+    ]},
+    "extras": {"note": "Add to any order", "items": [
+      "Soup: Pumpkin Bisque with Candied Pecans ($20)",
+      "Entrée salad: Organic Superfood Greens with Herb-Crusted Chicken, Olives, Red Onion, Cucumber, Gorgonzola, Croutons and Lemon Garlic Vinaigrette ($35)",
+      "Weekly salad: Organic Romaine with Cherry Tomatoes, Cucumber and Balsamic Vinaigrette",
+      "Fresh-cut fruit, 1-gallon bag of several varieties ($35)"
+    ]}
+  },
+
+  "protein": {
+    "this_week": {"note": "Cooked weight · add-on, or $100 minimum on its own", "items": [
+      "CAB Beef Ground Sirloin",
+      "Braised Pork",
+      "Southwestern Shredded Chicken",
+      "Herb-Crusted Chicken"
+    ]}
+  },
+
+  "marquee": [
+    "Braised Pork Osso Buco", "Herb & Lavender Crusted Chicken", "Pumpkin Bisque with Candied Pecans",
+    "Southwestern Chicken Tacos", "Maple Bacon Baked Beans", "White Wine Risotto",
+    "Seared Tuna", "Rack of Lamb", "Spiced Apples", "Loaded Potato Casserole"
+  ]
+}

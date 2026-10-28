@@ -1,0 +1,55 @@
+{
+  "_note": "FAQ groups for the menu + plan pages (menus/, zone, paleo, lcdf, family, protein). Real facts only: site.json, menu.json, faq.json, BRAND_GUIDE.md and Mike's live menu pages. Placeholders are filled at build time.",
+
+  "menus": [
+    {"q": "When does the new menu come out?", "a": "Chef Mike posts brand-new menus every {{menu_posted}}. Orders for the following {{delivery_day}} close {{cutoff}}, and meals are delivered {{delivery_day}} between {{delivery_window}}."},
+    {"q": "What does “2 of each” mean on the menu?", "a": "It's how many servings of each dish you get. Every course adds up to six meals for one person: three dishes with two of each, or, for Zone breakfasts, two dishes with three of each. A full Zone week is 6 breakfasts, 6 lunches and 6 dinners (18 meals)."},
+    {"q": "Can I swap a dish I don't like?", "a": "Meals are cooked exactly as listed, with no substitutions. That's how Chef Mike keeps quality high and prices fair. Every menu is new each week, so next week brings different dishes."},
+    {"q": "Do I have to subscribe?", "a": "No. Order any single week you like in the <a href=\"{{store}}\">JOMB Store</a>, with no contract. If you'd rather have meals every week, a <a href=\"{{link:meal-plans/}}\">JOMB meal plan</a> saves you up to 12% and lets you skip any week."},
+    {"q": "What if I have a food allergy?", "a": "Gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy. If you have a severe allergy, email <a href=\"mailto:{{email}}\">{{email}}</a> before you order so we can talk it through."}
+  ],
+
+  "zone": [
+    {"q": "What is a Zone block?", "a": "In the Zone diet, one block is 7 g of protein, 9 g of carbohydrate and 1.5 g of fat. Every JOMB Zone meal is built at 4 blocks and targets about 28–32 g protein, 34–40 g carbohydrate and 12–16 g fat."},
+    {"q": "What does 40/30/30 mean?", "a": "The Zone diet balances each meal at roughly 40% of calories from carbohydrate, 30% from protein and 30% from fat. You count blocks instead of calories, and Chef Mike builds every JOMB Zone meal to 4 blocks so you don't have to weigh anything."},
+    {"q": "Are the Zone macros exact?", "a": "They're targets, not lab-tested values. Chef Mike aims for 4 blocks in every meal and works to be as accurate as possible, but individual meals aren't always exact."},
+    {"q": "Can I order only breakfasts, lunches or dinners?", "a": "Yes. Order 6 breakfasts ({{price:zone_breakfast}}), 6 lunches ({{price:zone_lunch}}) or 6 dinners ({{price:zone_dinner}}), or the full week of 18 meals for {{price:zone_all}} ({{per:zone_all}} a meal). Prices are before tax."},
+    {"q": "Can two people share the Zone plan?", "a": "Yes. The double plan is 6 breakfasts, 6 lunches and 6 dinners for two people (36 meals) for {{price:zone_double}}, which works out to {{per:zone_double}} a meal before tax."},
+    {"q": "Can my Zone meals be delivered to my CrossFit gym?", "a": "Yes. Meals can be delivered to your CrossFit gym on {{delivery_day}}, as well as to homes and offices in {{towns_sentence}}. Gym and office drops arrive in JOMB cooler bags; please bring them back to the drop point before the next delivery."},
+    {"q": "Is the Zone diet the same as keto?", "a": "No. Keto cuts carbohydrate very low. Zone is balanced, at about 40% of calories from carbs, 30% from protein and 30% from fat, so JOMB Zone meals include real carbohydrates alongside lean protein."}
+  ],
+
+  "paleo": [
+    {"q": "What does Paleo mean at Just One More Bite?", "a": "Meals built on meat, vegetables, fruit, nuts and seeds, with no grains, no dairy and no added sugar."},
+    {"q": "How much do Paleo meals cost?", "a": "6 Paleo lunches are {{price:paleo_lunch}} ({{per:paleo_lunch}} each) and 6 Paleo dinners are {{price:paleo_dinner}} ({{per:paleo_dinner}} each), before tax. Order lunches, dinners or both."},
+    {"q": "Do you publish macros for the Paleo menu?", "a": "No. Every menu is new each week, so we publish macro targets only for the Zone menu (about 28–32 g protein per meal). If you want counted macros, look at <a href=\"{{link:zone-meal-delivery/}}\">Zone meal delivery</a>."},
+    {"q": "Is the Paleo menu safe for a gluten or dairy allergy?", "a": "Paleo meals are planned without grains or dairy, but they're cooked in a kitchen that also handles gluten and dairy. If you have a severe allergy, email <a href=\"mailto:{{email}}\">{{email}}</a> before you order."},
+    {"q": "What's the difference between Paleo and Low-Carb Dairy-Free?", "a": "Both are dairy-free lunches and dinners. Paleo also leaves out grains and added sugar and is built on meat, vegetables, fruit, nuts and seeds. Low-Carb Dairy-Free is for lighter, lower-carb eating, with lunches at {{per:lcdf_lunch}}. Compare them on <a href=\"{{link:menus/}}\">this week's menus</a>."},
+    {"q": "When do I need to order?", "a": "By {{cutoff}} for delivery the following {{delivery_day}}, {{delivery_window}}. The new Paleo menu posts every {{menu_posted}}."}
+  ],
+
+  "lcdf": [
+    {"q": "How long should I stay on the Low-Carb Dairy-Free plan?", "a": "Chef Mike recommends 3–4 weeks in a row to really feel the difference. There's no contract, though: order any week, for as long as you like."},
+    {"q": "Can two people share the plan?", "a": "Yes. Double portions for two adults are available. Call {{phone_link}} or email {{email_link}} and we'll set it up."},
+    {"q": "How much does Low-Carb Dairy-Free cost?", "a": "6 lunches are {{price:lcdf_lunch}} ({{per:lcdf_lunch}} each) and 6 dinners are {{price:lcdf_dinner}} ({{per:lcdf_dinner}} each), before tax. Order lunches, dinners or both."},
+    {"q": "Is it safe for a dairy or gluten allergy?", "a": "Gluten-free and dairy-free meals are made in a kitchen that also handles gluten and dairy. If you have a severe allergy, email <a href=\"mailto:{{email}}\">{{email}}</a> before ordering so we can talk it through."},
+    {"q": "Do you list carbs or calories?", "a": "Not for this menu. Because every menu is new each week, we publish macro targets only for the Zone menu. If you want numbers, the <a href=\"{{link:zone-meal-delivery/}}\">Zone plan</a> targets 34–40 g carbohydrate per meal."}
+  ],
+
+  "family": [
+    {"q": "How many people does a family dinner feed?", "a": "One family dinner feeds three adults, or two adults and two small children. The soup, entrée salad and vegetarian options are a little smaller and usually serve two adults."},
+    {"q": "Is there a minimum order?", "a": "Yes: two family dinners per order. Each dinner is {{price:family_meal}} before tax."},
+    {"q": "What can I add to a family order?", "a": "A soup of the week ({{price:family_soup}}), an entrée salad ({{price:family_salad}}) and a 1-gallon bag of fresh-cut fruit in several varieties ({{price:fruit}}). The extras change with the menu each week."},
+    {"q": "What does a family dinner cost per person?", "a": "At {{price:family_meal}} for three adults, it's {{per:family_meal}} per adult serving, before tax, with no shopping, cooking or dishes."},
+    {"q": "Can I send family dinners as a gift?", "a": "Yes. Gift cards start at {{price:gift_from}}, or you can send a week of dinners straight to someone else's door in our delivery area. <a href=\"{{link:gift-cards/}}\">See gift cards</a>."},
+    {"q": "What if we're not home on Tuesday?", "a": "Leave a cooler outside with ice packs and the driver will move your dinners into it. A 48-quart cooler is plenty for most orders."}
+  ],
+
+  "protein": [
+    {"q": "What does “cooked weight” mean?", "a": "The protein is weighed after it's cooked, so the pound you pay for is the pound you eat."},
+    {"q": "Is there a minimum order?", "a": "Add protein by the pound to any meal order, or order protein on its own with a $100 minimum before tax."},
+    {"q": "Which proteins can I buy?", "a": "The cooked proteins from that week's menus, so the selection changes weekly. Prices before tax: chicken {{price:protein_chicken}}/lb, CAB beef {{price:protein_beef}}/lb, pork {{price:protein_pork}}/lb and seafood {{price:protein_seafood}}/lb."},
+    {"q": "When do I order, and when does it arrive?", "a": "Order by {{cutoff}}. Your protein is delivered with the week's meals on {{delivery_day}}, {{delivery_window}}, anywhere in {{towns_sentence}}."},
+    {"q": "Can I add protein to my Zone or family order?", "a": "Yes. Protein by the pound works as an add-on to any Zone, Paleo, Low-Carb Dairy-Free or Family order. Add it to your cart in the <a href=\"{{store}}\">JOMB Store</a>."}
+  ]
+}

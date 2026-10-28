@@ -1,0 +1,141 @@
+<!--meta
+{
+  "title": "Cooked Protein by the Pound in Raleigh | Just One More Bite",
+  "og_title": "Chef-cooked protein by the pound · Just One More Bite",
+  "description": "Chef-cooked chicken, CAB beef, pork and seafood by the pound, delivered Tuesdays in Raleigh. $10.99–$18.99/lb by cooked weight; $100 minimum on its own.",
+  "path": "protein-by-the-pound/",
+  "og": "og-default",
+  "nav": "menus",
+  "page_type": "WebPage",
+  "breadcrumb": [["Menus", "menus/"], ["Protein by the pound", "protein-by-the-pound/"]],
+  "service": {"name": "Cooked protein by the pound", "description": "The cooked proteins from each week's Just One More Bite menus, sold by cooked weight and delivered every Tuesday in the Raleigh area. Add to any meal order, or order on its own with a $100 minimum.", "type": "Prepared food delivery", "offers": ["protein_chicken", "protein_beef", "protein_pork", "protein_seafood"]}
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero-grid">
+      <div>
+        <h1><span class="eyebrow">Cooked protein by the pound · Raleigh</span>The slowest part of meal prep, <em>done.</em></h1>
+        <p class="lead">Just One More Bite sells the proteins from each week's menus by the pound, already cooked and priced by cooked weight: chicken {{price:protein_chicken}}/lb, CAB beef {{price:protein_beef}}/lb, pork {{price:protein_pork}}/lb and seafood {{price:protein_seafood}}/lb. Add it to any meal order, or order protein on its own with a $100 minimum. Order by {{cutoff}} for {{delivery_day}} delivery in {{towns_sentence}}.</p>
+        <div class="price-chips">
+          <div class="price-chip"><b>{{price:protein_chicken}}</b><span>chicken / lb</span></div>
+          <div class="price-chip"><b>{{price:protein_beef}}</b><span>CAB beef / lb</span></div>
+          <div class="price-chip"><b>{{price:protein_pork}}</b><span>pork / lb</span></div>
+          <div class="price-chip"><b>{{price:protein_seafood}}</b><span>seafood / lb</span></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="{{store}}">{{icon:cart}}Order protein</a>
+          <a class="btn btn--ghost btn--lg" href="#this-week">This week's proteins</a>
+        </div>
+      </div>
+      <div class="hero-media menus-hero-media">
+        <div class="media-frame">{{img:osso-buco-style|(min-width: 960px) 46vw, 100vw||eager}}</div>
+        <div class="float-card">{{icon:flame}}<p><b>Priced by cooked weight</b>The pound you pay for is the pound on your plate.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="prices">
+  <div class="container menus-split-tight">
+    <div class="reveal">
+      <span class="eyebrow">Chef Mike's butcher board</span>
+      <h2>Four proteins. <em>One price per pound.</em></h2>
+      <p class="lead menus-dark-lead">Cooked exactly the way they're cooked for this week's menus, so your protein tastes like Chef Mike's food, not like a plain meal-prep tub.</p>
+      <ul class="checks">
+        <li>Comes from that week's Zone, Paleo, Low-Carb Dairy-Free and Family menus</li>
+        <li>Weighed after cooking, so there's no shrink to account for</li>
+        <li>Delivered {{delivery_day}}, {{delivery_window}}, with the rest of your order</li>
+      </ul>
+    </div>
+    <div class="menus-board reveal">
+      <ul class="menus-pricelist">
+        <li><span>Chicken<small>per pound, cooked weight</small></span><i></i><b>{{price:protein_chicken}}</b></li>
+        <li><span>CAB beef<small>per pound, cooked weight</small></span><i></i><b>{{price:protein_beef}}</b></li>
+        <li><span>Pork<small>per pound, cooked weight</small></span><i></i><b>{{price:protein_pork}}</b></li>
+        <li><span>Seafood<small>per pound, cooked weight</small></span><i></i><b>{{price:protein_seafood}}</b></li>
+      </ul>
+      <div class="menus-board-foot">
+        <span>{{icon:plate}}Add to any meal order</span>
+        <span>{{icon:cart}}$100 minimum on its own</span>
+        <span>{{icon:clock}}Order by {{cutoff_short}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper menus-anchor" id="this-week">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">On the board this week</span>
+      <h2>This week's <em>proteins</em></h2>
+      <p>The selection follows the menus, so it changes every week. A new list posts every {{menu_posted}} with the new <a href="{{link:menus/}}">weekly menus</a>.</p>
+    </div>
+    <div class="menus-split-tight menus-split-tight--flip">
+      <div class="reveal">{{menu:protein}}</div>
+      <div class="menus-photo-pair reveal">
+        <div class="media-frame">{{img:steaks-grill|(min-width: 960px) 20vw, 50vw}}</div>
+        <div class="media-frame">{{img:shrimp|(min-width: 960px) 20vw, 50vw}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="who">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Who orders by the pound</span>
+      <h2>Cook the easy part. <em>We'll handle the rest.</em></h2>
+    </div>
+    <div class="menus-cards menus-cards--3">
+      <article class="menus-card reveal"><span class="menus-card-icon">{{icon:plate}}</span><h3>People who cook their own sides</h3><p>Make the rice, the salad or the roasted vegetables your way. Chef Mike handles the protein, the part that takes the longest.</p></article>
+      <article class="menus-card reveal"><span class="menus-card-icon">{{icon:users}}</span><h3>Big families</h3><p>Feeding five or six? Add a few pounds of cooked protein to a <a href="{{link:family-meal-delivery/}}">family dinner order</a> and stretch the week further.</p></article>
+      <article class="menus-card reveal"><span class="menus-card-icon">{{icon:dumbbell}}</span><h3>Athletes</h3><p>Hit your protein for the week without grilling chicken every Sunday. It pairs well with the <a href="{{link:zone-meal-delivery/}}">Zone plan</a>.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Two ways to order</span>
+      <h2>Add it on, or <em>order it on its own.</em></h2>
+    </div>
+    <div class="menus-pair">
+      <div class="menus-pair-a reveal">
+        <h3>{{icon:plate}}As an add-on</h3>
+        <p>Put protein by the pound in the same cart as any Zone, Paleo, Low-Carb Dairy-Free or Family order. It arrives with your meals on {{delivery_day}}.</p>
+        <a class="text-link" href="{{link:menus/}}">See this week's menus</a>
+      </div>
+      <div class="menus-pair-a reveal">
+        <h3>{{icon:cart}}On its own</h3>
+        <p>Just want the protein? Order it by itself with a $100 minimum before tax, by {{cutoff}}.</p>
+        <a class="text-link" href="{{store}}">Order in the JOMB Store</a>
+      </div>
+    </div>
+    <p class="note mt-2">Prices before NC sales tax. See <a href="{{link:pricing/}}">every price on one page</a> or <a href="{{link:how-it-works/}}">how delivery works</a>.</p>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq">
+  <div class="container container--narrow">
+    <div class="section-head section-head--center reveal"><span class="eyebrow">Protein questions</span><h2>By the pound, <em>explained</em></h2></div>
+    {{faq:protein}}
+    <p class="center mt-2"><a class="text-link" href="{{link:faq/}}">See every FAQ</a></p>
+  </div>
+</section>
+
+<section class="section" id="related">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pair it with a plan</span>
+      <h2>Protein plus <em>the full menu.</em></h2>
+      <p>Protein by the pound works with every weekly plan. <a href="{{link:chef-michael-saunders/}}">Chef Mike</a> cooks them all.</p>
+      <a class="menus-sub" href="{{link:meal-plans/}}"><span class="menus-sub-icon">{{icon:calendar}}</span><span><b>Want this every week?</b> Subscribers save up to 12% and can skip any week.</span><span class="menus-sub-go">Meal plans</span></a>
+    </div>
+    {{plans}}
+  </div>
+</section>
+
+{{cta_band:bbq-chicken-broccoli}}

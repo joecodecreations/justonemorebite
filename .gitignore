@@ -1,0 +1,6 @@
+.build.lock
+src/img/source/
+src/img/sheet_*.jpg
+shots/
+__pycache__/
+.DS_Store

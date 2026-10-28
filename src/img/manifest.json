@@ -1,0 +1,404 @@
+{
+ "lamb": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 1500,
+  "alt": "Roasted rack of lamb with red wine demi-glace, mashed potatoes and vegetables"
+ },
+ "salmon-plated": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Glazed salmon fillets plated with grilled asparagus"
+ },
+ "meals-rows": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 1500,
+  "alt": "Rows of Just One More Bite meals packed for Tuesday delivery"
+ },
+ "meals-containers": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Weekly prepared meals in containers with chicken, rice and snap peas"
+ },
+ "meals-tray": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Lunch containers with chicken, brown rice and green beans ready for delivery"
+ },
+ "zone-plate": {
+  "widths": [
+   480,
+   800,
+   1125
+  ],
+  "w": 1125,
+  "h": 1125,
+  "alt": "Herb-crusted chicken with asparagus and a cranberry relish"
+ },
+ "paleo-plate": {
+  "widths": [
+   480,
+   800,
+   1125
+  ],
+  "w": 1125,
+  "h": 1125,
+  "alt": "Sliced roast pork tenderloin over a kale salad"
+ },
+ "lcdf-plate": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ],
+  "w": 1440,
+  "h": 1080,
+  "alt": "Sliced chicken with a green herb sauce over a crunchy cabbage slaw"
+ },
+ "family-plate": {
+  "widths": [
+   480,
+   800,
+   1125
+  ],
+  "w": 1125,
+  "h": 1125,
+  "alt": "Glazed braised short rib with roasted potatoes and green beans"
+ },
+ "steaks-grill": {
+  "widths": [
+   480,
+   600
+  ],
+  "w": 600,
+  "h": 600,
+  "alt": "Chef grilling USDA Choice steaks"
+ },
+ "shrimp": {
+  "widths": [
+   480,
+   640
+  ],
+  "w": 640,
+  "h": 800,
+  "alt": "Spiced grilled shrimp packed for a weekly order"
+ },
+ "tuna": {
+  "widths": [
+   480,
+   800,
+   1125
+  ],
+  "w": 1125,
+  "h": 1125,
+  "alt": "Seared tuna with a spicy aioli over carrot slaw"
+ },
+ "pineapple-chicken": {
+  "widths": [
+   480,
+   800,
+   1125
+  ],
+  "w": 1125,
+  "h": 1125,
+  "alt": "Grilled chicken with pineapple and teriyaki glaze"
+ },
+ "bbq-chicken-broccoli": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ],
+  "w": 1440,
+  "h": 1440,
+  "alt": "Barbecue chicken with broccoli and pasta in weekly meal containers"
+ },
+ "chef-plating": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Chef plating seared salmon and asparagus on a butcher-block cart"
+ },
+ "chef-plating-2": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Chef finishing plates of seared salmon"
+ },
+ "chef-label": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Chef checking a hand-written label on a bottle of house vinaigrette"
+ },
+ "chef-banner": {
+  "widths": [
+   480,
+   500
+  ],
+  "w": 500,
+  "h": 486,
+  "alt": "Chef Michael Saunders of Just One More Bite at an event"
+ },
+ "chef-table-outdoor": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Chef standing at a long outdoor table set for a private dinner"
+ },
+ "table-outdoor": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 1125,
+  "alt": "Farmhouse table set outdoors for a private chef dinner"
+ },
+ "table-fall": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Autumn table setting with sunflowers and leaf placemats"
+ },
+ "private-plates": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2001,
+  "alt": "Plated first courses lined up for a private dinner party"
+ },
+ "scallop": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2001,
+  "alt": "Seared scallop course on a shell-shaped plate"
+ },
+ "home-plating": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2001,
+  "alt": "Chefs plating a multi-course private dinner"
+ },
+ "dinner-candles": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ],
+  "w": 1440,
+  "h": 1800,
+  "alt": "Candlelit long table with flowers and printed menus for a private birthday dinner"
+ },
+ "dinner-long": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ],
+  "w": 1440,
+  "h": 1800,
+  "alt": "Long dinner table set beside the open kitchen for a private event"
+ },
+ "produce": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1440
+  ],
+  "w": 1440,
+  "h": 764,
+  "alt": "Fresh squash, zucchini, eggplant and peppers on a prep table"
+ },
+ "catering-tuna": {
+  "widths": [
+   480,
+   800,
+   1080
+  ],
+  "w": 1080,
+  "h": 1080,
+  "alt": "Seared tuna crostini with grapefruit and wasabi cream on a catering table"
+ },
+ "catering-buffet": {
+  "widths": [
+   480,
+   600
+  ],
+  "w": 600,
+  "h": 600,
+  "alt": "Catered buffet spread with salads, crudit\u00e9s and dips"
+ },
+ "catering-platter": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Catering platter of grilled skewers and greens"
+ },
+ "catering-crostini": {
+  "widths": [
+   480,
+   800,
+   1200,
+   1500
+  ],
+  "w": 1500,
+  "h": 2000,
+  "alt": "Pulled pork crostini and stuffed bread bites for a party"
+ },
+ "soup": {
+  "widths": [
+   480,
+   600
+  ],
+  "w": 600,
+  "h": 600,
+  "alt": "Bowls of tomato bisque garnished with herbs"
+ },
+ "fruit": {
+  "widths": [
+   480,
+   800,
+   1125
+  ],
+  "w": 1125,
+  "h": 1125,
+  "alt": "Fresh-cut fruit cups with strawberries, mango and almonds"
+ },
+ "athletes": {
+  "widths": [
+   480,
+   750
+  ],
+  "w": 750,
+  "h": 726,
+  "alt": "Two athletes in JOMB Athlete shirts at a CrossFit competition"
+ },
+ "dessert": {
+  "widths": [
+   480,
+   600
+  ],
+  "w": 600,
+  "h": 600,
+  "alt": "Fruit crumble with vanilla ice cream and berry sauce"
+ },
+ "steak-plated": {
+  "widths": [
+   480,
+   708
+  ],
+  "w": 708,
+  "h": 554,
+  "alt": "Sliced steak with asparagus and a balsamic reduction"
+ },
+ "seared-tuna-slaw": {
+  "widths": [
+   480,
+   800,
+   960
+  ],
+  "w": 960,
+  "h": 720,
+  "alt": "Sesame seared tuna over purple cabbage"
+ },
+ "osso-buco-style": {
+  "widths": [
+   480,
+   800,
+   1115
+  ],
+  "w": 1115,
+  "h": 1399,
+  "alt": "Braised pork with a savory pan sauce"
+ },
+ "turkey-plate": {
+  "widths": [
+   480,
+   500
+  ],
+  "w": 500,
+  "h": 480,
+  "alt": "Roast turkey with cranberry, sweet potato and creamy salad"
+ }
+}
