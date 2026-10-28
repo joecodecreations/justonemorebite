@@ -61,6 +61,7 @@
   }
   // exposed for automated checks against build.py
   window.JOMBPlanQuote = quote;
+  quote.round = pyRound;
 
   function money(v) { return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
   function wholeMoney(v) { return "$" + Math.round(v).toLocaleString("en-US"); }
@@ -261,7 +262,7 @@
     setText("deliveries", q.deliveries > 1 ? q.deliveries + " · " + firstDay.slice(0, 3) + " + " + secondDay.slice(0, 3) : "1 · " + firstDay);
     setText("name", info.name);
     setText("detail", info.detail);
-    setText("barsub", money(q.per) + " per " + q.unit + " · save " + pct(q.disc));
+    setText("barsub", money(q.per) + (fam ? " a dinner" : " a meal") + " · save " + pct(q.disc));
     (outs.tag || []).forEach(function (el) { el.textContent = info.tag; el.hidden = !info.tag; });
     (outs.mailto || []).forEach(function (el) { el.href = mailto(info.name, info.detail + " · " + money(q.price) + " a week"); });
 

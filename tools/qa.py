@@ -1466,10 +1466,16 @@ def make_handler(root, prefix):
     return H
 
 
+class QuietServer(ThreadingHTTPServer):
+    def handle_error(self, request, client_address):
+        if not isinstance(sys.exc_info()[1], (ConnectionResetError, BrokenPipeError, TimeoutError)):
+            super().handle_error(request, client_address)  # Chrome dropping keep-alive sockets is normal
+
+
 class SiteServer:
     def __init__(self, root, prefix=PREFIX):
         self.prefix = prefix
-        self.httpd = ThreadingHTTPServer(("127.0.0.1", 0), make_handler(Path(root), prefix))
+        self.httpd = QuietServer(("127.0.0.1", 0), make_handler(Path(root), prefix))
         self.httpd.daemon_threads = True
         self.port = self.httpd.server_address[1]
         threading.Thread(target=self.httpd.serve_forever, daemon=True).start()

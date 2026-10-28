@@ -398,6 +398,10 @@ def fill(pg, text, meta=None):
             return render_mbr_featured(pg, arg)
         if key == "membership_table":
             return render_mbr_table(pg, arg)
+        if key == "membership_from":
+            return mbr_from()
+        if key == "membership_save_max":
+            return mbr_save_max()
         if key == "membership_mini":
             return render_mbr_mini(pg, arg)
         if key == "membership_perks":
@@ -452,6 +456,25 @@ def plan_mailto(name, detail):
     return f"mailto:{SITE['email']}?subject={_q('JOMB Membership: ' + name)}&body={_q(body)}"
 
 
+def mbr_from():
+    best = None
+    for h in MBR["households"]:
+        for d in MBR["days"]:
+            if "family_dinners" in h:
+                combos = [("dinner", "family")]
+            else:
+                combos = [(c["key"], m) for m, mv in MBR["menus"].items() for c in MBR["coverage"]
+                          if ("menus" not in c or m in c["menus"]) and all(meal in mv for meal in c["meals"])]
+            for cov, menu in combos:
+                p = plan_quote(h["key"], d, cov, menu)["price"]
+                best = p if best is None or p < best else best
+    return m2(best)
+
+
+def mbr_save_max():
+    return f'{round(max(MBR["discount"].values()) * 100)}%'
+
+
 def render_mbr_featured(pg, arg):
     cards = []
     for f in MBR.get("featured", []):
@@ -462,11 +485,11 @@ def render_mbr_featured(pg, arg):
         detail = f'{hh["label"]} · {f["days"]} days a week · {cov["label"].lower()} · {menu_label}'
         deliv = "1 delivery a week" if q["deliveries"] == 1 else f'{q["deliveries"]} deliveries a week'
         cards.append(
-            f'<article class="mbr-plan reveal"><span class="mbr-tag">{esc(f["tag"])}</span><h3>{esc(f["name"])}</h3>'
+            f'<article class="mbr-plan{" mbr-plan--popular" if f["tag"] == "Most popular" else ""} reveal"><span class="mbr-tag">{esc(f["tag"])}</span><h3>{esc(f["name"])}</h3>'
             f'<p class="mbr-blurb">{esc(f["blurb"])}</p><ul class="mbr-specs"><li>{esc(hh["label"])}</li><li>{f["days"]} days a week</li>'
             f'<li>{esc(cov["label"])} · {esc(menu_label)}</li><li>{deliv}</li></ul>'
             f'<div class="mbr-price"><strong>{m2(q["price"])}</strong><span>/ week</span></div>'
-            f'<p class="mbr-math"><s>{m2(q["base"])}</s> · save {m2(q["save"])} a week ({int(q["disc"] * 100)}%) · {m2(q["per"])} per {q["unit"]}</p>'
+            f'<p class="mbr-math"><s>{m2(q["base"])}</s> · save {m2(q["save"])} a week ({round(q["disc"] * 100)}%) · {m2(q["per"])} per {q["unit"]}</p>'
             f'<p class="mbr-month">About {m2(q["monthly"]).split(".")[0]} a month · {q["meals"]} {q["unit"]}s a week</p>'
             f'<a class="btn btn--primary" href="{plan_mailto(f["name"], detail)}">Start {esc(f["name"])}</a></article>')
     return f'<div class="mbr-plans">{"".join(cards)}</div>'
@@ -493,7 +516,7 @@ def render_mbr_table(pg, arg):
                 cells = "".join(f'<td class="num"><strong>{m2(plan_quote("one", d, c["key"], mk)["price"])}</strong><br><span class="muted small">{m2(plan_quote("one", d, c["key"], mk)["per"])}/meal</span></td>' for d in days)
                 rows.append(f'<tr><td><strong>{esc(mv["label"])}</strong><br><span class="muted small">{esc(c["label"])}</span></td>{cells}</tr>')
         title = "Individual plans · weekly price for one person (two people: double it)"
-    disc_row = "".join(f'<td class="num"><span class="mbr-save">save {int(MBR["discount"][str(d)] * 100)}%</span></td>' for d in days)
+    disc_row = "".join(f'<td class="num"><span class="mbr-save">save {round(MBR["discount"][str(d)] * 100)}%</span></td>' for d in days)
     return (f'<div class="table-wrap"><table class="table mbr-table"><caption class="sr-only">{esc(title)}</caption><thead><tr><th>Plan</th>{head}</tr></thead>'
             f'<tbody>{"".join(rows)}<tr class="mbr-disc-row"><td><span class="muted small">Subscriber savings vs. one-off orders</span></td>{disc_row}</tr></tbody></table></div>')
 
@@ -503,7 +526,7 @@ def render_mbr_mini(pg, arg):
     for f in MBR.get("featured", []):
         q = plan_quote(f["household"], f["days"], f["coverage"], f["menu"])
         items.append(f'<li><span class="mbr-mini-name">{esc(f["name"])}</span><strong>{m2(q["price"])}<small>/wk</small></strong>'
-                     f'<span class="mbr-mini-note">{m2(q["per"])} per {q["unit"]} · save {int(q["disc"] * 100)}%</span></li>')
+                     f'<span class="mbr-mini-note">{m2(q["per"])} per {q["unit"]} · save {round(q["disc"] * 100)}%</span></li>')
     return f'<ul class="mbr-mini">{"".join(items)}</ul>'
 
 

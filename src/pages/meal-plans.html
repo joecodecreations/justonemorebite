@@ -18,9 +18,9 @@
       <div>
         <p class="mbr-proposal">{{proposal}}</p>
         <h1><span class="eyebrow">Weekly meal plan subscriptions · Raleigh, NC</span>Set it once. <em>Eat well every week.</em></h1>
-        <p class="lead">JOMB Membership is a weekly meal plan subscription from Just One More Bite in Raleigh, NC. Choose who's eating (just you, the two of you, or a family of up to six), 2 to 7 days a week, and dinner only or lunch and dinner. {{chef}} cooks it from scratch and delivers it every {{delivery_day}}. Members pay up to <span data-mbr="maxsave">12%</span> less than one-off orders, with plans from <span data-mbr="from">$34.20</span> a week, and can skip or pause any week by {{cutoff}}. No contract.</p>
+        <p class="lead">JOMB Membership is a weekly meal plan subscription from Just One More Bite in Raleigh, NC. Choose who's eating (just you, the two of you, or a family of up to six), 2 to 7 days a week, and dinner only or lunch and dinner. {{chef}} cooks it from scratch and delivers it every {{delivery_day}}. Members pay up to <span data-mbr="maxsave">{{membership_save_max}}</span> less than one-off orders, with plans from <span data-mbr="from">{{membership_from}}</span> a week, and can skip or pause any week by {{cutoff}}. No contract.</p>
         <div class="price-chips">
-          <div class="price-chip"><b>Up to <span data-mbr="maxsave">12%</span></b><span>less than one-off orders</span></div>
+          <div class="price-chip"><b>Up to <span data-mbr="maxsave">{{membership_save_max}}</span></b><span>less than one-off orders</span></div>
           <div class="price-chip"><b>2 to 7 days</b><span>a week, your call</span></div>
           <div class="price-chip"><b>1 to 6 people</b><span>solo, couples, big families</span></div>
           <div class="price-chip"><b>{{cutoff_short}}</b><span>skip or pause deadline</span></div>
@@ -32,7 +32,7 @@
       </div>
       <div class="mbr-hero-media">
         <div class="media-frame media-frame--square">{{img:meals-rows|(min-width: 960px) 46vw, 100vw||eager|Rows of Just One More Bite meals packed for a week of subscriber deliveries}}</div>
-        <div class="stamp" aria-hidden="true"><div><span>Members save</span><strong><span data-mbr="maxsave">12%</span></strong><span>every week</span></div></div>
+        <div class="stamp" aria-hidden="true"><div><span>Members save</span><strong><span data-mbr="maxsave">{{membership_save_max}}</span></strong><span>every week</span></div></div>
         <div class="float-card">{{icon:truck}}<p><b>Delivered every {{delivery_day}}</b>5- and 7-day plans get a second delivery Friday, so every meal is fresh.</p></div>
       </div>
     </div>
@@ -91,7 +91,7 @@
         </div>
       </form>
 
-      <aside class="builder-summary" id="builder-summary" aria-labelledby="builder-sum-title">
+      <aside class="builder-summary" id="builder-summary" aria-label="Your plan summary">
         <div class="builder-card">
           <p class="builder-kicker"><span>Your plan</span><span class="builder-badge" data-out="tag" hidden></span></p>
           <h3 id="builder-sum-title" data-out="name">Your plan</h3>
